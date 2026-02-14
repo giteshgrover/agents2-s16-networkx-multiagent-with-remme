@@ -38,6 +38,7 @@ async def run_query(agent_loop, query):
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--ui", action="store_true", help="Launch Web UI")
+    parser.add_argument("--reload", action="store_true", help="Enable auto-reload for UI development")
     args = parser.parse_args()
 
     console = Console()
@@ -52,55 +53,31 @@ async def main():
         agent_loop = AgentLoop4(multi_mcp=multi_mcp)
 
         if args.ui:
-            import gradio as gr
-            import core.loop
+            try:
+                from ui.advanced_ui import AdvancedUI
+            except ImportError as e:
+                print(f"[red]Error importing AdvancedUI: {e}[/red]")
+                print("[yellow]Make sure all dependencies are installed: gradio, requests, pandas[/yellow]")
+                return
             
-            # Global buffer for logs
-            log_buffer = []
+            print("[bold green]Starting Advanced UI on http://localhost:7860[/bold green]")
+            print("[yellow]Note: Make sure the API server is running on http://localhost:8000[/yellow]")
+            print("[yellow]Start it with: uv run uvicorn api:app --reload --host 0.0.0.0 --port 8000[/yellow]")
+            print("[yellow]Or: uv run python api.py[/yellow]")
             
-            # Monkeypatch logging
-            original_log_step = core.loop.log_step
-            def ui_log_step(title, payload=None, symbol="🟢", **kwargs):
-                log_buffer.append(f"{symbol} {title}")
-                # Pass everything to original logger
-                original_log_step(title, payload, symbol, **kwargs)
-            
-            core.loop.log_step = ui_log_step
-            
-            async def chat_fn(message, history):
-                log_buffer.clear()
-                log_buffer.append("🚀 Starting analysis...")
+            try:
+                # Launch advanced UI (runs in separate thread, non-blocking)
+                from ui.advanced_ui import launch_ui
+                launch_ui(share=False, server_name="0.0.0.0", server_port=7860, reload=args.reload)
                 
-                # Run as task effectively
-                task = asyncio.create_task(run_query(agent_loop, message))
-                
-                # Stream logs
-                while not task.done():
-                    logs = "\n> ".join(log_buffer[-10:]) # Show last 10 logs
-                    yield f"**Thinking...**\n\n> {logs}"
-                    await asyncio.sleep(0.2)
-                
-                # Verify result
-                try:
-                    result = await task
-                except Exception as e:
-                    result = f"Error: {e}"
-                
-                full_logs = "\n".join([f"> {l}" for l in log_buffer])
-                yield f"<details><summary>Execution Logs</summary>\n\n{full_logs}\n</details>\n\n{result}"
-
-            demo = gr.ChatInterface(
-                fn=chat_fn,
-                title="S16 NetworkX Agent",
-                description="Ask complex questions. The agent will plan, browse, code, and summarize.",
-            )
-            print("[bold green]Starting UI on http://localhost:7860[/bold green]")
-            # Launch without blocking async loop, so MultiMCP pipes continue to work
-            demo.launch(prevent_thread_lock=True) 
-            
-            # Keep the main thread alive and let asyncio loop process background tasks
-            while True:
-                await asyncio.sleep(1) 
+                # Keep the main thread alive
+                while True:
+                    await asyncio.sleep(1)
+            except Exception as e:
+                print(f"[red]Error launching UI: {e}[/red]")
+                import traceback
+                traceback.print_exc()
+                return 
         else:
             # 3. Interactive Loop (CLI)
             while True:

@@ -1,0 +1,10 @@
+```json
+{
+  "weather_data_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('3 day weather forecast Durham NC temperature precipitation conditions', 5))\nreturn {'weather_data_T001': results}",
+    "CODE_1B": "urls = json.loads(fetch_search_urls('Durham NC weather forecast', 5))\ncontent = []\nfor url in urls[:3]:\n    content.append(webpage_url_to_raw_text(url))\nreturn {'weather_data_T001': content}"
+  }
+}
+```

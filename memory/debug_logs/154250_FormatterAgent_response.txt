@@ -1,0 +1,7 @@
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "The stock symbol for Veeva Systems is VEEV.",
+  "call_self": false
+}
+```

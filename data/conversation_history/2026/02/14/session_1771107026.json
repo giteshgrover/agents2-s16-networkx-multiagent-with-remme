@@ -1,0 +1,463 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "session_id": "1771107026",
+    "original_query": "How is the stock market doing today?",
+    "file_manifest": [],
+    "created_at": "2026-02-14T22:10:26.555419",
+    "status": "completed",
+    "globals_schema": {
+      "major_indices_data_T001": {
+        "content": [
+          {
+            "type": "text",
+            "text": [
+              {
+                "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-sink-as-tech-gets-hit-as-ai-disruption-fears-grow-gold-bitcoin-sink-210353533.html",
+                "content": "Stock market today: Dow, S&P 500, Nasdaq sink as tech gets hit as AI disruption fears grow; gold, bitcoin sink Oops, something went wrong Skip to main content News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep Your body Children's health Dermatology Foot health Hair loss Oral health Sexual health Weight management Women's health Conditions Cardiovascular health Digestive health Endocrine system Hearing Mental health Parenting Family health So mini ways Style and beauty It Figures Unapologetically Horoscopes Shopping Presidents' Day sales Best Presidents' Day sales Amazon Presidents' Day sale Walmart Presidents' Day sale Style Accessories Clothing Luggage Shoes Beauty Fragrance Hair Makeup Nails Skincare Sunscreen Health Dental Fitness Hair loss Hearing Mental health Mobility Nutrition Personal care Sexual health Sleep Women's health Home and garden Bath Bedding Cleaning Gardening Kitchen Outdoor Pets Tech Accessories Audio Auto Computers Phones Smart home Streaming TVs Gift ideas Best gifts for men Best gift cards Best gifts for mom Best gifts for teens Stores Amazon Best Buy Home Depot Macy's Nordstrom Target Walmart Wayfair Shopping Guides Best cordless stick vacuums Best water bottles Best vacuums Best air fryers Best luggage Best jeans Best bras Best nontoxic nail polish Best under eye cream Best skin tightening creams Best coffee makers Deals Toys and games General Valentine's Day gifts Best Valentine's Day gifts Valentine's Day gifts for her Valentine's Day gifts for him Food Travel Autos EV & Future Tech Classic & Collector Deals & Buying Guides Ownership Safety & Recalls Policy & Environment New Vehicles & Reviews Auto Shows General People & Culture Gift ideas Buying guides Valentine's Day gifts Presidents' Day sales Amazon Presidents' Day sale Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My Portfolio News Latest Originals Premium news Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal",
+                "images": [],
+                "rank": 1
+              },
+              {
+                "url": "https://economictimes.indiatimes.com/news/international/us/why-is-us-stock-market-surging-today-dow-sp-500-and-nasdaq-all-jump-big-today/articleshow/128212853.cms",
+                "content": "Dow Jones S&P 500 Nasdaq gaining big today: Why is US stock market surging today: Dow, S&P 500 and Nasdaq all jump big today - The Economic Times Remove Ads SHARE THIS NEWS Close Font Size Abc Small Abc Normal Abc Large Close Welcome User Sign in Download ET App Download ETMarkets App Home Budget 2026 Budget Headlines Budget & Markets Taxes & You Power Lifters VIEW MORE + The Power Shift CXO Corner Eco Survey 2026 Flashback FAQs Sectors in Focus SME Luxury Defence Housing Banking Real Estate Tech Energy Insurance Borrow Auto Travel ETPrime Tech Markets Auto + Aviation Corporate Governance VIEW MORE + Economy Pharma Energy Infra Fintech + BFSI Environment Telecom + OTT Consumer Prime Decoder Collections PRIMESHOTS Prime Vantage Markets Market Stats Stocks News Live Blog Stock Live Blog Earnings Podcast Market Classroom Dons of Dalal Street Recos Stock Reports Plus My Screener Candlestick Screener Stock Screener Stock Watch Market Calendar Stock Price Quotes Bonds Corner Cryptocurrency VIEW MORE + Options IPOs/FPOs Expert Views Investment Ideas Commodities Views News Forex Forex News Currency Converter Live Stream! AIF PMS US Stocks Crypto Crypto News Crypto TV Crypto Prices Bonds Digital Real Estate Realty News Technicals Technical Chart Mind Over Money Web Stories Markets Data The Golden Thumb Rule Unlisted Companies Market Moguls Webinars Definitions AI Spotlight India Energy Week 2026 ET SME Regional Summit ET WEF Special at DAVOS IIT Programs listed on ET VIEW MORE + Invest in US Markets India Inc On The Move 2026 Engineering Leadership Forum Niva Bupa Insurance Academy India's most trusted winds - Suzlon MSME Awards 2025 Soonicorns Summit ET Snapchat Gen Z Index Today's Paper Market Data Stock Dashboard Top Gainer Top Loser Most Active Volume Most Active Value New 52 Week High New 52 Week Low Technical Signals Golden Cross Death Cross Above SMA 20 RSI Below 20 RSI Above 80 Stock Reports Plus Top Score Companies High Upside Most Buys Score Upgrade Market Mood VIEW MORE + Stock Recos New Recos High Upside Recos High Downside BigBull Portfolio All Investors Top Picks Rakesh Jhunjhunwala RK Damani Stock Screener ET Learn Courses Stock Markets Mutual Funds Investment Strategies Insurance & Wealth Management Indices Nifty 50 Nifty 500 BSE Sensex Bank Nifty Sectors News India ET @ Davos 2026 Economy Economy Dashboard Agriculture Finance Foreign Trade Indicators Infrastructure Policy Politics VIEW MORE + Newsblogs Elections Assembly Elections West Bengal Assam Tamil Nadu Kerala Puducherry Sports ICC Men's T20 World Cup IPL 2026 Science Defence International US News Global Trends Trump Action Tracker Canada News UK News Australia New Zealand Saudi Arabia UAE Singapore Hong Kong Business World News ET Explains Company Corporate Trends Industry Trending Decoded Morning Brief Podcast ET Evoke Bengaluru News Pune News Mumbai News Videos Latest News Most Read Most Shared Most Commented Industry Auto Auto News Cars & UVs Two wheelers & three wheelers LCV & HCV Auto Components Tyres Banking/Finance Banking Finance Insure Cons. Products Durables Electronics Fashion / Cosmetics / Jewellery FMCG Food Garments / Textiles Liquor Paints Tobacco Energy Power Oil & Gas VIEW MORE + Renewables Solar Energy Wind Energy Policy and regulations People Hybrid Power Electric vehicles Ind'l Goods/Svs Construction Engineering Cement Chem / Fertilisers Metals & Mining Packaging Paper / Wood / Glass/ Plastic/ Marbles Petrochem Steel Healthcare/Biotech Biotech Healthcare Pharmaceuticals Services Advertising Consultancy / Audit Education Hotels / Restaurants Property / C'struction Retail Travel Media/Entertainment Entertainment Media Transportation Railways Airlines / Aviation Shipping / Transport Roadways Tech ITES Tech & Internet Startups Funding Tech Bytes Telecom Telecom News Telecom Policy Miscellaneous CSR Initiatives Policy Environment SME Sustainability SME Sector Policy Trade Exports Pre-Exports Process Logistics Post-Exports Insights VIEW MORE + Entr",
+                "images": [],
+                "rank": 2
+              },
+              {
+                "url": "https://markets.businessinsider.com/index/s&p_500?op=1",
+                "content": "S&P 500 INDEX TODAY | INX LIVE TICKER | S&P 500 QUOTE & CHART | Markets Insider Business Insider My Markets Watchlist Markets Indices Search Business Strategy Economy Finance Retail Advertising Careers Media Real Estate Small Business The Better Work Project Personal Finance Tech Science AI Enterprise Transportation Startups Innovation Markets Stocks Indices Commodities Crypto Currencies ETFs Lifestyle Entertainment Culture Travel Food Health Parenting Politics Military & Defense Law Education Reviews Home Kitchen Style Streaming Pets Tech Deals Gifts Tickets Video Big Business Food Wars So Expensive Still Standing Boot Camp S&P 500 Index , INX 6,836.17 +3.41 +0.05% 04:49:41 PM EDT 2/13/2026 Add to watchlist Snapshot 6,832.76 Prev. Close 6,835.05 Open 6,794.55 Day Low 6,881.96 Day High 6,836.17 4,835.04 52 Week Low 7,002.28 52 Week High 6,836.17 04:49 PM Trade Time 02/13/26 Trade Date News Business Insider 1d Past crypto winters show bitcoin could keep tumbling to $31,000, research firm says In past bitcoin winters, the crypto has dropped an average 84%, according to an analysis from Ned Davis Research. Business Insider 1d Why top economist says the US will continue to dodge a recession through the end of the decade Yardeni has touted his \"Roaring 20s\" thesis before, retierating his view this week that the economy and markets will remain strong through this decade. Business Insider 1d Goldman flags 10 energy stocks poised to rally as the sector crushes the S&P 500 in 2026 Energy is the best-performing sector in the S&P 500 this year. Goldman Sachs analysts flag 10 stock picks with further upside ahead. Business Insider 1d From software to trucking, here are all the stock sectors that have been gripped by AI panic A company that used to make karaoke machines is the latest source of AI-induced panic, adding to woes in real estate and wealth management shares. Business Insider 1d 5 tech bosses took a combined $26 billion wealth hit in Thursday's AI sell-off Elon Musk took an $8 billion blow to his net worth from Thursday's slump in AI stocks, while Mark Zuckerberg saw a nearly $7 billion drop. Realtime Prices for S&P 500 Stocks Name Previous Close Last % +/- Trade Time 3M 174.61 171.82 -1.60% -2.79 2/13/2026 A.O. Smith 79.62 80.46 1.06% 0.84 2/13/2026 Abbott Laboratories 111.47 112.68 1.09% 1.21 2/13/2026 AbbVie 227.50 231.50 1.76% 4.00 2/13/2026 Accenture 222.05 224.23 0.98% 2.18 2/13/2026 Adobe 262.50 263.97 0.56% 1.47 2/13/2026 AES 16.20 16.28 0.49% 0.08 2/13/2026 Aflac 115.88 114.91 -0.84% -0.97 2/13/2026 Agilent Technologies 124.88 125.81 0.74% 0.93 2/13/2026 Air Products and Chemicals 291.50 279.74 -4.03% -11.76 2/13/2026 Airbnb 115.96 121.35 4.65% 5.39 2/13/2026 Akamai 104.61 111.76 6.83% 7.15 2/13/2026 Albemarle 158.93 166.35 4.67% 7.42 2/13/2026 Alexandria Real Estate Equities 50.40 52.49 4.15% 2.09 2/13/2026 Align Technology 183.86 186.77 1.58% 2.91 2/13/2026 Allegion 178.20 179.50 0.73% 1.30 2/13/2026 Alliant Energy 69.68 71.19 2.17% 1.51 2/13/2026 Allstate 206.56 207.51 0.46% 0.95 2/13/2026 Alphabet A 309.00 305.72 -1.06% -3.28 2/13/2026 Alphabet C 309.37 306.02 -1.08% -3.35 2/13/2026 Altria 67.01 67.25 0.36% 0.24 2/13/2026 Amazon 199.60 198.79 -0.41% -0.81 2/13/2026 AMD 205.94 207.32 0.67% 1.38 2/13/2026 Ameren 109.34 110.97 1.49% 1.63 2/13/2026 American Electric Power 126.43 129.94 2.78% 3.51 2/13/2026 American Express 342.88 337.50 -1.57% -5.38 2/13/2026 American International Group 78.80 78.27 -0.67% -0.53 2/13/2026 American Tower 188.19 192.10 2.08% 3.91 2/13/2026 American Water Works 128.37 133.50 4.00% 5.13 2/13/2026 Ameriprise Financial 467.30 473.67 1.36% 6.37 2/13/2026 Ametek 228.69 229.76 0.47% 1.07 2/13/2026 Amgen 366.20 369.19 0.82% 2.99 2/13/2026 Amphenol 143.73 146.72 2.08% 2.99 2/13/2026 Analog Devices 331.36 337.10 1.73% 5.74 2/13/2026 Aon 314.49 321.70 2.29% 7.21 2/13/2026 APA Corporation Registered Shs 26.92 27.92 3.71% 1.00 2/13/2026 Apple 261.73 255.78 -2.27% -5.95 2/13/2026 Applied Materials 328",
+                "images": [],
+                "rank": 3
+              },
+              {
+                "url": "https://www.investors.com/research/stock-market-data-dow-jones-sp-500-nasdaq-spdr-etfs/",
+                "content": "Access to this page has been denied. Please verify you are a human Access to this page has been denied because we believe you are using automation tools to browse the         website. This may happen as a result of the following: Javascript is disabled or blocked by an extension (ad blockers for example) Your browser does not support cookies Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking         them from loading. Reference ID: #0b721ae8-09f2-11f1-8504-4e9e8f519f20 Powered by PerimeterX , Inc.",
+                "images": [],
+                "rank": 4
+              },
+              {
+                "url": "https://www.marketwatch.com/investing/index/spx",
+                "content": "[error] ",
+                "rank": 5
+              }
+            ],
+            "annotations": null,
+            "_meta": null
+          }
+        ]
+      },
+      "market_summary_T002": {
+        "summary_bullets": [
+          "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+          "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+          "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+          "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+        ]
+      },
+      "formatted_report_T003": []
+    }
+  },
+  "nodes": [
+    {
+      "description": "Initial Query",
+      "agent": "System",
+      "status": "completed",
+      "output": null,
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": null,
+      "execution_time": 0.0,
+      "id": "ROOT"
+    },
+    {
+      "id": "Query",
+      "description": "Formulate execution plan",
+      "agent": "PlannerAgent",
+      "status": "completed",
+      "reads": [
+        "original_query"
+      ],
+      "writes": [
+        "plan_graph"
+      ],
+      "output": {
+        "plan_graph": {
+          "nodes": [
+            {
+              "id": "T001",
+              "description": "Get current stock market index data",
+              "agent": "RetrieverAgent",
+              "agent_prompt": "Retrieve the current performance data for major stock market indices such as the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Focus on today's date.",
+              "reads": [],
+              "writes": [
+                "major_indices_data_T001"
+              ]
+            },
+            {
+              "id": "T002",
+              "description": "Synthesize stock market performance summary",
+              "agent": "DistillerAgent",
+              "agent_prompt": "Summarize the retrieved stock market index data, highlighting the performance of the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite for today. Provide key figures like current values and daily changes.",
+              "reads": [
+                "major_indices_data_T001"
+              ],
+              "writes": [
+                "market_summary_T002"
+              ]
+            },
+            {
+              "id": "T003",
+              "description": "Format stock market performance report",
+              "agent": "FormatterAgent",
+              "agent_prompt": "Format the stock market summary into a direct and informative report. Include the current values and daily changes for the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Aim for clarity and conciseness.",
+              "reads": [
+                "market_summary_T002"
+              ],
+              "writes": [
+                "formatted_report_T003"
+              ]
+            }
+          ],
+          "edges": [
+            {
+              "source": "ROOT",
+              "target": "T001"
+            },
+            {
+              "source": "T001",
+              "target": "T002"
+            },
+            {
+              "source": "T002",
+              "target": "T003"
+            }
+          ]
+        },
+        "next_step_id": "T001",
+        "interpretation_confidence": 0.95,
+        "ambiguity_notes": [],
+        "cost": 9.790000000000001e-05,
+        "input_tokens": 27,
+        "output_tokens": 238,
+        "total_tokens": 265,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": "2026-02-14T22:10:28.548914",
+      "execution_time": 0.0
+    },
+    {
+      "id": "T001",
+      "description": "Get current stock market index data",
+      "agent": "RetrieverAgent",
+      "agent_prompt": "Retrieve the current performance data for major stock market indices such as the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Focus on today's date.",
+      "reads": [],
+      "writes": [
+        "major_indices_data_T001"
+      ],
+      "status": "completed",
+      "output": {
+        "major_indices_data_T001": [],
+        "call_self": false,
+        "code_variants": {
+          "CODE_1A": "data = json.loads(search_web_with_text_content('S&P 500 Dow Jones Nasdaq Composite today performance', 5))\nreturn {'major_indices_data_T001': data}",
+          "CODE_1B": "urls = json.loads(web_search('S&P 500 today', 3))\ncontent_sp500 = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Dow Jones Industrial Average today', 3))\ncontent_dowjones = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Nasdaq Composite today', 3))\ncontent_nasdaq = webpage_url_to_raw_text(urls[0] if urls else '')\nreturn {'major_indices_data_T001': {'sp500': content_sp500, 'dowjones': content_dowjones, 'nasdaq': content_nasdaq}}"
+        },
+        "cost": 4.54e-05,
+        "input_tokens": 78,
+        "output_tokens": 94,
+        "total_tokens": 172,
+        "executed_model": "gemini:gemini-2.5-flash-lite",
+        "execution_result": {
+          "major_indices_data_T001": {
+            "content": [
+              {
+                "type": "text",
+                "text": [
+                  {
+                    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-sink-as-tech-gets-hit-as-ai-disruption-fears-grow-gold-bitcoin-sink-210353533.html",
+                    "content": "Stock market today: Dow, S&P 500, Nasdaq sink as tech gets hit as AI disruption fears grow; gold, bitcoin sink Oops, something went wrong Skip to main content News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep Your body Children's health Dermatology Foot health Hair loss Oral health Sexual health Weight management Women's health Conditions Cardiovascular health Digestive health Endocrine system Hearing Mental health Parenting Family health So mini ways Style and beauty It Figures Unapologetically Horoscopes Shopping Presidents' Day sales Best Presidents' Day sales Amazon Presidents' Day sale Walmart Presidents' Day sale Style Accessories Clothing Luggage Shoes Beauty Fragrance Hair Makeup Nails Skincare Sunscreen Health Dental Fitness Hair loss Hearing Mental health Mobility Nutrition Personal care Sexual health Sleep Women's health Home and garden Bath Bedding Cleaning Gardening Kitchen Outdoor Pets Tech Accessories Audio Auto Computers Phones Smart home Streaming TVs Gift ideas Best gifts for men Best gift cards Best gifts for mom Best gifts for teens Stores Amazon Best Buy Home Depot Macy's Nordstrom Target Walmart Wayfair Shopping Guides Best cordless stick vacuums Best water bottles Best vacuums Best air fryers Best luggage Best jeans Best bras Best nontoxic nail polish Best under eye cream Best skin tightening creams Best coffee makers Deals Toys and games General Valentine's Day gifts Best Valentine's Day gifts Valentine's Day gifts for her Valentine's Day gifts for him Food Travel Autos EV & Future Tech Classic & Collector Deals & Buying Guides Ownership Safety & Recalls Policy & Environment New Vehicles & Reviews Auto Shows General People & Culture Gift ideas Buying guides Valentine's Day gifts Presidents' Day sales Amazon Presidents' Day sale Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My Portfolio News Latest Originals Premium news Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal",
+                    "images": [],
+                    "rank": 1
+                  },
+                  {
+                    "url": "https://economictimes.indiatimes.com/news/international/us/why-is-us-stock-market-surging-today-dow-sp-500-and-nasdaq-all-jump-big-today/articleshow/128212853.cms",
+                    "content": "Dow Jones S&P 500 Nasdaq gaining big today: Why is US stock market surging today: Dow, S&P 500 and Nasdaq all jump big today - The Economic Times Remove Ads SHARE THIS NEWS Close Font Size Abc Small Abc Normal Abc Large Close Welcome User Sign in Download ET App Download ETMarkets App Home Budget 2026 Budget Headlines Budget & Markets Taxes & You Power Lifters VIEW MORE + The Power Shift CXO Corner Eco Survey 2026 Flashback FAQs Sectors in Focus SME Luxury Defence Housing Banking Real Estate Tech Energy Insurance Borrow Auto Travel ETPrime Tech Markets Auto + Aviation Corporate Governance VIEW MORE + Economy Pharma Energy Infra Fintech + BFSI Environment Telecom + OTT Consumer Prime Decoder Collections PRIMESHOTS Prime Vantage Markets Market Stats Stocks News Live Blog Stock Live Blog Earnings Podcast Market Classroom Dons of Dalal Street Recos Stock Reports Plus My Screener Candlestick Screener Stock Screener Stock Watch Market Calendar Stock Price Quotes Bonds Corner Cryptocurrency VIEW MORE + Options IPOs/FPOs Expert Views Investment Ideas Commodities Views News Forex Forex News Currency Converter Live Stream! AIF PMS US Stocks Crypto Crypto News Crypto TV Crypto Prices Bonds Digital Real Estate Realty News Technicals Technical Chart Mind Over Money Web Stories Markets Data The Golden Thumb Rule Unlisted Companies Market Moguls Webinars Definitions AI Spotlight India Energy Week 2026 ET SME Regional Summit ET WEF Special at DAVOS IIT Programs listed on ET VIEW MORE + Invest in US Markets India Inc On The Move 2026 Engineering Leadership Forum Niva Bupa Insurance Academy India's most trusted winds - Suzlon MSME Awards 2025 Soonicorns Summit ET Snapchat Gen Z Index Today's Paper Market Data Stock Dashboard Top Gainer Top Loser Most Active Volume Most Active Value New 52 Week High New 52 Week Low Technical Signals Golden Cross Death Cross Above SMA 20 RSI Below 20 RSI Above 80 Stock Reports Plus Top Score Companies High Upside Most Buys Score Upgrade Market Mood VIEW MORE + Stock Recos New Recos High Upside Recos High Downside BigBull Portfolio All Investors Top Picks Rakesh Jhunjhunwala RK Damani Stock Screener ET Learn Courses Stock Markets Mutual Funds Investment Strategies Insurance & Wealth Management Indices Nifty 50 Nifty 500 BSE Sensex Bank Nifty Sectors News India ET @ Davos 2026 Economy Economy Dashboard Agriculture Finance Foreign Trade Indicators Infrastructure Policy Politics VIEW MORE + Newsblogs Elections Assembly Elections West Bengal Assam Tamil Nadu Kerala Puducherry Sports ICC Men's T20 World Cup IPL 2026 Science Defence International US News Global Trends Trump Action Tracker Canada News UK News Australia New Zealand Saudi Arabia UAE Singapore Hong Kong Business World News ET Explains Company Corporate Trends Industry Trending Decoded Morning Brief Podcast ET Evoke Bengaluru News Pune News Mumbai News Videos Latest News Most Read Most Shared Most Commented Industry Auto Auto News Cars & UVs Two wheelers & three wheelers LCV & HCV Auto Components Tyres Banking/Finance Banking Finance Insure Cons. Products Durables Electronics Fashion / Cosmetics / Jewellery FMCG Food Garments / Textiles Liquor Paints Tobacco Energy Power Oil & Gas VIEW MORE + Renewables Solar Energy Wind Energy Policy and regulations People Hybrid Power Electric vehicles Ind'l Goods/Svs Construction Engineering Cement Chem / Fertilisers Metals & Mining Packaging Paper / Wood / Glass/ Plastic/ Marbles Petrochem Steel Healthcare/Biotech Biotech Healthcare Pharmaceuticals Services Advertising Consultancy / Audit Education Hotels / Restaurants Property / C'struction Retail Travel Media/Entertainment Entertainment Media Transportation Railways Airlines / Aviation Shipping / Transport Roadways Tech ITES Tech & Internet Startups Funding Tech Bytes Telecom Telecom News Telecom Policy Miscellaneous CSR Initiatives Policy Environment SME Sustainability SME Sector Policy Trade Exports Pre-Exports Process Logistics Post-Exports Insights VIEW MORE + Entr",
+                    "images": [],
+                    "rank": 2
+                  },
+                  {
+                    "url": "https://markets.businessinsider.com/index/s&p_500?op=1",
+                    "content": "S&P 500 INDEX TODAY | INX LIVE TICKER | S&P 500 QUOTE & CHART | Markets Insider Business Insider My Markets Watchlist Markets Indices Search Business Strategy Economy Finance Retail Advertising Careers Media Real Estate Small Business The Better Work Project Personal Finance Tech Science AI Enterprise Transportation Startups Innovation Markets Stocks Indices Commodities Crypto Currencies ETFs Lifestyle Entertainment Culture Travel Food Health Parenting Politics Military & Defense Law Education Reviews Home Kitchen Style Streaming Pets Tech Deals Gifts Tickets Video Big Business Food Wars So Expensive Still Standing Boot Camp S&P 500 Index , INX 6,836.17 +3.41 +0.05% 04:49:41 PM EDT 2/13/2026 Add to watchlist Snapshot 6,832.76 Prev. Close 6,835.05 Open 6,794.55 Day Low 6,881.96 Day High 6,836.17 4,835.04 52 Week Low 7,002.28 52 Week High 6,836.17 04:49 PM Trade Time 02/13/26 Trade Date News Business Insider 1d Past crypto winters show bitcoin could keep tumbling to $31,000, research firm says In past bitcoin winters, the crypto has dropped an average 84%, according to an analysis from Ned Davis Research. Business Insider 1d Why top economist says the US will continue to dodge a recession through the end of the decade Yardeni has touted his \"Roaring 20s\" thesis before, retierating his view this week that the economy and markets will remain strong through this decade. Business Insider 1d Goldman flags 10 energy stocks poised to rally as the sector crushes the S&P 500 in 2026 Energy is the best-performing sector in the S&P 500 this year. Goldman Sachs analysts flag 10 stock picks with further upside ahead. Business Insider 1d From software to trucking, here are all the stock sectors that have been gripped by AI panic A company that used to make karaoke machines is the latest source of AI-induced panic, adding to woes in real estate and wealth management shares. Business Insider 1d 5 tech bosses took a combined $26 billion wealth hit in Thursday's AI sell-off Elon Musk took an $8 billion blow to his net worth from Thursday's slump in AI stocks, while Mark Zuckerberg saw a nearly $7 billion drop. Realtime Prices for S&P 500 Stocks Name Previous Close Last % +/- Trade Time 3M 174.61 171.82 -1.60% -2.79 2/13/2026 A.O. Smith 79.62 80.46 1.06% 0.84 2/13/2026 Abbott Laboratories 111.47 112.68 1.09% 1.21 2/13/2026 AbbVie 227.50 231.50 1.76% 4.00 2/13/2026 Accenture 222.05 224.23 0.98% 2.18 2/13/2026 Adobe 262.50 263.97 0.56% 1.47 2/13/2026 AES 16.20 16.28 0.49% 0.08 2/13/2026 Aflac 115.88 114.91 -0.84% -0.97 2/13/2026 Agilent Technologies 124.88 125.81 0.74% 0.93 2/13/2026 Air Products and Chemicals 291.50 279.74 -4.03% -11.76 2/13/2026 Airbnb 115.96 121.35 4.65% 5.39 2/13/2026 Akamai 104.61 111.76 6.83% 7.15 2/13/2026 Albemarle 158.93 166.35 4.67% 7.42 2/13/2026 Alexandria Real Estate Equities 50.40 52.49 4.15% 2.09 2/13/2026 Align Technology 183.86 186.77 1.58% 2.91 2/13/2026 Allegion 178.20 179.50 0.73% 1.30 2/13/2026 Alliant Energy 69.68 71.19 2.17% 1.51 2/13/2026 Allstate 206.56 207.51 0.46% 0.95 2/13/2026 Alphabet A 309.00 305.72 -1.06% -3.28 2/13/2026 Alphabet C 309.37 306.02 -1.08% -3.35 2/13/2026 Altria 67.01 67.25 0.36% 0.24 2/13/2026 Amazon 199.60 198.79 -0.41% -0.81 2/13/2026 AMD 205.94 207.32 0.67% 1.38 2/13/2026 Ameren 109.34 110.97 1.49% 1.63 2/13/2026 American Electric Power 126.43 129.94 2.78% 3.51 2/13/2026 American Express 342.88 337.50 -1.57% -5.38 2/13/2026 American International Group 78.80 78.27 -0.67% -0.53 2/13/2026 American Tower 188.19 192.10 2.08% 3.91 2/13/2026 American Water Works 128.37 133.50 4.00% 5.13 2/13/2026 Ameriprise Financial 467.30 473.67 1.36% 6.37 2/13/2026 Ametek 228.69 229.76 0.47% 1.07 2/13/2026 Amgen 366.20 369.19 0.82% 2.99 2/13/2026 Amphenol 143.73 146.72 2.08% 2.99 2/13/2026 Analog Devices 331.36 337.10 1.73% 5.74 2/13/2026 Aon 314.49 321.70 2.29% 7.21 2/13/2026 APA Corporation Registered Shs 26.92 27.92 3.71% 1.00 2/13/2026 Apple 261.73 255.78 -2.27% -5.95 2/13/2026 Applied Materials 328",
+                    "images": [],
+                    "rank": 3
+                  },
+                  {
+                    "url": "https://www.investors.com/research/stock-market-data-dow-jones-sp-500-nasdaq-spdr-etfs/",
+                    "content": "Access to this page has been denied. Please verify you are a human Access to this page has been denied because we believe you are using automation tools to browse the         website. This may happen as a result of the following: Javascript is disabled or blocked by an extension (ad blockers for example) Your browser does not support cookies Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking         them from loading. Reference ID: #0b721ae8-09f2-11f1-8504-4e9e8f519f20 Powered by PerimeterX , Inc.",
+                    "images": [],
+                    "rank": 4
+                  },
+                  {
+                    "url": "https://www.marketwatch.com/investing/index/spx",
+                    "content": "[error] ",
+                    "rank": 5
+                  }
+                ],
+                "annotations": null,
+                "_meta": null
+              }
+            ]
+          }
+        },
+        "execution_status": "success",
+        "execution_error": null,
+        "execution_time": "2026-02-14 17:10:56",
+        "executed_variant": "CODE_1A",
+        "execution_logs": ""
+      },
+      "error": null,
+      "cost": 4.54e-05,
+      "start_time": "2026-02-14T22:10:28.551907",
+      "end_time": "2026-02-14T22:11:20.469645",
+      "execution_time": 51.917738,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "major_indices_data_T001": [],
+            "call_self": false,
+            "code_variants": {
+              "CODE_1A": "data = json.loads(search_web_with_text_content('S&P 500 Dow Jones Nasdaq Composite today performance', 5))\nreturn {'major_indices_data_T001': data}",
+              "CODE_1B": "urls = json.loads(web_search('S&P 500 today', 3))\ncontent_sp500 = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Dow Jones Industrial Average today', 3))\ncontent_dowjones = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Nasdaq Composite today', 3))\ncontent_nasdaq = webpage_url_to_raw_text(urls[0] if urls else '')\nreturn {'major_indices_data_T001': {'sp500': content_sp500, 'dowjones': content_dowjones, 'nasdaq': content_nasdaq}}"
+            },
+            "cost": 4.54e-05,
+            "input_tokens": 78,
+            "output_tokens": 94,
+            "total_tokens": 172,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          },
+          "execution_result": {
+            "status": "success",
+            "result": {
+              "major_indices_data_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-gains-fizzle-to-cap-week-of-sharp-losses-as-ai-fears-grow-210219798.html",
+                        "content": "Stock market today: Dow, S&P 500, Nasdaq gains fizzle to cap week of sharp losses as AI fears grow Something went wrong Skip to navigation Skip to main content Skip to right column News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep Your body Children's health Dermatology Foot health Hair loss Oral health Sexual health Weight management Women's health Conditions Cardiovascular health Digestive health Endocrine system Hearing Mental health Parenting Family health So mini ways Style and beauty It Figures Unapologetically Horoscopes Shopping Presidents' Day sales Best Presidents' Day sales Amazon Presidents' Day sale Walmart Presidents' Day sale Style Accessories Clothing Luggage Shoes Beauty Fragrance Hair Makeup Nails Skincare Sunscreen Health Dental Fitness Hair loss Hearing Mental health Mobility Nutrition Personal care Sexual health Sleep Women's health Home and garden Bath Bedding Cleaning Gardening Kitchen Outdoor Pets Tech Accessories Audio Auto Computers Phones Smart home Streaming TVs Gift ideas Best gifts for men Best gift cards Best gifts for mom Best gifts for teens Stores Amazon Best Buy Home Depot Macy's Nordstrom Target Walmart Wayfair Shopping Guides Best cordless stick vacuums Best water bottles Best vacuums Best air fryers Best luggage Best jeans Best bras Best nontoxic nail polish Best under eye cream Best skin tightening creams Best coffee makers Deals Toys and games General Valentine's Day gifts Best Valentine's Day gifts Valentine's Day gifts for her Valentine's Day gifts for him Food Travel Autos EV & Future Tech Classic & Collector Deals & Buying Guides Ownership Safety & Recalls Policy & Environment New Vehicles & Reviews Auto Shows General People & Culture Gift ideas Buying guides Valentine's Day gifts Presidents' Day sales Amazon Presidents' Day sale Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My Portfolio News Latest Originals Premium news Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Persona",
+                        "images": [],
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://markets.businessinsider.com/index/s&p_500?op=1",
+                        "content": "S&P 500 INDEX TODAY | INX LIVE TICKER | S&P 500 QUOTE & CHART | Markets Insider Business Insider My Markets Watchlist Markets Indices Search Business Strategy Economy Finance Retail Advertising Careers Media Real Estate Small Business The Better Work Project Personal Finance Tech Science AI Enterprise Transportation Startups Innovation Markets Stocks Indices Commodities Crypto Currencies ETFs Lifestyle Entertainment Culture Travel Food Health Parenting Politics Military & Defense Law Education Reviews Home Kitchen Style Streaming Pets Tech Deals Gifts Tickets Video Big Business Food Wars So Expensive Still Standing Boot Camp S&P 500 Index , INX 6,836.17 +3.41 +0.05% 04:49:41 PM EDT 2/13/2026 Add to watchlist Snapshot 6,832.76 Prev. Close 6,835.05 Open 6,794.55 Day Low 6,881.96 Day High 6,836.17 4,835.04 52 Week Low 7,002.28 52 Week High 6,836.17 04:49 PM Trade Time 02/13/26 Trade Date News Business Insider 1d Past crypto winters show bitcoin could keep tumbling to $31,000, research firm says In past bitcoin winters, the crypto has dropped an average 84%, according to an analysis from Ned Davis Research. Business Insider 1d Why top economist says the US will continue to dodge a recession through the end of the decade Yardeni has touted his \"Roaring 20s\" thesis before, retierating his view this week that the economy and markets will remain strong through this decade. Business Insider 1d Goldman flags 10 energy stocks poised to rally as the sector crushes the S&P 500 in 2026 Energy is the best-performing sector in the S&P 500 this year. Goldman Sachs analysts flag 10 stock picks with further upside ahead. Business Insider 1d From software to trucking, here are all the stock sectors that have been gripped by AI panic A company that used to make karaoke machines is the latest source of AI-induced panic, adding to woes in real estate and wealth management shares. Business Insider 1d 5 tech bosses took a combined $26 billion wealth hit in Thursday's AI sell-off Elon Musk took an $8 billion blow to his net worth from Thursday's slump in AI stocks, while Mark Zuckerberg saw a nearly $7 billion drop. Realtime Prices for S&P 500 Stocks Name Previous Close Last % +/- Trade Time 3M 174.61 171.82 -1.60% -2.79 2/13/2026 A.O. Smith 79.62 80.46 1.06% 0.84 2/13/2026 Abbott Laboratories 111.47 112.68 1.09% 1.21 2/13/2026 AbbVie 227.50 231.50 1.76% 4.00 2/13/2026 Accenture 222.05 224.23 0.98% 2.18 2/13/2026 Adobe 262.50 263.97 0.56% 1.47 2/13/2026 AES 16.20 16.28 0.49% 0.08 2/13/2026 Aflac 115.88 114.91 -0.84% -0.97 2/13/2026 Agilent Technologies 124.88 125.81 0.74% 0.93 2/13/2026 Air Products and Chemicals 291.50 279.74 -4.03% -11.76 2/13/2026 Airbnb 115.96 121.35 4.65% 5.39 2/13/2026 Akamai 104.61 111.76 6.83% 7.15 2/13/2026 Albemarle 158.93 166.35 4.67% 7.42 2/13/2026 Alexandria Real Estate Equities 50.40 52.49 4.15% 2.09 2/13/2026 Align Technology 183.86 186.77 1.58% 2.91 2/13/2026 Allegion 178.20 179.50 0.73% 1.30 2/13/2026 Alliant Energy 69.68 71.19 2.17% 1.51 2/13/2026 Allstate 206.56 207.51 0.46% 0.95 2/13/2026 Alphabet A 309.00 305.72 -1.06% -3.28 2/13/2026 Alphabet C 309.37 306.02 -1.08% -3.35 2/13/2026 Altria 67.01 67.25 0.36% 0.24 2/13/2026 Amazon 199.60 198.79 -0.41% -0.81 2/13/2026 AMD 205.94 207.32 0.67% 1.38 2/13/2026 Ameren 109.34 110.97 1.49% 1.63 2/13/2026 American Electric Power 126.43 129.94 2.78% 3.51 2/13/2026 American Express 342.88 337.50 -1.57% -5.38 2/13/2026 American International Group 78.80 78.27 -0.67% -0.53 2/13/2026 American Tower 188.19 192.10 2.08% 3.91 2/13/2026 American Water Works 128.37 133.50 4.00% 5.13 2/13/2026 Ameriprise Financial 467.30 473.67 1.36% 6.37 2/13/2026 Ametek 228.69 229.76 0.47% 1.07 2/13/2026 Amgen 366.20 369.19 0.82% 2.99 2/13/2026 Amphenol 143.73 146.72 2.08% 2.99 2/13/2026 Analog Devices 331.36 337.10 1.73% 5.74 2/13/2026 Aon 314.49 321.70 2.29% 7.21 2/13/2026 APA Corporation Registered Shs 26.92 27.92 3.71% 1.00 2/13/2026 Apple 261.73 255.78 -2.27% -5.95 2/13/2026 Applied Materials 328",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://economictimes.indiatimes.com/news/international/us/us-stock-market-on-the-move-today-dow-climbs-toward-50400-as-sp-500-and-nasdaq-also-in-green-gold-and-silver-slip-while-bitcoin-gains/articleshow/128263561.cms",
+                        "content": "Dow Jones S&P 500 and Nasdaq up today: US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains - The Economic Times Benchmarks Nifty 25,807.20 -146.65 FEATURED FUNDS  Motilal Oswal Midcap Fund Direct-Growth 5Y Return 25.46 % Invest Now Enter search text: News English Edition English Edition     | Today's ePaper My Watchlist Subscribe Sign In Home BUDGET ETPrime Markets Market Data Masterclass News Industry SME Politics Wealth Tech AI Careers Opinion NRI Panache More Menu India ET @ Davos 2026 Economy Economy Dashboard Agriculture Finance Foreign Trade Indicators Infrastructure Policy Politics Newsblogs Elections Assembly Elections West Bengal Assam Tamil Nadu Kerala Puducherry Sports ICC Men's T20 World Cup IPL 2026 More Science Defence International US News Global Trends Trump Action Tracker Canada News UK News Australia New Zealand Saudi Arabia UAE Singapore Hong Kong Business World News ET Explains Company Corporate Trends Industry Trending Decoded Morning Brief Podcast ET Evoke Bengaluru News Pune News Mumbai News Videos Latest News Most Read Most Shared Most Commented Business News News International US News US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains The Economic Times daily newspaper is available online now. Read Today's Paper US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains SECTIONS US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains By Piyush Shukla , Global Desk Last Updated: Feb 12, 2026, 08:19:00 PM IST Rate Story Follow us Share Font Size Abc Small Abc Medium Abc Large Save Print Comment Synopsis US stock market today: The Dow Jones hit 50,330.70 today as a shock 130,000 jobs gain reshaped Wall Street. Hiring surged past forecasts. The unemployment rate fell to 4.3%. S&P 500 and Nasdaq followed the green trend. Growth optimism is high. However, Gold dropped to $5,084 as interest rate cut hopes faded. Bitcoin defied the dip, gaining to $67,813. Investors now wait for Friday's CPI inflation report to signal the Fed's next move. Listen to this article in summarized format Listen Loading...  Subscribe to Unlock AI Briefing and Premium Content Subscribe Now What's Included Exclusive Stories Daily ePaper Access Smart Market Tools Curated Investment Ideas Ad-lite Experience Subscription TIMESOFINDIA.COM US stock market today: The Dow Jones Industrial Average is climbing toward 50,400 today, gaining over 200 points in active US stock market trading. The S&P 500 and Nasdaq Composite are also in the green. US stock market today: The Dow Jones Industrial Average jumped 295 points, or 0.6%, as U.S. stocks moved higher in Thursday trading. The S&P 500 gained 0.3% to 6,967.08, while the Nasdaq Composite rose 0.4% to 23,146.07, extending a modest rebound after a volatile session earlier this week. Investors reacted to a surprisingly strong U.S. jobs report , fresh corporate earnings, and shifting expectations around Federal Reserve interest rate cuts. The Labor Department reported 130,000 new jobs last month , far above economist forecasts and sharply higher than Decembers downwardly revised figure. The unemployment rate fell to 4.3% from 4.4% , easing fears of a sudden labor market slowdown. That data helped steady investor confidence but also complicated the outlook for Federal Reserve rate cuts in 2026. At the same time, corporate earnings drove sharp stock-specific moves. Technology, energy, crypto-linked stocks, and leveraged ETFs all saw heavy trading volumes. Commodity prices were mixed, with oil slipping and natural gas climbing more than 4%. Markets now turn their focus to Fridays Consumer Price Index (CPI), which could determine whether inflation is cooling eno",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://www.investors.com/research/stock-market-data-dow-jones-sp-500-nasdaq-spdr-etfs/",
+                        "content": "Access to this page has been denied. Please verify you are a human Access to this page has been denied because we believe you are using automation tools to browse the         website. This may happen as a result of the following: Javascript is disabled or blocked by an extension (ad blockers for example) Your browser does not support cookies Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking         them from loading. Reference ID: #fd598fa9-09f1-11f1-9e88-ed799d004626 Powered by PerimeterX , Inc.",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.marketwatch.com/investing/index/spx",
+                        "content": "[error] ",
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "raw": {
+              "major_indices_data_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-gains-fizzle-to-cap-week-of-sharp-losses-as-ai-fears-grow-210219798.html",
+                        "content": "Stock market today: Dow, S&P 500, Nasdaq gains fizzle to cap week of sharp losses as AI fears grow Something went wrong Skip to navigation Skip to main content Skip to right column News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep Your body Children's health Dermatology Foot health Hair loss Oral health Sexual health Weight management Women's health Conditions Cardiovascular health Digestive health Endocrine system Hearing Mental health Parenting Family health So mini ways Style and beauty It Figures Unapologetically Horoscopes Shopping Presidents' Day sales Best Presidents' Day sales Amazon Presidents' Day sale Walmart Presidents' Day sale Style Accessories Clothing Luggage Shoes Beauty Fragrance Hair Makeup Nails Skincare Sunscreen Health Dental Fitness Hair loss Hearing Mental health Mobility Nutrition Personal care Sexual health Sleep Women's health Home and garden Bath Bedding Cleaning Gardening Kitchen Outdoor Pets Tech Accessories Audio Auto Computers Phones Smart home Streaming TVs Gift ideas Best gifts for men Best gift cards Best gifts for mom Best gifts for teens Stores Amazon Best Buy Home Depot Macy's Nordstrom Target Walmart Wayfair Shopping Guides Best cordless stick vacuums Best water bottles Best vacuums Best air fryers Best luggage Best jeans Best bras Best nontoxic nail polish Best under eye cream Best skin tightening creams Best coffee makers Deals Toys and games General Valentine's Day gifts Best Valentine's Day gifts Valentine's Day gifts for her Valentine's Day gifts for him Food Travel Autos EV & Future Tech Classic & Collector Deals & Buying Guides Ownership Safety & Recalls Policy & Environment New Vehicles & Reviews Auto Shows General People & Culture Gift ideas Buying guides Valentine's Day gifts Presidents' Day sales Amazon Presidents' Day sale Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My Portfolio News Latest Originals Premium news Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Persona",
+                        "images": [],
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://markets.businessinsider.com/index/s&p_500?op=1",
+                        "content": "S&P 500 INDEX TODAY | INX LIVE TICKER | S&P 500 QUOTE & CHART | Markets Insider Business Insider My Markets Watchlist Markets Indices Search Business Strategy Economy Finance Retail Advertising Careers Media Real Estate Small Business The Better Work Project Personal Finance Tech Science AI Enterprise Transportation Startups Innovation Markets Stocks Indices Commodities Crypto Currencies ETFs Lifestyle Entertainment Culture Travel Food Health Parenting Politics Military & Defense Law Education Reviews Home Kitchen Style Streaming Pets Tech Deals Gifts Tickets Video Big Business Food Wars So Expensive Still Standing Boot Camp S&P 500 Index , INX 6,836.17 +3.41 +0.05% 04:49:41 PM EDT 2/13/2026 Add to watchlist Snapshot 6,832.76 Prev. Close 6,835.05 Open 6,794.55 Day Low 6,881.96 Day High 6,836.17 4,835.04 52 Week Low 7,002.28 52 Week High 6,836.17 04:49 PM Trade Time 02/13/26 Trade Date News Business Insider 1d Past crypto winters show bitcoin could keep tumbling to $31,000, research firm says In past bitcoin winters, the crypto has dropped an average 84%, according to an analysis from Ned Davis Research. Business Insider 1d Why top economist says the US will continue to dodge a recession through the end of the decade Yardeni has touted his \"Roaring 20s\" thesis before, retierating his view this week that the economy and markets will remain strong through this decade. Business Insider 1d Goldman flags 10 energy stocks poised to rally as the sector crushes the S&P 500 in 2026 Energy is the best-performing sector in the S&P 500 this year. Goldman Sachs analysts flag 10 stock picks with further upside ahead. Business Insider 1d From software to trucking, here are all the stock sectors that have been gripped by AI panic A company that used to make karaoke machines is the latest source of AI-induced panic, adding to woes in real estate and wealth management shares. Business Insider 1d 5 tech bosses took a combined $26 billion wealth hit in Thursday's AI sell-off Elon Musk took an $8 billion blow to his net worth from Thursday's slump in AI stocks, while Mark Zuckerberg saw a nearly $7 billion drop. Realtime Prices for S&P 500 Stocks Name Previous Close Last % +/- Trade Time 3M 174.61 171.82 -1.60% -2.79 2/13/2026 A.O. Smith 79.62 80.46 1.06% 0.84 2/13/2026 Abbott Laboratories 111.47 112.68 1.09% 1.21 2/13/2026 AbbVie 227.50 231.50 1.76% 4.00 2/13/2026 Accenture 222.05 224.23 0.98% 2.18 2/13/2026 Adobe 262.50 263.97 0.56% 1.47 2/13/2026 AES 16.20 16.28 0.49% 0.08 2/13/2026 Aflac 115.88 114.91 -0.84% -0.97 2/13/2026 Agilent Technologies 124.88 125.81 0.74% 0.93 2/13/2026 Air Products and Chemicals 291.50 279.74 -4.03% -11.76 2/13/2026 Airbnb 115.96 121.35 4.65% 5.39 2/13/2026 Akamai 104.61 111.76 6.83% 7.15 2/13/2026 Albemarle 158.93 166.35 4.67% 7.42 2/13/2026 Alexandria Real Estate Equities 50.40 52.49 4.15% 2.09 2/13/2026 Align Technology 183.86 186.77 1.58% 2.91 2/13/2026 Allegion 178.20 179.50 0.73% 1.30 2/13/2026 Alliant Energy 69.68 71.19 2.17% 1.51 2/13/2026 Allstate 206.56 207.51 0.46% 0.95 2/13/2026 Alphabet A 309.00 305.72 -1.06% -3.28 2/13/2026 Alphabet C 309.37 306.02 -1.08% -3.35 2/13/2026 Altria 67.01 67.25 0.36% 0.24 2/13/2026 Amazon 199.60 198.79 -0.41% -0.81 2/13/2026 AMD 205.94 207.32 0.67% 1.38 2/13/2026 Ameren 109.34 110.97 1.49% 1.63 2/13/2026 American Electric Power 126.43 129.94 2.78% 3.51 2/13/2026 American Express 342.88 337.50 -1.57% -5.38 2/13/2026 American International Group 78.80 78.27 -0.67% -0.53 2/13/2026 American Tower 188.19 192.10 2.08% 3.91 2/13/2026 American Water Works 128.37 133.50 4.00% 5.13 2/13/2026 Ameriprise Financial 467.30 473.67 1.36% 6.37 2/13/2026 Ametek 228.69 229.76 0.47% 1.07 2/13/2026 Amgen 366.20 369.19 0.82% 2.99 2/13/2026 Amphenol 143.73 146.72 2.08% 2.99 2/13/2026 Analog Devices 331.36 337.10 1.73% 5.74 2/13/2026 Aon 314.49 321.70 2.29% 7.21 2/13/2026 APA Corporation Registered Shs 26.92 27.92 3.71% 1.00 2/13/2026 Apple 261.73 255.78 -2.27% -5.95 2/13/2026 Applied Materials 328",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://economictimes.indiatimes.com/news/international/us/us-stock-market-on-the-move-today-dow-climbs-toward-50400-as-sp-500-and-nasdaq-also-in-green-gold-and-silver-slip-while-bitcoin-gains/articleshow/128263561.cms",
+                        "content": "Dow Jones S&P 500 and Nasdaq up today: US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains - The Economic Times Benchmarks Nifty 25,807.20 -146.65 FEATURED FUNDS  Motilal Oswal Midcap Fund Direct-Growth 5Y Return 25.46 % Invest Now Enter search text: News English Edition English Edition     | Today's ePaper My Watchlist Subscribe Sign In Home BUDGET ETPrime Markets Market Data Masterclass News Industry SME Politics Wealth Tech AI Careers Opinion NRI Panache More Menu India ET @ Davos 2026 Economy Economy Dashboard Agriculture Finance Foreign Trade Indicators Infrastructure Policy Politics Newsblogs Elections Assembly Elections West Bengal Assam Tamil Nadu Kerala Puducherry Sports ICC Men's T20 World Cup IPL 2026 More Science Defence International US News Global Trends Trump Action Tracker Canada News UK News Australia New Zealand Saudi Arabia UAE Singapore Hong Kong Business World News ET Explains Company Corporate Trends Industry Trending Decoded Morning Brief Podcast ET Evoke Bengaluru News Pune News Mumbai News Videos Latest News Most Read Most Shared Most Commented Business News News International US News US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains The Economic Times daily newspaper is available online now. Read Today's Paper US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains SECTIONS US stock market on the move today: Dow climbs toward 50,400 as S&P 500 and Nasdaq also in green - Gold and silver slip while Bitcoin gains By Piyush Shukla , Global Desk Last Updated: Feb 12, 2026, 08:19:00 PM IST Rate Story Follow us Share Font Size Abc Small Abc Medium Abc Large Save Print Comment Synopsis US stock market today: The Dow Jones hit 50,330.70 today as a shock 130,000 jobs gain reshaped Wall Street. Hiring surged past forecasts. The unemployment rate fell to 4.3%. S&P 500 and Nasdaq followed the green trend. Growth optimism is high. However, Gold dropped to $5,084 as interest rate cut hopes faded. Bitcoin defied the dip, gaining to $67,813. Investors now wait for Friday's CPI inflation report to signal the Fed's next move. Listen to this article in summarized format Listen Loading...  Subscribe to Unlock AI Briefing and Premium Content Subscribe Now What's Included Exclusive Stories Daily ePaper Access Smart Market Tools Curated Investment Ideas Ad-lite Experience Subscription TIMESOFINDIA.COM US stock market today: The Dow Jones Industrial Average is climbing toward 50,400 today, gaining over 200 points in active US stock market trading. The S&P 500 and Nasdaq Composite are also in the green. US stock market today: The Dow Jones Industrial Average jumped 295 points, or 0.6%, as U.S. stocks moved higher in Thursday trading. The S&P 500 gained 0.3% to 6,967.08, while the Nasdaq Composite rose 0.4% to 23,146.07, extending a modest rebound after a volatile session earlier this week. Investors reacted to a surprisingly strong U.S. jobs report , fresh corporate earnings, and shifting expectations around Federal Reserve interest rate cuts. The Labor Department reported 130,000 new jobs last month , far above economist forecasts and sharply higher than Decembers downwardly revised figure. The unemployment rate fell to 4.3% from 4.4% , easing fears of a sudden labor market slowdown. That data helped steady investor confidence but also complicated the outlook for Federal Reserve rate cuts in 2026. At the same time, corporate earnings drove sharp stock-specific moves. Technology, energy, crypto-linked stocks, and leveraged ETFs all saw heavy trading volumes. Commodity prices were mixed, with oil slipping and natural gas climbing more than 4%. Markets now turn their focus to Fridays Consumer Price Index (CPI), which could determine whether inflation is cooling eno",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://www.investors.com/research/stock-market-data-dow-jones-sp-500-nasdaq-spdr-etfs/",
+                        "content": "Access to this page has been denied. Please verify you are a human Access to this page has been denied because we believe you are using automation tools to browse the         website. This may happen as a result of the following: Javascript is disabled or blocked by an extension (ad blockers for example) Your browser does not support cookies Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking         them from loading. Reference ID: #fd598fa9-09f1-11f1-9e88-ed799d004626 Powered by PerimeterX , Inc.",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.marketwatch.com/investing/index/spx",
+                        "content": "[error] ",
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "logs": "",
+            "execution_time": "2026-02-14 17:10:32",
+            "total_time": "24.714",
+            "executed_variant": "CODE_1A"
+          }
+        }
+      ],
+      "input_tokens": 78,
+      "output_tokens": 94,
+      "total_tokens": 172
+    },
+    {
+      "id": "T002",
+      "description": "Synthesize stock market performance summary",
+      "agent": "DistillerAgent",
+      "agent_prompt": "Summarize the retrieved stock market index data, highlighting the performance of the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite for today. Provide key figures like current values and daily changes.",
+      "reads": [
+        "major_indices_data_T001"
+      ],
+      "writes": [
+        "market_summary_T002"
+      ],
+      "status": "completed",
+      "output": {
+        "market_summary_T002": {
+          "summary_bullets": [
+            "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+            "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+            "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+            "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+          ]
+        },
+        "cost": 0.00034480000000000003,
+        "input_tokens": 3000,
+        "output_tokens": 112,
+        "total_tokens": 3112,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.00034480000000000003,
+      "start_time": "2026-02-14T22:11:20.471916",
+      "end_time": "2026-02-14T22:11:21.530539",
+      "execution_time": 1.058623,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "market_summary_T002": {
+              "summary_bullets": [
+                "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+                "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+                "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+                "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+              ]
+            },
+            "cost": 0.00034480000000000003,
+            "input_tokens": 3000,
+            "output_tokens": 112,
+            "total_tokens": 3112,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          }
+        }
+      ],
+      "input_tokens": 3000,
+      "output_tokens": 112,
+      "total_tokens": 3112
+    },
+    {
+      "id": "T003",
+      "description": "Format stock market performance report",
+      "agent": "FormatterAgent",
+      "agent_prompt": "Format the stock market summary into a direct and informative report. Include the current values and daily changes for the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Aim for clarity and conciseness.",
+      "reads": [
+        "market_summary_T002"
+      ],
+      "writes": [
+        "formatted_report_T003"
+      ],
+      "status": "completed",
+      "output": {
+        "final_format": "markdown",
+        "markdown_report": "# Stock Market Performance Report - February 14, 2026\n\n## Executive Summary\n\nStock market performance on February 14, 2026, presented a bifurcated picture, with conflicting reports regarding the direction of major indices. While the S&P 500 registered a modest gain of +3.41 points (+0.05%) to close at 6,836.17, some sources indicated a broader surge across the Dow Jones Industrial Average and the Nasdaq Composite. Conversely, other reports suggested a decline in these indices, with particular weakness observed in technology stocks attributed to fears surrounding AI disruption. This report synthesiles the available data to provide a clear overview of the day's trading activity.\n\n## Market Overview\n\nOn February 14, 2026, the major U.S. stock indices exhibited divergent trends, creating a complex trading environment. The S&P 500 closed at 6,836.17, reflecting a marginal increase of 3.41 points, or 0.05%. This indicates a relatively stable day for the broad market, which encompasses 500 of the largest publicly traded companies in the United States.\n\nHowever, the narrative surrounding the Dow Jones Industrial Average and the Nasdaq Composite was less uniform. An analysis from The Economic Times suggested a strong upward movement in both of these indices, implying a generally positive sentiment across the market. This perspective would typically be driven by factors such as positive economic data, strong corporate earnings, or an optimistic outlook on future growth.\n\nIn contrast, a report from Yahoo Finance presented a starkly different scenario, indicating that the Dow Jones, S&P 500, and Nasdaq were experiencing declines. This report specifically highlighted technology stocks as being particularly hard-hit, attributing the downturn to growing fears about the disruptive potential of Artificial Intelligence (AI). Such fears can lead investors to re-evaluate the long-term prospects of companies heavily reliant on or investing in AI technologies, potentially leading to sell-offs.\n\nThe conflicting reports suggest a market grappling with competing narratives and influencing factors. Investors were likely weighing positive economic indicators against concerns related to technological disruption and its potential impact on established industries and business models.\n\n## Key Market Indices Performance\n\n### S&P 500\n\nThe S&P 500 closed at **6,836.17** on February 14, 2026. This represents a daily change of **+3.41 points**, translating to a **+0.05%** increase. The index traded within a range, with a day low of 6,794.55 and a day high of 6,881.96. The 52-week high for the S&P 500 was recorded at 7,002.28, and the 52-week low was 4,835.04.\n\n### Dow Jones Industrial Average\n\nReports on the Dow Jones Industrial Average presented conflicting information. While The Economic Times indicated a significant gain, Yahoo Finance suggested a decline. Specific figures for the Dow Jones's performance were not consistently available across all sources, highlighting the divergence in market sentiment reported on this date.\n\n### Nasdaq Composite\n\nSimilar to the Dow Jones, the Nasdaq Composite's performance was subject to conflicting reports. Some analyses suggested substantial gains, while others pointed to a sinking trend, particularly impacting technology stocks. Detailed daily change figures for the Nasdaq were not uniformly provided across the examined sources.\n\n## Contributing Factors and Market Sentiment\n\n### Positive Market Surge Narrative\n\nAccording to The Economic Times, the U.S. stock market, including the Dow Jones, S&P 500, and Nasdaq, experienced a significant surge on February 14, 2026. This positive outlook suggests an environment of robust investor confidence, potentially fueled by favorable economic data, anticipation of positive corporate earnings reports, or a general belief in continued economic expansion. Such broad-based gains often indicate a healthy risk appetite among investors, who are willing to invest in equities with the expectation of future returns.\n\n### AI Disruption Fears and Tech Stock Downturn Narrative\n\nConversely, Yahoo Finance reported a downturn in the Dow Jones, S&P 500, and Nasdaq, with a specific emphasis on the negative impact on technology stocks. This sentiment appears to be driven by growing anxieties surrounding the disruptive potential of Artificial Intelligence (AI). Fears may stem from the possibility that AI could automate jobs, render existing business models obsolete, or lead to a rapid shift in market dominance away from incumbent technology companies. The article notes that tech stocks were being hit hard, suggesting that investors were actively reassessing their positions in companies perceived to be vulnerable to AI-driven changes. This narrative points to a cautious or even pessimistic sentiment within specific sectors of the market, driven by technological innovation and its potential consequences.\n\n## Conclusion\n\nOn February 14, 2026, the stock market presented a mixed performance. The S&P 500 closed with a minor gain, indicating a degree of stability. However, conflicting reports on the Dow Jones Industrial Average and Nasdaq Composite underscored a market divided by competing narratives. While one perspective suggested significant gains, another highlighted a decline, particularly within the technology sector, due to increasing concerns about AI disruption. Investors were likely navigating these divergent signals, weighing the overall economic outlook against the evolving landscape shaped by technological advancements.",
+        "call_self": false,
+        "cost": 0.0007969000000000001,
+        "input_tokens": 3229,
+        "output_tokens": 1185,
+        "total_tokens": 4414,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0007969000000000001,
+      "start_time": "2026-02-14T22:11:21.533207",
+      "end_time": "2026-02-14T22:11:30.646065",
+      "execution_time": 9.112858,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "final_format": "markdown",
+            "markdown_report": "# Stock Market Performance Report - February 14, 2026\n\n## Executive Summary\n\nStock market performance on February 14, 2026, presented a bifurcated picture, with conflicting reports regarding the direction of major indices. While the S&P 500 registered a modest gain of +3.41 points (+0.05%) to close at 6,836.17, some sources indicated a broader surge across the Dow Jones Industrial Average and the Nasdaq Composite. Conversely, other reports suggested a decline in these indices, with particular weakness observed in technology stocks attributed to fears surrounding AI disruption. This report synthesiles the available data to provide a clear overview of the day's trading activity.\n\n## Market Overview\n\nOn February 14, 2026, the major U.S. stock indices exhibited divergent trends, creating a complex trading environment. The S&P 500 closed at 6,836.17, reflecting a marginal increase of 3.41 points, or 0.05%. This indicates a relatively stable day for the broad market, which encompasses 500 of the largest publicly traded companies in the United States.\n\nHowever, the narrative surrounding the Dow Jones Industrial Average and the Nasdaq Composite was less uniform. An analysis from The Economic Times suggested a strong upward movement in both of these indices, implying a generally positive sentiment across the market. This perspective would typically be driven by factors such as positive economic data, strong corporate earnings, or an optimistic outlook on future growth.\n\nIn contrast, a report from Yahoo Finance presented a starkly different scenario, indicating that the Dow Jones, S&P 500, and Nasdaq were experiencing declines. This report specifically highlighted technology stocks as being particularly hard-hit, attributing the downturn to growing fears about the disruptive potential of Artificial Intelligence (AI). Such fears can lead investors to re-evaluate the long-term prospects of companies heavily reliant on or investing in AI technologies, potentially leading to sell-offs.\n\nThe conflicting reports suggest a market grappling with competing narratives and influencing factors. Investors were likely weighing positive economic indicators against concerns related to technological disruption and its potential impact on established industries and business models.\n\n## Key Market Indices Performance\n\n### S&P 500\n\nThe S&P 500 closed at **6,836.17** on February 14, 2026. This represents a daily change of **+3.41 points**, translating to a **+0.05%** increase. The index traded within a range, with a day low of 6,794.55 and a day high of 6,881.96. The 52-week high for the S&P 500 was recorded at 7,002.28, and the 52-week low was 4,835.04.\n\n### Dow Jones Industrial Average\n\nReports on the Dow Jones Industrial Average presented conflicting information. While The Economic Times indicated a significant gain, Yahoo Finance suggested a decline. Specific figures for the Dow Jones's performance were not consistently available across all sources, highlighting the divergence in market sentiment reported on this date.\n\n### Nasdaq Composite\n\nSimilar to the Dow Jones, the Nasdaq Composite's performance was subject to conflicting reports. Some analyses suggested substantial gains, while others pointed to a sinking trend, particularly impacting technology stocks. Detailed daily change figures for the Nasdaq were not uniformly provided across the examined sources.\n\n## Contributing Factors and Market Sentiment\n\n### Positive Market Surge Narrative\n\nAccording to The Economic Times, the U.S. stock market, including the Dow Jones, S&P 500, and Nasdaq, experienced a significant surge on February 14, 2026. This positive outlook suggests an environment of robust investor confidence, potentially fueled by favorable economic data, anticipation of positive corporate earnings reports, or a general belief in continued economic expansion. Such broad-based gains often indicate a healthy risk appetite among investors, who are willing to invest in equities with the expectation of future returns.\n\n### AI Disruption Fears and Tech Stock Downturn Narrative\n\nConversely, Yahoo Finance reported a downturn in the Dow Jones, S&P 500, and Nasdaq, with a specific emphasis on the negative impact on technology stocks. This sentiment appears to be driven by growing anxieties surrounding the disruptive potential of Artificial Intelligence (AI). Fears may stem from the possibility that AI could automate jobs, render existing business models obsolete, or lead to a rapid shift in market dominance away from incumbent technology companies. The article notes that tech stocks were being hit hard, suggesting that investors were actively reassessing their positions in companies perceived to be vulnerable to AI-driven changes. This narrative points to a cautious or even pessimistic sentiment within specific sectors of the market, driven by technological innovation and its potential consequences.\n\n## Conclusion\n\nOn February 14, 2026, the stock market presented a mixed performance. The S&P 500 closed with a minor gain, indicating a degree of stability. However, conflicting reports on the Dow Jones Industrial Average and Nasdaq Composite underscored a market divided by competing narratives. While one perspective suggested significant gains, another highlighted a decline, particularly within the technology sector, due to increasing concerns about AI disruption. Investors were likely navigating these divergent signals, weighing the overall economic outlook against the evolving landscape shaped by technological advancements.",
+            "call_self": false,
+            "cost": 0.0007969000000000001,
+            "input_tokens": 3229,
+            "output_tokens": 1185,
+            "total_tokens": 4414,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          }
+        }
+      ],
+      "input_tokens": 3229,
+      "output_tokens": 1185,
+      "total_tokens": 4414
+    }
+  ],
+  "edges": [
+    {
+      "source": "ROOT",
+      "target": "Query"
+    },
+    {
+      "source": "Query",
+      "target": "T001"
+    },
+    {
+      "source": "T001",
+      "target": "T002"
+    },
+    {
+      "source": "T002",
+      "target": "T003"
+    }
+  ]
+}

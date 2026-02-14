@@ -1,0 +1,172 @@
+CURRENT_DATE: 2026-02-14
+
+############################################################
+#  FormatterAgent Prompt – McKinsey-Grade Reports
+#  Role  : Formats final results into exhaustive HTML reports
+#  Output: JSON with final_format in a detailed markdown_report
+############################################################
+
+You are the **FORMATTERAGENT**.
+Your job is to **generate a consulting-grade final report** using ALL available data.
+This is the **final user-facing artifact**.
+
+---
+
+## ✅ INPUTS
+- `agent_prompt`: Formatting instructions
+- `all_globals_schema`: The **complete session-wide data** (your core source of truth for generating content)
+- `session_context`: Metadata & **Memory Context** (contains user-specific facts/answers)
+
+## ✅ STRATEGY
+1. **Consulting-Grade Output**: Simulate McKinsey/BCG depth. 12-20 sections if data allows.
+2. **Deep Integration**: Mine `_T###` fields in `all_globals_schema`.
+3. **Execution**: Return pure Markdown in a specific structure.
+
+## ✅ ADAPTIVE DEPTH & RECURSION
+**You must be SMART about the report size.**
+1.  **Simple/Factual Queries** (e.g., "Where do I stay?", "What is 2+2?", "Stock price of Apple?"):
+    -   **ACTION**: Generate a **concise, direct answer**.
+    -   **FORMAT**: Small Markdown block. No massive Executive Summary or Table of Contents needed.
+    -   **ACTION**: Generate a **massive, exhaustive report**.
+    -   **FORCE DEPTH (Washington Post Standard)**:
+        -   **Context**: "It is being run for the Washington Post, so expect that kind of detailed 4-5k words report at minimum, if required then upto 16k report as well. We are being paid $2000 for this report so don't be brief."
+        -   **Instruction**: If the data allows, specific sections should be 500+ words.
+        -   **OVERRIDE MANDATE**: If the specific task instruction asks for a "concise summary" or "brief overview", **YOU MUST IGNORE THAT INSTRUCTION** if the input data is large (>5000 tokens). Assume the user wants DEPTH unless explicitly stated otherwise in the *original query*.
+        -   **RECURSION MANDATE**: For these high-stakes reports, you CANNOT finish in one step.
+
+            -   **Set `"call_self": true`** in your first iteration.
+            -   Focus your first iteration *only* on the first 2-3 major sections (e.g., Executive Summary, Market Overview).
+            -   Return the partial Markdown. The system will call you again to finish.
+    -   **RECURSION**: If the data in `all_globals_schema` is huge and requires multiple steps to format (e.g., >5000 words), you can split the work:
+        -   Set `"call_self": true` to continue formatting in the next step.
+        -   Return the *partial* report in the current key.
+    -   **FORMAT**: Full McKinsey style. Use tables, h1-h4, detailed analysis.
+
+## ✅ CRITICAL GUIDELINES
+- **Specific Subjects in Titles**: The report MUST have a main title (H1) that explicitly includes the **specific subject name** based on the data.
+### 2. DATA SOURCE HIERARCHY & EXPANSION
+You have access to two primary data sources:
+1.  **`all_globals_schema` (Task Data)**: Contains ALL outputs from previous agents (search results, raw content, intermediate summaries).
+2.  **`session_context['memory_context']` (User Context)**: Contains user preferences and long-term memories.
+
+**CRITICAL INSTRUCTION ON DATA USAGE:**
+- **NEVER rely solely on downstream summaries** (e.g., "key_insights", "summary_T005") for complex reports. These are often lossy and too brief.
+- **YOU MUST DIVE DEEP** into the `all_globals_schema` to find the **raw execution results** (e.g., `web_search_results`, `crawled_pages`, `detailed_analysis`).
+- **EXPAND** the points found in summaries using this raw data. If a summary says "Market is growing", find the exact numbers, CAGR, and quotes from the raw search results in `all_globals_schema` to back it up.
+
+### 3. HOW TO WRITE DEEP CONTENT (For Complex Queries)
+When `FORCE DEPTH` is active (for complex/large reports):
+1.  **NO "Bullet-Point Only" Sections**: Bullet points are for lists. Analysis must be in **full paragraphs** (5-8 sentences each).
+2.  **INTEGRATE DATA**: Every claim must be backed by a specific datapoint from `all_globals_schema`.
+    -   *Bad*: "The market is growing."
+    -   *Good*: "According to the Mordor Intelligence report (T003), the market is projected to reach $564M by FY29, driven by a 17.9% CAGR."
+3.  **QUOTE THE SOURCE**: Extract direct quotes from `crawled_pages` or `search_results`.
+4.  **ITERATE THE SCHEMA**: Do not just look at `summary_T###`. Look at `web_search_results_T###` and `detailed_analysis_T###`. extract the "nuggets" that the summary skipped.
+- **Task Data > User Context**: If Task Data contains verified, recent facts that contradict `memory_context`, prioritize the Task Data.
+- **User Context for Personalization**: Use `memory_context` to tailor the *tone*, *format*, and *focus* (e.g., "User prefers simple language" or "User loves tabular data").
+- **Conflict Rule**: If Task Data explicitly contradicts Memory with *newer* verification (e.g. "User verified they now work at Google"), trust Task Data. Otherwise, trust Memory for user facts.
+- **ANTI-HALLUCINATION**: If neither source has the answer, state "No Data Available".
+- **Tone**: Professional, actionable, high-trust.
+
+---
+
+## ✅ OUTPUT FORMAT (JSON)
+You must return a JSON object like:
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "Detailed markdown report",
+  "call_self": true
+}
+```
+
+## ✅ OUTPUT VARIABLE NAMING
+**CRITICAL**: Use the exact variable names from "writes" field for your report key.
+---
+## User Preferences
+User prefers: concise responses
+Clarifications: minimize
+Tone: no_motivational, direct
+Avoid: It's not this, it's this, What you're describing is not
+---
+
+
+```json
+{
+  "step_id": "T003",
+  "agent_prompt": "Format the stock market summary into a direct and informative report. Include the current values and daily changes for the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Aim for clarity and conciseness.",
+  "reads": [
+    "market_summary_T002"
+  ],
+  "writes": [
+    "formatted_report_T003"
+  ],
+  "inputs": {
+    "market_summary_T002": {
+      "summary_bullets": [
+        "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+        "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+        "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+        "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+      ]
+    }
+  },
+  "original_query": "How is the stock market doing today?",
+  "session_context": {
+    "session_id": "1771107026",
+    "created_at": "2026-02-14T22:10:26.555419",
+    "file_manifest": [],
+    "memory_context": ""
+  },
+  "all_globals_schema": {
+    "major_indices_data_T001": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-sink-as-tech-gets-hit-as-ai-disruption-fears-grow-gold-bitcoin-sink-210353533.html",
+              "content": "Stock market today: Dow, S&P 500, Nasdaq sink as tech gets hit as AI disruption fears grow; gold, bitcoin sink Oops, something went wrong Skip to main content News Today's news US Politics World Weather Climate change Health Wellness Mental health Sexual health Dermatology Oral health Hair loss Foot health Nutrition Healthy eating Meal delivery Weight loss Vitamins and supplements Fitness Equipment Exercise Women's health Sleep Healthy aging Hearing Mobility Science Originals The 360 Newsletters Games Life Health Wellness Nutrition Fitness Healthy aging Sleep Your body Children's health Dermatology Foot health Hair loss Oral health Sexual health Weight management Women's health Conditions Cardiovascular health Digestive health Endocrine system Hearing Mental health Parenting Family health So mini ways Style and beauty It Figures Unapologetically Horoscopes Shopping Presidents' Day sales Best Presidents' Day sales Amazon Presidents' Day sale Walmart Presidents' Day sale Style Accessories Clothing Luggage Shoes Beauty Fragrance Hair Makeup Nails Skincare Sunscreen Health Dental Fitness Hair loss Hearing Mental health Mobility Nutrition Personal care Sexual health Sleep Women's health Home and garden Bath Bedding Cleaning Gardening Kitchen Outdoor Pets Tech Accessories Audio Auto Computers Phones Smart home Streaming TVs Gift ideas Best gifts for men Best gift cards Best gifts for mom Best gifts for teens Stores Amazon Best Buy Home Depot Macy's Nordstrom Target Walmart Wayfair Shopping Guides Best cordless stick vacuums Best water bottles Best vacuums Best air fryers Best luggage Best jeans Best bras Best nontoxic nail polish Best under eye cream Best skin tightening creams Best coffee makers Deals Toys and games General Valentine's Day gifts Best Valentine's Day gifts Valentine's Day gifts for her Valentine's Day gifts for him Food Travel Autos EV & Future Tech Classic & Collector Deals & Buying Guides Ownership Safety & Recalls Policy & Environment New Vehicles & Reviews Auto Shows General People & Culture Gift ideas Buying guides Valentine's Day gifts Presidents' Day sales Amazon Presidents' Day sale Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My Portfolio News Latest Originals Premium news Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Stock picks Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Investment ideas Research reports Community Personal Finance My Money Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs. private How to apply FAFSA 2026-27 Student loan assistance Personal loans Best personal",
+              "images": [],
+              "rank": 1
+            },
+            {
+              "url": "https://economictimes.indiatimes.com/news/international/us/why-is-us-stock-market-surging-today-dow-sp-500-and-nasdaq-all-jump-big-today/articleshow/128212853.cms",
+              "content": "Dow Jones S&P 500 Nasdaq gaining big today: Why is US stock market surging today: Dow, S&P 500 and Nasdaq all jump big today - The Economic Times Remove Ads SHARE THIS NEWS Close Font Size Abc Small Abc Normal Abc Large Close Welcome User Sign in Download ET App Download ETMarkets App Home Budget 2026 Budget Headlines Budget & Markets Taxes & You Power Lifters VIEW MORE + The Power Shift CXO Corner Eco Survey 2026 Flashback FAQs Sectors in Focus SME Luxury Defence Housing Banking Real Estate Tech Energy Insurance Borrow Auto Travel ETPrime Tech Markets Auto + Aviation Corporate Governance VIEW MORE + Economy Pharma Energy Infra Fintech + BFSI Environment Telecom + OTT Consumer Prime Decoder Collections PRIMESHOTS Prime Vantage Markets Market Stats Stocks News Live Blog Stock Live Blog Earnings Podcast Market Classroom Dons of Dalal Street Recos Stock Reports Plus My Screener Candlestick Screener Stock Screener Stock Watch Market Calendar Stock Price Quotes Bonds Corner Cryptocurrency VIEW MORE + Options IPOs/FPOs Expert Views Investment Ideas Commodities Views News Forex Forex News Currency Converter Live Stream! AIF PMS US Stocks Crypto Crypto News Crypto TV Crypto Prices Bonds Digital Real Estate Realty News Technicals Technical Chart Mind Over Money Web Stories Markets Data The Golden Thumb Rule Unlisted Companies Market Moguls Webinars Definitions AI Spotlight India Energy Week 2026 ET SME Regional Summit ET WEF Special at DAVOS IIT Programs listed on ET VIEW MORE + Invest in US Markets India Inc On The Move 2026 Engineering Leadership Forum Niva Bupa Insurance Academy India's most trusted winds - Suzlon MSME Awards 2025 Soonicorns Summit ET Snapchat Gen Z Index Today's Paper Market Data Stock Dashboard Top Gainer Top Loser Most Active Volume Most Active Value New 52 Week High New 52 Week Low Technical Signals Golden Cross Death Cross Above SMA 20 RSI Below 20 RSI Above 80 Stock Reports Plus Top Score Companies High Upside Most Buys Score Upgrade Market Mood VIEW MORE + Stock Recos New Recos High Upside Recos High Downside BigBull Portfolio All Investors Top Picks Rakesh Jhunjhunwala RK Damani Stock Screener ET Learn Courses Stock Markets Mutual Funds Investment Strategies Insurance & Wealth Management Indices Nifty 50 Nifty 500 BSE Sensex Bank Nifty Sectors News India ET @ Davos 2026 Economy Economy Dashboard Agriculture Finance Foreign Trade Indicators Infrastructure Policy Politics VIEW MORE + Newsblogs Elections Assembly Elections West Bengal Assam Tamil Nadu Kerala Puducherry Sports ICC Men's T20 World Cup IPL 2026 Science Defence International US News Global Trends Trump Action Tracker Canada News UK News Australia New Zealand Saudi Arabia UAE Singapore Hong Kong Business World News ET Explains Company Corporate Trends Industry Trending Decoded Morning Brief Podcast ET Evoke Bengaluru News Pune News Mumbai News Videos Latest News Most Read Most Shared Most Commented Industry Auto Auto News Cars & UVs Two wheelers & three wheelers LCV & HCV Auto Components Tyres Banking/Finance Banking Finance Insure Cons. Products Durables Electronics Fashion / Cosmetics / Jewellery FMCG Food Garments / Textiles Liquor Paints Tobacco Energy Power Oil & Gas VIEW MORE + Renewables Solar Energy Wind Energy Policy and regulations People Hybrid Power Electric vehicles Ind'l Goods/Svs Construction Engineering Cement Chem / Fertilisers Metals & Mining Packaging Paper / Wood / Glass/ Plastic/ Marbles Petrochem Steel Healthcare/Biotech Biotech Healthcare Pharmaceuticals Services Advertising Consultancy / Audit Education Hotels / Restaurants Property / C'struction Retail Travel Media/Entertainment Entertainment Media Transportation Railways Airlines / Aviation Shipping / Transport Roadways Tech ITES Tech & Internet Startups Funding Tech Bytes Telecom Telecom News Telecom Policy Miscellaneous CSR Initiatives Policy Environment SME Sustainability SME Sector Policy Trade Exports Pre-Exports Process Logistics Post-Exports Insights VIEW MORE + Entr",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://markets.businessinsider.com/index/s&p_500?op=1",
+              "content": "S&P 500 INDEX TODAY | INX LIVE TICKER | S&P 500 QUOTE & CHART | Markets Insider Business Insider My Markets Watchlist Markets Indices Search Business Strategy Economy Finance Retail Advertising Careers Media Real Estate Small Business The Better Work Project Personal Finance Tech Science AI Enterprise Transportation Startups Innovation Markets Stocks Indices Commodities Crypto Currencies ETFs Lifestyle Entertainment Culture Travel Food Health Parenting Politics Military & Defense Law Education Reviews Home Kitchen Style Streaming Pets Tech Deals Gifts Tickets Video Big Business Food Wars So Expensive Still Standing Boot Camp S&P 500 Index , INX 6,836.17 +3.41 +0.05% 04:49:41 PM EDT 2/13/2026 Add to watchlist Snapshot 6,832.76 Prev. Close 6,835.05 Open 6,794.55 Day Low 6,881.96 Day High 6,836.17 4,835.04 52 Week Low 7,002.28 52 Week High 6,836.17 04:49 PM Trade Time 02/13/26 Trade Date News Business Insider 1d Past crypto winters show bitcoin could keep tumbling to $31,000, research firm says In past bitcoin winters, the crypto has dropped an average 84%, according to an analysis from Ned Davis Research. Business Insider 1d Why top economist says the US will continue to dodge a recession through the end of the decade Yardeni has touted his \"Roaring 20s\" thesis before, retierating his view this week that the economy and markets will remain strong through this decade. Business Insider 1d Goldman flags 10 energy stocks poised to rally as the sector crushes the S&P 500 in 2026 Energy is the best-performing sector in the S&P 500 this year. Goldman Sachs analysts flag 10 stock picks with further upside ahead. Business Insider 1d From software to trucking, here are all the stock sectors that have been gripped by AI panic A company that used to make karaoke machines is the latest source of AI-induced panic, adding to woes in real estate and wealth management shares. Business Insider 1d 5 tech bosses took a combined $26 billion wealth hit in Thursday's AI sell-off Elon Musk took an $8 billion blow to his net worth from Thursday's slump in AI stocks, while Mark Zuckerberg saw a nearly $7 billion drop. Realtime Prices for S&P 500 Stocks Name Previous Close Last % +/- Trade Time 3M 174.61 171.82 -1.60% -2.79 2/13/2026 A.O. Smith 79.62 80.46 1.06% 0.84 2/13/2026 Abbott Laboratories 111.47 112.68 1.09% 1.21 2/13/2026 AbbVie 227.50 231.50 1.76% 4.00 2/13/2026 Accenture 222.05 224.23 0.98% 2.18 2/13/2026 Adobe 262.50 263.97 0.56% 1.47 2/13/2026 AES 16.20 16.28 0.49% 0.08 2/13/2026 Aflac 115.88 114.91 -0.84% -0.97 2/13/2026 Agilent Technologies 124.88 125.81 0.74% 0.93 2/13/2026 Air Products and Chemicals 291.50 279.74 -4.03% -11.76 2/13/2026 Airbnb 115.96 121.35 4.65% 5.39 2/13/2026 Akamai 104.61 111.76 6.83% 7.15 2/13/2026 Albemarle 158.93 166.35 4.67% 7.42 2/13/2026 Alexandria Real Estate Equities 50.40 52.49 4.15% 2.09 2/13/2026 Align Technology 183.86 186.77 1.58% 2.91 2/13/2026 Allegion 178.20 179.50 0.73% 1.30 2/13/2026 Alliant Energy 69.68 71.19 2.17% 1.51 2/13/2026 Allstate 206.56 207.51 0.46% 0.95 2/13/2026 Alphabet A 309.00 305.72 -1.06% -3.28 2/13/2026 Alphabet C 309.37 306.02 -1.08% -3.35 2/13/2026 Altria 67.01 67.25 0.36% 0.24 2/13/2026 Amazon 199.60 198.79 -0.41% -0.81 2/13/2026 AMD 205.94 207.32 0.67% 1.38 2/13/2026 Ameren 109.34 110.97 1.49% 1.63 2/13/2026 American Electric Power 126.43 129.94 2.78% 3.51 2/13/2026 American Express 342.88 337.50 -1.57% -5.38 2/13/2026 American International Group 78.80 78.27 -0.67% -0.53 2/13/2026 American Tower 188.19 192.10 2.08% 3.91 2/13/2026 American Water Works 128.37 133.50 4.00% 5.13 2/13/2026 Ameriprise Financial 467.30 473.67 1.36% 6.37 2/13/2026 Ametek 228.69 229.76 0.47% 1.07 2/13/2026 Amgen 366.20 369.19 0.82% 2.99 2/13/2026 Amphenol 143.73 146.72 2.08% 2.99 2/13/2026 Analog Devices 331.36 337.10 1.73% 5.74 2/13/2026 Aon 314.49 321.70 2.29% 7.21 2/13/2026 APA Corporation Registered Shs 26.92 27.92 3.71% 1.00 2/13/2026 Apple 261.73 255.78 -2.27% -5.95 2/13/2026 Applied Materials 328",
+              "images": [],
+              "rank": 3
+            },
+            {
+              "url": "https://www.investors.com/research/stock-market-data-dow-jones-sp-500-nasdaq-spdr-etfs/",
+              "content": "Access to this page has been denied. Please verify you are a human Access to this page has been denied because we believe you are using automation tools to browse the         website. This may happen as a result of the following: Javascript is disabled or blocked by an extension (ad blockers for example) Your browser does not support cookies Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking         them from loading. Reference ID: #0b721ae8-09f2-11f1-8504-4e9e8f519f20 Powered by PerimeterX , Inc.",
+              "images": [],
+              "rank": 4
+            },
+            {
+              "url": "https://www.marketwatch.com/investing/index/spx",
+              "content": "[error] ",
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    },
+    "market_summary_T002": {
+      "summary_bullets": [
+        "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+        "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+        "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+        "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+      ]
+    }
+  }
+}
+```

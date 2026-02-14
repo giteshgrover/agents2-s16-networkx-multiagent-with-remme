@@ -1,0 +1,11 @@
+```json
+{
+  "stock_symbol_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "symbol = search_stored_documents_rag('stock symbol for Veeva Systems')\nreturn {'stock_symbol_T001': symbol}",
+    "CODE_1B": "symbol = web_search('Veeva Systems stock symbol', 1)\nreturn {'stock_symbol_T001': symbol}",
+    "CODE_1C": "symbol = search_web_with_text_content('Veeva Systems stock ticker', 1)\nreturn {'stock_symbol_T001': symbol}"
+  }
+}
+```

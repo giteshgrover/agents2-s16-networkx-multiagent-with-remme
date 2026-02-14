@@ -1,0 +1,59 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Get current stock market index data",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the current performance data for major stock market indices such as the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Focus on today's date.",
+        "reads": [],
+        "writes": [
+          "major_indices_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Synthesize stock market performance summary",
+        "agent": "DistillerAgent",
+        "agent_prompt": "Summarize the retrieved stock market index data, highlighting the performance of the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite for today. Provide key figures like current values and daily changes.",
+        "reads": [
+          "major_indices_data_T001"
+        ],
+        "writes": [
+          "market_summary_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format stock market performance report",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the stock market summary into a direct and informative report. Include the current values and daily changes for the S&P 500, Dow Jones Industrial Average, and Nasdaq Composite. Aim for clarity and conciseness.",
+        "reads": [
+          "market_summary_T002"
+        ],
+        "writes": [
+          "formatted_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

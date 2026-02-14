@@ -1,0 +1,42 @@
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve the stock symbol for Veeva Systems.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Search the knowledge base or external sources for the stock symbol of 'Veeva Systems'. Return the stock symbol.",
+        "reads": [],
+        "writes": [
+          "stock_symbol_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format the stock symbol into a clear output.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "The user asked for the stock symbol of Veeva Systems. The retrieved stock symbol is `stock_symbol_T001`. Format this information into a direct and concise answer. Avoid motivational language or comparative phrasing.",
+        "reads": [
+          "stock_symbol_T001"
+        ],
+        "writes": [
+          "final_answer_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

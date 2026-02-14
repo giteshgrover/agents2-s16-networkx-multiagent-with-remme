@@ -70,36 +70,73 @@ app.add_middleware(
 # active_loops, multi_mcp, remme_store, remme_extractor are imported from there
 
 # === Import and Include Routers ===
+# Only import routers that actually exist
 from routers import runs as runs_router
-from routers import rag as rag_router
 from routers import remme as remme_router
-from routers import apps as apps_router
 from routers import settings as settings_router
-from routers import explorer as explorer_router
 from routers import mcp as mcp_router
-app.include_router(runs_router.router)
-app.include_router(rag_router.router)
-app.include_router(remme_router.router)
-app.include_router(apps_router.router)
-app.include_router(settings_router.router)
-app.include_router(explorer_router.router)
-app.include_router(mcp_router.router)
-from routers import prompts as prompts_router
-from routers import news as news_router
-from routers import git as git_router
-app.include_router(prompts_router.router)
-app.include_router(news_router.router)
-app.include_router(git_router.router)
-
-from routers import chat as chat_router
-app.include_router(chat_router.router)
-from routers import agent as agent_router
-app.include_router(agent_router.router)
-from routers import ide_agent as ide_agent_router
-app.include_router(ide_agent_router.router)
 from routers import metrics as metrics_router
+
+app.include_router(runs_router.router)
+app.include_router(remme_router.router)
+app.include_router(settings_router.router)
+app.include_router(mcp_router.router)
 app.include_router(metrics_router.router)
-# Chat router included
+
+# Optional routers - only import if they exist
+try:
+    from routers import rag as rag_router
+    app.include_router(rag_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import apps as apps_router
+    app.include_router(apps_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import explorer as explorer_router
+    app.include_router(explorer_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import prompts as prompts_router
+    app.include_router(prompts_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import news as news_router
+    app.include_router(news_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import git as git_router
+    app.include_router(git_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import chat as chat_router
+    app.include_router(chat_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import agent as agent_router
+    app.include_router(agent_router.router)
+except ImportError:
+    pass
+
+try:
+    from routers import ide_agent as ide_agent_router
+    app.include_router(ide_agent_router.router)
+except ImportError:
+    pass
 
 
 

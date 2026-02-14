@@ -1,0 +1,10 @@
+```json
+{
+  "major_indices_data_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "data = json.loads(search_web_with_text_content('S&P 500 Dow Jones Nasdaq Composite today performance', 5))\nreturn {'major_indices_data_T001': data}",
+    "CODE_1B": "urls = json.loads(web_search('S&P 500 today', 3))\ncontent_sp500 = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Dow Jones Industrial Average today', 3))\ncontent_dowjones = webpage_url_to_raw_text(urls[0] if urls else '')\nurls = json.loads(web_search('Nasdaq Composite today', 3))\ncontent_nasdaq = webpage_url_to_raw_text(urls[0] if urls else '')\nreturn {'major_indices_data_T001': {'sp500': content_sp500, 'dowjones': content_dowjones, 'nasdaq': content_nasdaq}}"
+  }
+}
+```

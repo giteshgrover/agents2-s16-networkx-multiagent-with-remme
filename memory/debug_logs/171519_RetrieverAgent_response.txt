@@ -1,0 +1,10 @@
+```json
+{
+  "indian_stock_market_data_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('Nifty 50 Sensex live data today', 5))\nreturn {'indian_stock_market_data_T001': results}",
+    "CODE_1B": "urls = json.loads(web_search('major Indian stock market indices performance 2026-02-14', 5))\nreturn {'indian_stock_market_data_T001': urls}"
+  }
+}
+```

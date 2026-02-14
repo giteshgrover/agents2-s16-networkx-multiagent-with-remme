@@ -1,0 +1,42 @@
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve 3-day weather forecast for Durham, NC",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the 3-day weather forecast for Durham, NC. Provide specific details on temperature, precipitation, and general conditions for each of the next three days. Ensure the data is comprehensive enough for detailed analysis.",
+        "reads": [],
+        "writes": [
+          "weather_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Synthesize and format the 3-day weather forecast for Durham, NC",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the retrieved 3-day weather forecast for Durham, NC into a clear and structured report. Include daily breakdowns of high/low temperatures, probability of precipitation, and a summary of expected conditions. Present this information in a comprehensive markdown format suitable for executive review. Ensure all details from `weather_data_T001` are included.",
+        "reads": [
+          "weather_data_T001"
+        ],
+        "writes": [
+          "formatted_weather_report_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

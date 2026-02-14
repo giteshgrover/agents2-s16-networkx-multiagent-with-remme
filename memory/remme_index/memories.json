@@ -1,0 +1,11 @@
+[
+  {
+    "id": "b3353191-a1b2-476a-81ba-84b55af9be09",
+    "text": "User is asking about the weather in Morrisville, NC",
+    "category": "derived",
+    "created_at": "2026-02-14T17:52:59.016327",
+    "updated_at": "2026-02-14T17:52:59.016359",
+    "source": "run_1771109418",
+    "faiss_id": 0
+  }
+]

@@ -1,0 +1,55 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Fetch current Indian stock market performance data",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the latest available real-time or end-of-day data for the major Indian stock market indices (e.g., Nifty 50, Sensex). Focus on key performance indicators like current index levels, day's change (points and percentage), and trading volume if readily available. Assume data is accessible via a financial news API or a financial data provider. The current date is 2026-02-14.",
+        "reads": [],
+        "writes": [
+          "indian_stock_market_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Synthesize and format Indian stock market performance data",
+        "agent": "DistillerAgent",
+        "agent_prompt": "Synthesize the retrieved Indian stock market data from `indian_stock_market_data_T001`. Extract the key metrics for Nifty 50 and Sensex, including their current values, daily gains/losses in points and percentage, and any reported trading volumes. Present this information clearly and concisely.",
+        "reads": [
+          "indian_stock_market_data_T001"
+        ],
+        "writes": [
+          "synthesized_market_data_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the final Indian stock market report",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the synthesized Indian stock market performance data from `synthesized_market_data_T002` into a comprehensive, human-readable report suitable for a C-suite executive. The report should clearly state the current status of the Indian stock market today, 2026-02-14, highlighting the performance of Nifty 50 and Sensex. Include the latest index values, daily changes (both absolute and percentage), and trading volumes. Ensure the output is well-structured, potentially using tables or bullet points for clarity. Aim for a detailed report.",
+        "reads": [
+          "synthesized_market_data_T002"
+        ],
+        "writes": [
+          "final_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

@@ -1,0 +1,10 @@
+```json
+{
+  "weather_data_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('weather Morrisville North Carolina', 5))\nreturn {'weather_data_T001': results}",
+    "CODE_1B": "urls = json.loads(web_search('weather Morrisville NC', 5))\nreturn {'weather_data_T001': urls}"
+  }
+}
+```

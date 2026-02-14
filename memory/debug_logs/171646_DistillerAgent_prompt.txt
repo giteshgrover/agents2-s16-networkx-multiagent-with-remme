@@ -1,0 +1,135 @@
+CURRENT_DATE: 2026-02-14
+
+# DistillerAgent Prompt
+
+################################################################################################
+# DistillerAgent v2 Prompt – Content Distillation and File Profiling Specialist
+# Role  : Distill verbose input into structured summaries, outlines, or profiles
+# Output: STRICT JSON – bullet points, outlines, topic clusters, or file profiles
+################################################################################################
+
+You are **DistillerAgent**, the compression and structure agent for verbose or complex content.
+Your job is to **analyze any content** passed to you and **distill it into concise, structured summaries**.
+
+---
+
+## ✅ OUTPUT STRUCTURES YOU MAY USE
+
+### 1. Bullet Summary
+```json
+{
+  "summary_bullets": [
+    "Covers up to $500,000 in travel emergencies.",
+    "Excludes high-risk activities like skiing and diving."
+  ]
+}
+```
+
+### 2. Topic Clusters
+```json
+{
+  "clusters": {
+    "Pricing": ["Too expensive", "Fair"],
+    "UX": ["Smooth onboarding", "Overwhelming"]
+  },
+  "cluster_method": "semantic k-means"
+}
+```
+
+### 3. File Profiling
+```json
+{
+  "file_profiles_T01": [
+    {
+      "file_name": "survey_data.csv",
+      "analysis": {
+        "structure_type": "tabular",
+        "content_summary": "Survey of 2023 customer satisfaction.",
+        "key_elements": ["Region", "Rating"]
+      },
+      "summary": "Tabular customer survey data ready for aggregation"
+    }
+  ]
+}
+```
+
+---
+
+## ⚠️ RULES
+* ❌ Never hallucinate facts
+* ❌ Never reformat with Markdown or HTML (unless requested)
+* ✅ Return JSON only
+* ✅ If you can't find any signal, return `{"summary_unavailable": true}`
+
+## ✅ OUTPUT VARIABLE NAMING
+**CRITICAL**: Use the exact variable names from "writes" field as your JSON keys.
+---
+## User Preferences
+User prefers: concise responses
+Clarifications: minimize
+Tone: no_motivational, direct
+Avoid: It's not this, it's this, What you're describing is not
+---
+
+
+```json
+{
+  "step_id": "T002",
+  "agent_prompt": "Synthesize the retrieved Indian stock market data from `indian_stock_market_data_T001`. Extract the key metrics for Nifty 50 and Sensex, including their current values, daily gains/losses in points and percentage, and any reported trading volumes. Present this information clearly and concisely.",
+  "reads": [
+    "indian_stock_market_data_T001"
+  ],
+  "writes": [
+    "synthesized_market_data_T002"
+  ],
+  "inputs": {
+    "indian_stock_market_data_T001": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://www.google.com/finance/quote/NIFTY_50:INDEXNSE",
+              "content": "NIFTY 50 Price, Real-time Quote & News - Google Finance Finance Finance Sign in Finance Finance Finance finance_mode Home manage_search Market trends Portfolios add Create portfolio Watchlists add Create watchlist Most Active NVIDIA Corp -2.23% Rivian Automotive Inc +26.64% Transocean LTD +8.46% Ford Motor Co +1.95% Plug Power Inc +3.85% Grab Holdings Ltd -3.28% settings Settings feedback Send feedback Markets US Europe Asia Currencies Crypto Futures Dow Jones 49,500.93 +0.099% +48.95 Dow Jones 49,500.93 0.099% S&P 500 6,836.17 +0.050% +3.41 S&P 500 6,836.17 0.050% Nasdaq 22,546.67 -0.22% -50.48 Nasdaq 22,546.67 0.22% Russell 2,646.70 +1.18% +30.87 Russell 2,646.70 1.18% VIX 20.60 -1.06% -0.22 VIX 20.60 1.06% Home NIFTY_50 Index NIFTY 50 Follow Share 25,471.10 Feb 13, 3:31:08PM GMT+5:30 INDEXNSE Disclaimer 1D 5D 1M 6M YTD 1Y 5Y MAX insights Key events Key events shows relevant news articles on days with large price movements Key events Key events shows relevant news articles on days with large price movements Key events arrow_forward_ios Key events shows relevant news articles on days with large price movements No data close search Compare to BSE SENSEX 82,626.76 SENSEX 1.25% NIFTY Next 50 68,826.75 NIFTY_NEXT_50 1.56% NIFTY 500 23,313.15 NIFTY_500 1.43% Dow Jones Industrial Average 49,500.93 .DJI 0.099% Nikkei 225 56,941.97 NI225 1.21% S&P 500 6,836.17 .INX 0.050% Hang Seng Index 26,567.12 HSI 1.72% Nifty Bank 60,186.65 NIFTY_BANK 0.91% Nifty VIX 13.50 INDIA_VIX 15.18% FTSE 100 Index 10,446.35 UKX 0.42% In the news Mint 18 hours ago Stock market crash: Sensex may touch 60,000 by the end of FY27 if....say experts PressReader 19 hours ago IT services drop in Nifty 50 to 26-yr low while oil & gas reclaim top spot CNBC 1 week ago India's Nifty 50 closes 2.5% higher as long-awaited U.S. trade deal boosts investor sentiment The Economic Times 3 weeks ago Market Highlights: Sensex settles 271 pts lower, Nifty below 25,200; ICICI Bank, Trent drop 2% each; rupe... CNBC 1 week ago Japan stocks jump over 3% to record high as Asia markets rebound BusinessLine 1 day ago Q3 Results 13th Feb Highlights: NBCC (India), IPCA Lab, NLC Industries Q3 profit up, Alkem Lab shares slump, Rategain & Blue Jet profit fall, Torrent Pharma, KFin Tech, Shakti Pumps announce Q3 results stacked_line_chart Index A measure of the price performance of a collection of securities that are grouped to represent a certain market or sector Previous close The last closing price 25,807.20 Day range The range between the high and low prices over the past day 25,444.30 - 25,630.35 Year range The range between the high and low prices over the past 52 weeks 21,743.65 - 26,373.20 About  The NIFTY 50 is an Indian stock market index that represents the float-weighted average of 50 of the largest Indian companies listed on the National Stock Exchange. Nifty 50 is owned and managed by NSE Indices, which is a wholly owned subsidiary of the NSE. The Nifty 50 index was launched on 22 April 1996 with a base date of 3 November 1995 and with 1,000 as its base value. The NIFTY 50 index ecosystem consists of index funds, and futures and options at NSE and NSE International Exchange. In 2016, NIFTY 50 was reported by the WFE and FIA as the world's most actively traded index options contract, but it was later overtaken by Nifty Bank. In 2024, NIFTY 50 overtook Nifty Bank after the latter's weekly expiry contracts were discontinued. The NIFTY 50 index covers 13 sectors of the Indian economy and offers investment managers exposure to the Indian market in one portfolio. As of November 2025, NIFTY 50 gives a weightage of 36.84% to financial services including banking, 10.39% to oil and gas, 10.23% to information technology, 6.81% to automotive, and 6.49% to consumer goods. Wikipedia Discover more You may be interested in info This list is generated from recent searches, followed securities, and other activity. Learn more All data and information is provided as is for personal informatio",
+              "images": [],
+              "rank": 1
+            },
+            {
+              "url": "https://economictimes.indiatimes.com/markets/live-coverage",
+              "content": "Share Market, Nifty, Sensex, NSE/BSE Live Updates, Stock Market Today | The Economic Times Markets Dashboard Stocks Technical Signals Sectors Indices ET Learn FII DII Earnings Corporate Actions Announcements Technical Chart Live Stream Masterclass NEW Value Investing Technical Analysis My Watchlist News Stock Recos Screeners ETPrime Upside Radar Alpha Trades BigBull Portfolio Stock Reports Plus Market Mood Investment Ideas ePaper Stock Talk Switch To ET Stock Subscribe Indices As on 13 Feb, 2026 16:15 IST Nifty 50 25,471.1 -336.11 (-1.30%) BSE Sensex 82,626.76 -1048.16 (-1.25%) Nifty 500 23,313.15 -338.40 (-1.43%) Nifty Bank 60,186.65 -553.10 (-0.91%) Nifty IT 32,681.5 -478.70 (-1.44%) Nifty Midcap 50 16,960.45 -291.05 (-1.69%) BSE MidCap 44,246.27 -699.21 (-1.55%) Nifty 200 14,221.9 -203.61 (-1.41%) Nifty 100 26,092.4 -355.65 (-1.34%) Nifty Smallcap 50 8,318.55 -159.56 (-1.88%) BSE 500 36,532.48 -516.92 (-1.39%) BSE 100 26,695.13 -350.99 (-1.29%) 1D 1W 1M 3M 6M 1Y 3Y 5Y Technicals See Nifty 50 Advance/Decline 6 Advance 44 Decline 13 Feb, 2026 FII Cash Past 7 days activity 05 2150 Cr. 1950 Cr. 06 2254 Cr. 09 69 Cr. 10 943 Cr. 11 108 Cr. 12 13 7395 Cr. -7395.41 Cr. on 13 Feb DII Cash Past 7 days activity 1129 Cr. 05 06 1265 Cr. 4 Cr. 09 1174 Cr. 10 11 125 Cr. 276 Cr. 12 5553 Cr. 13 5553.96 Cr. on 13 Feb Top News Dalal Street Week Ahead: Protect gains, avoid fresh longs until key levels hold Stock picks of the week: 5 stocks with consistent score improvement and upside potential of up to 41% F&O Talk | Nifty breaches 20 & 100-DMA amid 11% VIX spike; Sudeep Shah on Coforge, 5 other top weekly movers Unravel market opportunities daily. Never miss today's key updates and plan ahead with tomorrow's trending stocks. Watchlist X-ray Download Report Reserve Bank of India tightens broker funding norms: Will stock brokers feel the squeeze? Coal India, Adani Power among 10 stocks that saw highest increase in retail shareholding in Q3. Check full list ET Prime Special - The Red Flags in balance sheets. How companies manipulate interest cost See All News Alpha Trades New New Trade Alert Explore Alpha Trades Now Markets Dashboard Nifty 500 1 Day Export Company Name Current Price (Rs) Price Change Engineers India 201.67 20.80 Linde India 6,900 460.00 Signatureglobal India 1,041 57.70 Vardhman Textiles 510.55 26.80 Aditya Birla Retail 73.80 3.76 KPR Mill 930.50 32.70 Hexaware Technologie 561.60 18.70 TBO Tek 1,521 48.50 Kirloskar Oil 1,380 42.90 Schneider 811.70 22.80 % Change Stock Score Volume Total Asset Turnover Market Cap (Rs Cr) 1W Returns 1M Returns 3M Returns 6M Returns 1Y Returns 3Y Returns YTD Returns 11.50% Upgrade to Prime 13,40,19,973 0.62 11,335 17.67% 2.47% 0.71% 5.97% 25.67% 164.49% -0.50% 7.14% Upgrade to Prime 4,04,286 0.50 58,846 13.81% 13.49% 20.15% 11.07% 23.82% 97.38% 16.79% 5.87% Upgrade to Prime 17,15,847 0.23 14,621 16.92% 12.75% -6.46% -5.43% -10.91% - -7.81% 5.55% Upgrade to Prime 41,74,502 0.80 14,767 5.92% 21.29% 12.75% 29.56% 17.21% 64.69% 17.25% 5.37% Upgrade to Prime 1,94,43,779 0.38 9,007 7.24% 1.37% -5.92% -1.60% -70.19% -70.23% -3.02% 3.65% Upgrade to Prime 38,75,768 1.08 31,806 -4.79% 8.33% -13.71% -2.01% 10.87% 63.62% 1.98% 3.44% Upgrade to Prime 47,82,118 1.48 34,315 -8.47% -21.21% -18.46% -21.71% - - -25.91% 3.30% Upgrade to Prime 1,91,886 0.31 16,511 3.86% -2.13% -3.30% 5.30% -5.99% - -6.36% 3.21% Upgrade to Prime 15,86,476 0.68 20,054 17.88% 18.27% 26.36% 52.90% 104.44% 341.50% 12.14% 2.89% Upgrade to Prime 17,41,823 1.50 19,408 5.57% 30.47% 1.82% -6.81% 29.36% 399.05% 13.41% * Investments in securities are subject to market risks. These are indicative and should not be interpreted as investment advice or guaranteed returns. View All Stocks Give me midcap stocks with strong RSI Ask AI Screener Discover the stocks with maximum upside based on the key investment themes. Sectors with High Upside Infrastructure 7 Stocks to Unlock Financial Services 17 Stocks to Unlock Retail 9 Stocks to Unlo",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://www.indmoney.com/indices/nifty-50",
+              "content": "[error] ",
+              "rank": 3
+            },
+            {
+              "url": "https://www.cnbctv18.com/market-live/nifty50/",
+              "content": "NIFTY 50 Today - Nifty Index, Nifty Share Price, Nifty 50 Chart | CNBCTV18 Join Us Log in / Sign up Become a Member Language English Latest news Live Updates Markets Markets Data Stocks IPOs Business Personal Finance Impact Shorts Economy India World Upcoming Events Engage with CNBC-TV18 Photos Videos Minis Web Stories Polls Quiz Healthcare Politics Travel Education & Careers Sports Views Auto Entertainment Technology Startups Lifestyle Retail Real Estate Minis Special Coverage India Business Leader Awards Branded Content HealthX Elevate India Retirement Insights Summit The Growth Summit Ceo awards Accelerate Your Cloud Journey Accelerating to a Connected Future Financial Services Cloud Symposium Crypto Education Next Ey Entrepreneur Of The Year IRMA Wizards of finance The Thought League Discover CNBCTV18 About Contact Advertise Disclaimer Terms of Use Privacy Policy Shows Anchors Polls 11:11 Newsletter Life Advertise with us Watch Live TV Latest News Market Budget Personal Finance Impact Shorts Business Economy Travel Webstories More Photos Videos Sports Lifestyle Entertainment Games Technology Polls Quiz Minis Upcoming Events LIVE TV New IPO New Games #MFCorner #NavigateWithHSBC #NiveshKaSahiKadam Nifty Sensex MCX Home Latest News Featured Live TV CNBC-TV18 CNBC Awaaz CNBC Bajar Market Live Minis Podcasts CNBC-TV18 Specials HealthX Elevate Global Leadership Summit Young Turks Future Female Forward 11:11 Newsletter Nivesh Ka Sahi Kadam Photos Sections Market Global Markets Stocks Money Companies Economy Technology Cryptocurrency Terms and Conditions Disclaimer Terms of Use Privacy Policy Nifty 50 Prev. Close Open Price Key Metrics Open Previous Close Todays Low Todays High 52 Week Low 52 Week High Index Components company price change %change View All Companies Word on the Market AI-led IT selloff may be overdone, not the time to exit, says Edelweiss AMC CIO Hotels in best phase in decades; autos, metals offer strong earnings play: Dipan Mehta AI priced into IT, gradual impact on finance; gold and autos in focus: Axis MF FPIs turning positive on India, banks and largecaps in focus: Nuvamas Shiv Diwan Access Indias valuation premium narrows as AI-led rally lifts global peers Feb 6, 2026 8:04 PM 2 Min Read Market Earnings stabilising but valuations still a hurdle for markets: Kotak's Sanjeev Prasad Jan 28, 2026 12:43 PM 3 Min Read Market Trade Setup for November 17: Nifty eyes further upside after recent pullback Nov 16, 2025 2:23 PM 3 Min Read Market HDFC Bank, Reliance and Bharti Airtel fuel a third of Nifty's 4,000-point rally Oct 29, 2025 6:29 PM 2 Min Read Market FPIs snap up over $1 billion in shares, mark second-biggest buy of 2025 Oct 28, 2025 9:51 PM 2 Min Read Commodities CLSA sees Nifty at 26,300 by year-end; gold may hit $4,100, silver $50 before pause Oct 8, 2025 11:58 AM 3 Min Read Market Nifty outpaces Sensex by the widest margin in four years Sept 25, 2025 7:44 PM 2 Min Read Access Indias market giants may be due for a comeback Aug 1, 2025 2:40 PM 2 Min Read Market Retail investors book profits as institutional buyers stage a comeback in the market May 2, 2025 11:37 PM 2 Min Read Market Nifty50s valuation premium over MSCI EM index hits seven-month high Apr 23, 2025 8:36 PM 3 Min Read About Nifty 50 NIFTY 50 & History The NIFTY 50 is the flagship index on the National Stock Exchange of India (NSE). It includes 50 of all companies listed on the NSE. The index, trading since April 22, 1996, covers 13 major sectors of the Indian economy. The NIFTY 50 is owned and managed by NSE Indices (previously known as India Index Services & Products Limited, India's first specialised company focused on an index as a core product). The index captures approximately 65 percent of its float-adjusted market capitalisation and is a true reflection of the Indian stock market. NIFTY 50 is one of the two main stock indices used in India, the other being the BSE SENSEX. NIFTY 50 selection criteria The security should have traded at an",
+              "images": [],
+              "rank": 4
+            },
+            {
+              "url": "https://zerodha.com/markets/indices/Nifty%2050/",
+              "content": "Nifty 50 Today: Live Share Price, Chart & Index Performance Powered By Markets Indices Nifty 50 NIFTY Index Value New to Zerodha? Sign-up for free. +91 Continue The Nifty 50 is the flagship benchmark index of the National Stock Exchange (NSE). It represents the performance of 50 of the largest, most liquid, and financially sound companies across key sectors of the Indian economy. The Nifty 50 is one of the primary barometers used to measure the overall health and sentiment of the Indian market. The Nifty 50 is the flagship benchmark index of the National Stock Exchange (NSE). It represents th More The Nifty 50 is the flagship benchmark index of the National Stock Exchange (NSE). It represents the performance of 50 of the largest, most liquid, and financially sound companies across key sectors of the Indian economy. The Nifty 50 is one of the primary barometers used to measure the overall health and sentiment of the Indian market. Less New to Zerodha? Sign-up for free. +91 Continue Low 21,743 52W Range High 26,373 M.cap 20429159.0 PE 22.24 P/B 3.46 Div.Yield 1.21% Low 21,743 52W Range High 26,373 Fundamentals Technicals Index Value constituents Technicals Coming soon 5D 1M 6M YTD 1Y 5Y MAX This data is currently unavailable for this index. Constituents Name M.Cap(Cr.) PE P/B 1 Yr(%) This data is currently unavailable for this index. Events This data is currently unavailable for this index. Powered by Agriculture Auto ancillary Aviation Building materials Chemicals Consumer durables Dairy products Defence Diversified Education & training Energy Engineering & capital goods FMCG Fertilizers Financial services Healthcare IT Logistics Media & entertainment Metals Miscellaneous NBFC Packaging Plastic pipes Real estate Retail Services Silver Software services Solar panel Telecom Textiles Tourism & hospitality Trading Powered by Tijori             Finance Contact Us Contact Us Name Email Message Something went wrong. Please try again. Submit Our team will get back to you soon. NSE & BSE SEBI Registration No: INZ000031633 | CDSL - SEBI Registration No: IN-DP-431-2019",
+              "images": [],
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    }
+  },
+  "original_query": "How is the Indian stock market doing today?",
+  "session_context": {
+    "session_id": "1771107312",
+    "created_at": "2026-02-14T22:15:12.433675",
+    "file_manifest": [],
+    "memory_context": ""
+  }
+}
+```

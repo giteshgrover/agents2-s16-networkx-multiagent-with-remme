@@ -1,0 +1,12 @@
+```json
+{
+  "market_summary_T002": {
+    "summary_bullets": [
+      "The S&P 500 is currently at 6,836.17, with a daily change of +3.41 (+0.05%).",
+      "The Dow Jones Industrial Average and Nasdaq Composite are also reported as gaining significantly today.",
+      "The article from The Economic Times indicates a strong surge across the Dow Jones, S&P 500, and Nasdaq.",
+      "However, another article from Yahoo Finance suggests that the Dow, S&P 500, and Nasdaq are sinking, with tech stocks being hit due to AI disruption fears."
+    ]
+  }
+}
+```

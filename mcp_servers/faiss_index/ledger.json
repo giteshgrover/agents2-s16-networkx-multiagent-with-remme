@@ -1156,6 +1156,13 @@
       "indexed_at": "2026-02-14T20:34:26.641381Z",
       "chunk_count": 1,
       "error": null
+    },
+    "conversation_history/2026/02/14/session_1771107240.json": {
+      "hash": "f12de00a05c93b822a848d486afe2633",
+      "status": "complete",
+      "indexed_at": "2026-02-14T22:19:06.738254Z",
+      "chunk_count": 1,
+      "error": null
     }
   }
 }

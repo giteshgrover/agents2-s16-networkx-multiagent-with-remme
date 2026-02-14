@@ -1,0 +1,11 @@
+```json
+{
+  "current_gold_price_T001": [],
+  "data_timestamp_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('current gold spot price USD per troy ounce', 5))\nprice_data = next((item for item in results if 'price' in item and 'timestamp' in item), None)\nif price_data:\n    return {'current_gold_price_T001': [price_data['price']], 'data_timestamp_T001': [price_data['timestamp']]}\nelse:\n    return {'current_gold_price_T001': ['Not Found'], 'data_timestamp_T001': ['Not Found']}",
+    "CODE_1B": "urls = json.loads(fetch_search_urls('gold price live per troy ounce', 3))\nif urls:\n    content = webpage_url_to_raw_text(urls[0])\n    # Basic parsing attempt, assuming structure like 'Gold Price: $XXXX.XX (as of YYYY-MM-DD HH:MM)'\n    price_str = 'Not Found'\n    timestamp_str = 'Not Found'\n    if 'Gold Price:' in content and 'as of' in content:\n        try:\n            price_part, timestamp_part = content.split('as of', 1)\n            price_str = price_part.split('Gold Price:')[1].strip().split(' ')[0]\n            timestamp_str = timestamp_part.strip().split('\\n')[0]\n        except Exception as e:\n            print(f\"Error parsing content: {e}\")\n    return {'current_gold_price_T001': [price_str], 'data_timestamp_T001': [timestamp_str]}\nelse:\n    return {'current_gold_price_T001': ['Not Found'], 'data_timestamp_T001': ['Not Found']}"
+  }
+}
+```

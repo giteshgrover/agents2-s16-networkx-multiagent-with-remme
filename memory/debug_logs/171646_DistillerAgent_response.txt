@@ -1,0 +1,18 @@
+```json
+{
+  "synthesized_market_data_T002": {
+    "NIFTY_50": {
+      "current_value": "25,471.10",
+      "daily_change_points": "-336.11",
+      "daily_change_percentage": "-1.30%",
+      "trading_volume": null
+    },
+    "Sensex": {
+      "current_value": "82,626.76",
+      "daily_change_points": "-1048.16",
+      "daily_change_percentage": "-1.25%",
+      "trading_volume": null
+    }
+  }
+}
+```

@@ -9598,5 +9598,11 @@
     "chunk": "# Session Summary: 71100913 **Original Query:** What is Google stock symbol? *Date: 2026-02-14T20:28:33.889945* --- ### Step: Initial Query (by System) --- ### Step: Formulate execution plan (by PlannerAgent) gemini:gemini-2.5-flash-lite --- ### Step: Retrieve Google stock symbol (by RetrieverAgent) gemini:gemini-2.5-flash-lite --- ### Step: Format the retrieved stock symbol (by FormatterAgent) Google's stock symbol is: GOOG",
     "chunk_id": "conversation_history/2026/02/14/session_71100913.json_0",
     "page": 1
+  },
+  {
+    "doc": "conversation_history/2026/02/14/session_1771107240.json",
+    "chunk": "# Session Summary: 1771107240\n\n**Original Query:** How is the Indian stock market doing?\n\n*Date: 2026-02-14T22:14:00.732076*\n\n---\n\n### Step: Initial Query (by System)\n\n---\n\n### Step: Formulate execution plan (by PlannerAgent)",
+    "chunk_id": "conversation_history/2026/02/14/session_1771107240.json_0",
+    "page": 1
   }
 ]

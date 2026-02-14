@@ -1,0 +1,43 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve current weather data for Morrisville, NC.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the current weather conditions for Morrisville, North Carolina. Include temperature, precipitation, wind speed, and humidity.",
+        "reads": [],
+        "writes": [
+          "weather_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format weather data for Morrisville, NC.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided weather data for Morrisville, NC into a clear and concise report. Include all retrieved details: temperature, precipitation, wind speed, and humidity.",
+        "reads": [
+          "weather_data_T001"
+        ],
+        "writes": [
+          "formatted_weather_report_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "ROOT",
+        "to": "T001"
+      },
+      {
+        "from": "T001",
+        "to": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 1.0,
+  "ambiguity_notes": []
+}
+```
