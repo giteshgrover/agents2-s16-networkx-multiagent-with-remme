@@ -7,5 +7,14 @@
     "updated_at": "2026-02-14T17:52:59.016359",
     "source": "run_1771109418",
     "faiss_id": 0
+  },
+  {
+    "id": "f238a5c8-94de-457d-bf73-f60fce5c0e7c",
+    "text": "User requested the 3-day weather forecast for Durham, NC.",
+    "category": "derived",
+    "created_at": "2026-02-14T17:59:50.789330",
+    "updated_at": "2026-02-14T17:59:50.789336",
+    "source": "run_1771109729",
+    "faiss_id": 1
   }
 ]

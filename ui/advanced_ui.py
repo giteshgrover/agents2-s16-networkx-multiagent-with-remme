@@ -404,7 +404,13 @@ class AdvancedUI:
                 status = node_data.get('status', 'pending')
                 agent_type = node_data.get('type', node_data.get('label', node_id))
                 
-                status_class = f'node-{status}'
+                # Fix: Don't show ROOT as PlannerAgent - show it as "Query" or "ROOT"
+                if node_id == "ROOT":
+                    agent_type = "Query"
+                    status_class = 'node-completed'  # ROOT is always completed
+                else:
+                    status_class = f'node-{status}'
+                
                 html_parts.append(f'''
                     <div class="graph-node {status_class}" title="{node_id} - {status}">
                         <div>{agent_type}</div>
