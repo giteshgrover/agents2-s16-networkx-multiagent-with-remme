@@ -1,0 +1,7 @@
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "Google's stock symbol is: GOOG",
+  "call_self": false
+}
+```

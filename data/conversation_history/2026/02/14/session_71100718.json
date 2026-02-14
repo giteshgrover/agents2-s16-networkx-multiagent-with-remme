@@ -1,0 +1,51 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "session_id": "71100718",
+    "original_query": "What is the google stock symbol?",
+    "file_manifest": [],
+    "created_at": "2026-02-14T20:25:18.451870",
+    "status": "failed",
+    "globals_schema": {},
+    "error": "Planning failed: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments."
+  },
+  "nodes": [
+    {
+      "description": "Initial Query",
+      "agent": "System",
+      "status": "completed",
+      "output": null,
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": null,
+      "execution_time": 0.0,
+      "id": "ROOT"
+    },
+    {
+      "id": "Query",
+      "description": "Formulate execution plan",
+      "agent": "PlannerAgent",
+      "status": "failed",
+      "reads": [
+        "original_query"
+      ],
+      "writes": [
+        "plan_graph"
+      ],
+      "output": null,
+      "error": "Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.",
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": "2026-02-14T20:25:18.553085",
+      "execution_time": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "ROOT",
+      "target": "Query"
+    }
+  ]
+}

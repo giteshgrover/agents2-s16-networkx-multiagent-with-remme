@@ -1,0 +1,43 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve Google stock symbol",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Search for the stock symbol of Google. Provide only the stock symbol.",
+        "reads": [],
+        "writes": [
+          "google_stock_symbol_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format the retrieved stock symbol",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided Google stock symbol into a clear and direct answer. The answer should state 'Google's stock symbol is: [symbol]'.",
+        "reads": [
+          "google_stock_symbol_T001"
+        ],
+        "writes": [
+          "formatted_answer_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "ROOT",
+        "to": "T001"
+      },
+      {
+        "from": "T001",
+        "to": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 1.0,
+  "ambiguity_notes": []
+}
+```
