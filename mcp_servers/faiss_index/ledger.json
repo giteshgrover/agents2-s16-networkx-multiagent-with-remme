@@ -1,1141 +1,7 @@
 {
   "version": 2,
-  "last_reconcile": "2026-01-16T12:03:21.536290Z",
+  "last_reconcile": "2026-02-15T04:03:46.288530Z",
   "files": {
-    "Experience Letter.docx": {
-      "hash": "ad0ebecbd466a9a7fccb788fbc0a56b9",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.570968Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "cricket.txt": {
-      "hash": "4644e0b2e21b9a8607eee44206ed8e43",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.570999Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "dlf.md": {
-      "hash": "8b99308d97aa5ec282f60ed7f15b3d39",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571007Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "markitdown.md": {
-      "hash": "e626751108325010eae576b25253dea4",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571013Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "SAMPLE-Indian-Policies-and-Procedures-January-2023.docx": {
-      "hash": "5fc9bf3d4737d2e042387a3710d51851",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571018Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "deekseek_moe_moh_v2_continue_with_hicra.py": {
-      "hash": "a7660f02082b4bb87fb7c39c1b95f30f",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571024Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "INVG67564.pdf": {
-      "hash": "a6e144a816413ca4f9905316ab8d38ec",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571029Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "economic.md": {
-      "hash": "a551ec57c7d6b7ef1fe590fa085260c7",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571042Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "How to use Canvas LMS.pdf": {
-      "hash": "a9b443230736946b1f769b334b8c6d45",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571047Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "DELETE_IMAGES.pdf": {
-      "hash": "2c9fdc7cb1a20eaa42ddbed56daffead",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571052Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/session_1766550691.json": {
-      "hash": "f4f89648e9edb486080f6db72aeaa209",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571057Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/29/session_1766994371.json": {
-      "hash": "a555f1f555c5c0e9fd5a148322409ee7",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571062Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/29/session_1767000223.json": {
-      "hash": "555f95b630f922eed0d96cd5a0e88af1",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571067Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/29/session_1766993663.json": {
-      "hash": "a6160b05ea7b794cd2e84eb4f7ae4bec",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571072Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "DLF_13072023190044_BRSR.pdf": {
-      "hash": "dc8857484ce7490ca44f888af5669f19",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571077Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/30/session_1767097844.json": {
-      "hash": "95e2904f5216d1400932db869b7fe92b",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571082Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/24/session_1766550691.json": {
-      "hash": "f4f89648e9edb486080f6db72aeaa209",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571086Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/29/session_1766988669.json": {
-      "hash": "86fd2b8d6418d048fe6a137e01b01abc",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571091Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766471412.json": {
-      "hash": "93f985002daa37ddd8c4dc029c763e9f",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571096Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766472880.json": {
-      "hash": "bf53672fc56fc7afdf14078d7a4eecc2",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571101Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766468612.json": {
-      "hash": "f8a6b3cc72ca458aa6b616df47560a9b",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571106Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766463423.json": {
-      "hash": "0fbd5cd764c09e72dc9669767873fbc7",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571111Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766471314.json": {
-      "hash": "e67b859500a7d15446d55b9fba405a6e",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571116Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766469446.json": {
-      "hash": "ba25605c0e45691bccbc2fc92c74f2f9",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571121Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766469017.json": {
-      "hash": "b86743ccf849d4f0ec3260b1a7f61ac7",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571126Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766464384.json": {
-      "hash": "419acd5efc914bfcfc931e9d6d6f8c9e",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571130Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/22/session_1766402327.json": {
-      "hash": "49bf8bfae951ab24509fc56fe6021e8d",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571135Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766637373.json": {
-      "hash": "cdcb973e1134471d0a46e61641ad16d0",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571140Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766630156.json": {
-      "hash": "f53f835158582b34b75d66b028682fb3",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571145Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766629873.json": {
-      "hash": "4302c9a0c013a4c053ef8ada8d325459",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571149Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766637337.json": {
-      "hash": "dcac54e3014b5949fd8238737261a068",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571154Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766628890.json": {
-      "hash": "eb064a167595551a42ff0389a5288a5a",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571159Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766628651.json": {
-      "hash": "cf252312ef050bb5fdde9a12bcd5c60d",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571164Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/02/session_1767346153.json": {
-      "hash": "200dc82ae59ba181c7c297cfbe420e46",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571168Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/25/session_1766628070.json": {
-      "hash": "adcd2c07cf651fd821a894c7f937e67c",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571173Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "pdfs/Receipt-2050-9059.pdf": {
-      "hash": "87da54c6418cd3c7eabe8dd27992b817",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571178Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/09/session_1767939679.json": {
-      "hash": "bdcddc45b8f2d3bafbfa653290e58bbc",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571183Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "pdfs/2-Pager_BME_Ghana_-_DE.pdf": {
-      "hash": "aa243aee347adc5eb16284ac14064aca",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571187Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "pdfs/2507.04239v1.pdf": {
-      "hash": "1556b001a766fa6cece406726ccff70e",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571192Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "pdfs/1706.03762v7.pdf": {
-      "hash": "18e1b007a1dab45b30cc861ba2dfda25",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571216Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766470384.json": {
-      "hash": "158f5666d24c2f9d7b678a820465154f",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571288Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766469751.json": {
-      "hash": "6ff5e585a32e0aeebaa5153321f73ef3",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571292Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766472146.json": {
-      "hash": "63ee4fd12209550644728ab6caaa1acb",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571297Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2025/12/23/session_1766467612.json": {
-      "hash": "81e7099f450016e23716a41b9c320938",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571302Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/02/session_1767347752.json": {
-      "hash": "fcd596eaacd090c8ca78cd7f19ae7e53",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571307Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/02/session_1767346377.json": {
-      "hash": "512834a964c8fa46e4b3183d6ffc3630",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571313Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/02/session_1767350329.json": {
-      "hash": "ab2820958da1f2c4b6c61e99ddb226db",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571318Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/09/session_1767956953.json": {
-      "hash": "cbb8838eaae235a04b8987d6b7bb1fac",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571323Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/10/session_1768023599.json": {
-      "hash": "f6354e2bb04904505c0ab6ca862761f0",
-      "status": "complete",
-      "indexed_at": "2026-01-10T10:14:41.571328Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/10/session_1768043248.json": {
-      "hash": "962236fa905a50def9c1b867029df326",
-      "status": "complete",
-      "indexed_at": "2026-01-10T11:09:23.101390Z",
-      "chunk_count": 15,
-      "error": null
-    },
-    "conversation_history/2026/01/10/session_1768012645.json": {
-      "hash": "72449b1ae4faf078276628aeac05d82d",
-      "status": "complete",
-      "indexed_at": "2026-01-10T11:14:08.110113Z",
-      "chunk_count": 18,
-      "error": null
-    },
-    "conversation_history/2026/01/10/session_1768025050.json": {
-      "hash": "a0fea9e65e9986c50f5bd5c1d5c75074",
-      "status": "complete",
-      "indexed_at": "2026-01-10T11:15:32.055281Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/10/session_1768025237.json": {
-      "hash": "e4b3d94b587437179c8c20069f5021f0",
-      "status": "complete",
-      "indexed_at": "2026-01-10T11:15:32.055545Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-0-0.png": {
-      "hash": "352909fec60031efa9f17f55349fabba",
-      "status": "complete",
-      "indexed_at": "2026-01-10T11:41:47.275371Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-11-0.png": {
-      "hash": "e20c7eda202920edf4922834ddc6a8c2",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:49:45.492426Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-10-0.png": {
-      "hash": "98cdcb7032a209a12f02a795a4cef501",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:49:53.131242Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-25-0.png": {
-      "hash": "1b5c310469ace284e03bdd17a5a39e8f",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:50:16.708640Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-35-0.png": {
-      "hash": "107916c530c3d5fd2119c69c29d1bee0",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:49:59.724049Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-7-0.png": {
-      "hash": "c0037d24233859be3a94c8bd3f3c3182",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:50:23.424592Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "images/Tesla_Motors_IP_Open_Innovation_and_the_Carbon_Crisis_-_Matthew_Rimmer.pdf-44-0.png": {
-      "hash": "5f71204280b6cf541e559610052c34ea",
-      "status": "complete",
-      "indexed_at": "2026-01-10T13:50:09.831668Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Ideas/NRYN.md": {
-      "hash": "bb1c39a1efc8f8ab9f9db0e2be4afc3f",
-      "status": "complete",
-      "indexed_at": "2026-01-13T06:30:42.015385Z",
-      "chunk_count": 17,
-      "error": null
-    },
-    "Notes/Ideas/Git commands.md": {
-      "hash": "b71f6b171ca520934c2900d8e2fb3229",
-      "status": "complete",
-      "indexed_at": "2026-01-13T05:10:19.593732Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Ideas/Test.md": {
-      "hash": "9cffcc8643bb2ecf88b2d7ef735891c1",
-      "status": "complete",
-      "indexed_at": "2026-01-13T04:45:29.095440Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "Notes/Ideas/attachments/img_352909fec6.png": {
-      "hash": "06cb3fddfa8fe082672978d913f1205c",
-      "status": "complete",
-      "indexed_at": "2026-01-12T17:02:11.080123Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Ideas/attachments/img_0bf6e55a97.png": {
-      "hash": "fe0d25e04caed615fb3716bda6efda07",
-      "status": "complete",
-      "indexed_at": "2026-01-12T17:09:08.965718Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Ideas/attachments/img_880f5fc5eb.png": {
-      "hash": "1e9e32dd5b8841702a0a4fcb49a195c8",
-      "status": "complete",
-      "indexed_at": "2026-01-12T17:10:35.689617Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Ideas/MarkdownTest.md": {
-      "hash": "34c1caa25aea2758154f76d4f380f242",
-      "status": "complete",
-      "indexed_at": "2026-01-13T05:10:28.124140Z",
-      "chunk_count": 16,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768299442.json": {
-      "hash": "20ab1593f1899ea8484a15c15d0d8f5e",
-      "status": "complete",
-      "indexed_at": "2026-01-13T10:22:58.808917Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768300776.json": {
-      "hash": "f5fd8405b0b0bb4372f1bfce38fc92fb",
-      "status": "complete",
-      "indexed_at": "2026-01-13T10:45:42.376814Z",
-      "chunk_count": 15,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768300911.json": {
-      "hash": "864f4fd9b3b08366eae5813c22a4867b",
-      "status": "complete",
-      "indexed_at": "2026-01-13T10:55:34.515760Z",
-      "chunk_count": 5,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768301512.json": {
-      "hash": "297f81bb6f395111c0343bdecaf78bc6",
-      "status": "complete",
-      "indexed_at": "2026-01-13T11:03:19.109311Z",
-      "chunk_count": 45,
-      "error": null
-    },
-    "Notes/Ideas/Plan.md": {
-      "hash": "b7c4e6bb87dc73c5ad986ec594374db2",
-      "status": "complete",
-      "indexed_at": "2026-01-13T11:24:27.998581Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768300299.json": {
-      "hash": "7240f17013d50004a2f9883e49eb3fe0",
-      "status": "complete",
-      "indexed_at": "2026-01-13T11:24:29.558268Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768300021.json": {
-      "hash": "febea16baf5c415f01d5d29a2cf169ac",
-      "status": "complete",
-      "indexed_at": "2026-01-13T11:24:29.753692Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/13/session_1768298791.json": {
-      "hash": "e235b0b0195fe30988d98d2ef934c2bd",
-      "status": "complete",
-      "indexed_at": "2026-01-13T11:24:29.940049Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Ideas/TryThings.md": {
-      "hash": "f3e7b3f5b522dced071e96908d03354c",
-      "status": "complete",
-      "indexed_at": "2026-01-16T02:06:51.294501Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Ideas/Bugs.md": {
-      "hash": "42f5aa0de8d2758c845dee9936467a82",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:01:54.126314Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768396000.json": {
-      "hash": "6e01569fe9c5b535d8542ac0265057ea",
-      "status": "complete",
-      "indexed_at": "2026-01-14T13:15:31.265404Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "nvidia_stock_price.txt": {
-      "hash": "d41d8cd98f00b204e9800998ecf8427e",
-      "status": "complete",
-      "indexed_at": "2026-01-14T13:15:31.284788Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768396150.json": {
-      "hash": "6f010893206d4a4a8a8c3fc80b2c399e",
-      "status": "complete",
-      "indexed_at": "2026-01-14T13:15:48.325753Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768399432.json": {
-      "hash": "a738861a2c1ca084787b72d6c27524c8",
-      "status": "complete",
-      "indexed_at": "2026-01-14T14:11:27.362591Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768400956.json": {
-      "hash": "831f74c7850d8f3a3c592ab9005c6c19",
-      "status": "complete",
-      "indexed_at": "2026-01-14T14:36:58.761846Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768401498.json": {
-      "hash": "81e108188f1633cf1408565e8cd5b419",
-      "status": "complete",
-      "indexed_at": "2026-01-14T14:50:48.811349Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768401855.json": {
-      "hash": "be4f67b7f2c44fe5c30b6a8376d6b045",
-      "status": "complete",
-      "indexed_at": "2026-01-14T14:50:49.750030Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768402462.json": {
-      "hash": "eeee64b80ac666bf965fd4f147f9b22a",
-      "status": "complete",
-      "indexed_at": "2026-01-14T15:03:33.329863Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768403898.json": {
-      "hash": "a20dc4e7a0354ff64e90fe324a7d221d",
-      "status": "complete",
-      "indexed_at": "2026-01-14T15:23:59.125790Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768404353.json": {
-      "hash": "8d0243e1cd2ec3c1a74d1e85841bc2c5",
-      "status": "complete",
-      "indexed_at": "2026-01-14T15:31:13.073743Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768404415.json": {
-      "hash": "8b8421159b8c9e3b927b4c304d2d39fd",
-      "status": "complete",
-      "indexed_at": "2026-01-14T15:32:13.703034Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768404615.json": {
-      "hash": "d5c24e000963ce809e1bf0067b2d78f3",
-      "status": "complete",
-      "indexed_at": "2026-01-14T15:36:48.498992Z",
-      "chunk_count": 13,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768402003.json": {
-      "hash": "4d27353ab9e60a4fe274a7d692c23fe4",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:40.308230Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768403688.json": {
-      "hash": "bde6e6493ac901d3a91fdbc774305ba1",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:40.502657Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768399155.json": {
-      "hash": "7ff93475129d8126f49f0944aa4530c0",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:41.320225Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768395516.json": {
-      "hash": "2c0a8805e6bfa1ae9dbf1e8f7a7d0781",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:40.702777Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768401279.json": {
-      "hash": "4d3240adf395009df57b912b4a7c26fa",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:42.474442Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768400720.json": {
-      "hash": "ab5d6f96102e207a792c18cf15c54187",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:41.113835Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/14/session_1768395583.json": {
-      "hash": "38b6c6f77481189c6abd078865734908",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:18:40.909737Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/AGNotes/agent_capabilities_reference.md": {
-      "hash": "d7c73e582e2782315f7f00413cc605a8",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:48:49.874757Z",
-      "chunk_count": 11,
-      "error": null
-    },
-    "Notes/AGNotes/agentic_implementation_plan.md": {
-      "hash": "6bbf8513c006b32e0b5cf082b3134bb0",
-      "status": "complete",
-      "indexed_at": "2026-01-14T16:48:54.864366Z",
-      "chunk_count": 5,
-      "error": null
-    },
-    "ChatGPT.md": {
-      "hash": "ee395a393801b3e48e29600a6240982a",
-      "status": "complete",
-      "indexed_at": "2026-01-15T10:26:22.669273Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768474294.json": {
-      "hash": "e9775ab7d5acefa02f51539ecff5f819",
-      "status": "complete",
-      "indexed_at": "2026-01-15T10:59:59.345270Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768474519.json": {
-      "hash": "b84c95c92cabbcdb9d4f303394e7a3cc",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:03:35.409231Z",
-      "chunk_count": 19,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768474925.json": {
-      "hash": "2b8191cc7a06fff3bb1963e092b0f31b",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:10:38.420318Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768475166.json": {
-      "hash": "4243ca87fdf35d9272bc4405f764bbec",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:13:11.832648Z",
-      "chunk_count": 13,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768475252.json": {
-      "hash": "d15a5dd46eb6c3b15d0fe17049733a29",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:13:38.568462Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768477398.json": {
-      "hash": "3f5c4b8ce65e40ee0329c69ddcdf371c",
-      "status": "complete",
-      "indexed_at": "2026-01-15T11:49:04.980676Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768478495.json": {
-      "hash": "fdb90ae539874ed0f7cc7e7187eb6606",
-      "status": "complete",
-      "indexed_at": "2026-01-15T12:07:18.798164Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768480078.json": {
-      "hash": "43c0f1bb197625ecc924d7dfc89ded15",
-      "status": "complete",
-      "indexed_at": "2026-01-15T12:36:51.745405Z",
-      "chunk_count": 12,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768483706.json": {
-      "hash": "36dd39ec8302efe6b1e4e90ed6cd7249",
-      "status": "complete",
-      "indexed_at": "2026-01-15T13:47:11.334247Z",
-      "chunk_count": 4,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768478304.json": {
-      "hash": "3afd521a988b15747cf1369789e4f810",
-      "status": "complete",
-      "indexed_at": "2026-01-15T14:34:04.240316Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768476765.json": {
-      "hash": "e4b082559626a28efff4dc755d93b2e5",
-      "status": "complete",
-      "indexed_at": "2026-01-15T14:34:06.897711Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768475660.json": {
-      "hash": "2e329ca2806c0735d30d937336de4d90",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:39:22.274978Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768479537.json": {
-      "hash": "40dedbd8e204506eb97de440adbbcfe8",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:40:35.477360Z",
-      "chunk_count": 14,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768480366.json": {
-      "hash": "4f2c58076076fba448ae00581bc909ce",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:39:35.383926Z",
-      "chunk_count": 4,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768476949.json": {
-      "hash": "8e742f77409dd00cfaf18ca39172e223",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:42:11.412940Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/AGNotes/task.md": {
-      "hash": "a0f2d5b6bd884112a3c6de8b07443ac8",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:40:42.052417Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768479634.json": {
-      "hash": "016090699b00b0c57d5b857b6cb9a1f6",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:42:10.252491Z",
-      "chunk_count": 4,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768476344.json": {
-      "hash": "f95ff766a4b97ac09561fef021d8f538",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:39:20.748430Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_1768475955.json": {
-      "hash": "dd8ed1fe592f080c5c17d814c2761fe4",
-      "status": "complete",
-      "indexed_at": "2026-01-15T15:39:38.272226Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_68495005.json": {
-      "hash": "814df27fd00727be1a4c075edb9f09c7",
-      "status": "complete",
-      "indexed_at": "2026-01-15T16:43:54.867430Z",
-      "chunk_count": 10,
-      "error": null
-    },
-    "conversation_history/2026/01/15/session_68495552.json": {
-      "hash": "a8774ad6537cdaf7f4f18190afa01b2b",
-      "status": "complete",
-      "indexed_at": "2026-01-15T16:51:46.778996Z",
-      "chunk_count": 4,
-      "error": null
-    },
-    "Notes/EAG/ARCHITECTURE.md": {
-      "hash": "e9ad32dac0d2492bd6e289155a7d5666",
-      "status": "complete",
-      "indexed_at": "2026-01-16T03:56:14.350348Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "Notes/EAG/Session 16.md": {
-      "hash": "41210a61d51d700b9f69464ad7450d6d",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:08:08.763637Z",
-      "chunk_count": 11,
-      "error": null
-    },
-    "Notes/EAG/remme_extention.md": {
-      "hash": "77a600699ecda286d82b4e27236db35a",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:08:08.786896Z",
-      "chunk_count": 0,
-      "error": null
-    },
-    "Notes/EAG/AI Agent Course Content.md": {
-      "hash": "ee56fbdf34545e1ad2fbd8c77accfeac",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:10:36.831236Z",
-      "chunk_count": 20,
-      "error": null
-    },
-    "Notes/EAG/Updated Session 16 Content.md": {
-      "hash": "ca4c42a1ef286dd958336f466b6805eb",
-      "status": "complete",
-      "indexed_at": "2026-01-16T12:04:00.441770Z",
-      "chunk_count": 21,
-      "error": null
-    },
-    "Notes/EAG/RAG_walkthrough.md": {
-      "hash": "5773e749745fb525aedb463af6b2f83e",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:10:38.010601Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "Notes/EAG/S16 tasks.md": {
-      "hash": "02470438f4b9886efd8a281fee4fe55e",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:10:04.015750Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/EAG/Missing from 16th.md": {
-      "hash": "7f8d677374b18dc120c722668072c751",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:09:56.248298Z",
-      "chunk_count": 6,
-      "error": null
-    },
-    "Notes/EAG/implementation_plan.md": {
-      "hash": "8ee7ad68164ee594ef42fbbf6991ff18",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:09:07.477905Z",
-      "chunk_count": 10,
-      "error": null
-    },
-    "Notes/EAG/Session 19.md": {
-      "hash": "915a56a181362bd7407c334618418ab3",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:10:00.302773Z",
-      "chunk_count": 4,
-      "error": null
-    },
-    "Notes/EAG/Next Plan for 16th.md": {
-      "hash": "183e51aaa94e1e99208343fb84a1da15",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:09:43.770169Z",
-      "chunk_count": 11,
-      "error": null
-    },
-    "Notes/EAG/ChatGPT on RemMe.md": {
-      "hash": "a4456e9bf83497b3092c96de45fba09d",
-      "status": "complete",
-      "indexed_at": "2026-01-16T04:09:22.052081Z",
-      "chunk_count": 11,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768545682.json": {
-      "hash": "82d9cef4c089a9fc1f5e6465e387ebb2",
-      "status": "complete",
-      "indexed_at": "2026-01-16T06:53:05.915175Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768546096.json": {
-      "hash": "fee643f9a9f568102d534346d094f674",
-      "status": "complete",
-      "indexed_at": "2026-01-16T06:57:17.649842Z",
-      "chunk_count": 12,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768546925.json": {
-      "hash": "69d521ef176f01625930b9a20ba5ef0d",
-      "status": "complete",
-      "indexed_at": "2026-01-16T07:07:50.800635Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Accommodation Options and NetworkX Summary.md": {
-      "hash": "a9c7929702988ac5c53187a5592c45b6",
-      "status": "complete",
-      "indexed_at": "2026-01-16T07:37:19.133451Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768548860.json": {
-      "hash": "c78d0f3b957eb4558afa55bc9e01f846",
-      "status": "complete",
-      "indexed_at": "2026-01-16T08:12:49.099318Z",
-      "chunk_count": 37,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768553286.json": {
-      "hash": "0918b64ce623dc3d1197d60ccd99a710",
-      "status": "complete",
-      "indexed_at": "2026-01-16T08:55:25.035311Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768554337.json": {
-      "hash": "e699adf0db184e05b9977a6cda184fb5",
-      "status": "complete",
-      "indexed_at": "2026-01-16T09:11:12.571617Z",
-      "chunk_count": 3,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768554833.json": {
-      "hash": "31bc8726546582c2065bf5849ac18644",
-      "status": "complete",
-      "indexed_at": "2026-01-16T09:21:55.123486Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768555057.json": {
-      "hash": "f3c3a5d25895f97395a6a273c8974154",
-      "status": "complete",
-      "indexed_at": "2026-01-16T09:22:56.175166Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Arcturus/Silver Price in Bangalore January 16, 2026.md": {
-      "hash": "9aa240062c9e21cca4e7521a256556cc",
-      "status": "complete",
-      "indexed_at": "2026-01-16T09:23:10.049778Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768551978.json": {
-      "hash": "69fcd2953e94752dc1b755b962895932",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:02:48.020522Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768547901.json": {
-      "hash": "394005b05212023f48178fe947c79e71",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:02:48.256236Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Animal Leg Problem Analysis Report.md": {
-      "hash": "fa1abc96af730817bb8a087b395e3443",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:29.885866Z",
-      "chunk_count": 5,
-      "error": null
-    },
-    "Notes/Arcturus/NetworkX Benefits Analysis Report.md": {
-      "hash": "4b098ffd0e76b9ae7483f6612abde773",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:02:51.088541Z",
-      "chunk_count": 2,
-      "error": null
-    },
-    "Notes/Arcturus/Kolkata AQI Report - 2025-12-22.md": {
-      "hash": "292ba0838234c924016e17085eeb21fb",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:30.151088Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Memory Recall Discussions About AQI.md": {
-      "hash": "f3c39a82e7c2340df36a3feeee95d16b",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:26.947363Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/DLF Subsidiary and Holding Company Analysis.md": {
-      "hash": "d999c52bbb382f11f628f93e8ed8cf51",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:15.156906Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768552739.json": {
-      "hash": "d08291d7444b01d5707fb4e1ef3d08ff",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:09.196192Z",
-      "chunk_count": 15,
-      "error": null
-    },
-    "Notes/Arcturus/Analysis of Indian Stock Market Decline (Late Dec 2025 - Jan.md": {
-      "hash": "45109906c57cc9d9d26209b57b54a6d5",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:26.680222Z",
-      "chunk_count": 12,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768554257.json": {
-      "hash": "e15b40a6d960e325662519e499d69b71",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:14.335653Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768553964.json": {
-      "hash": "4d40e783273416a57f3af51dc326e118",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:13.640078Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Dhurandhar Box Office Revenue Report.md": {
-      "hash": "b47a8bcccb03743aa78a6de241f61f91",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:13.390264Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Dhurandhar Box Office Revenue Report (as of December 22, 202.md": {
-      "hash": "7907297b786511442fecb733d54d084a",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:13.119195Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768552251.json": {
-      "hash": "efbebef3aa01abaa7f6af560e3b1549a",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:12.848889Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/Executive Report Average Construction Price of a 1000MW Nucl.md": {
-      "hash": "346cef5d3d0025ea88e9b87bd3c3cc69",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:11.906108Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768552537.json": {
-      "hash": "213f0fddab12fd97acaf40515803e579",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:09.875673Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768553775.json": {
-      "hash": "6c85e3db29fe00162b165d7ac297f2a3",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:12.159948Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "conversation_history/2026/01/16/session_1768554516.json": {
-      "hash": "3156bb79baff92ad44314303c5b411ff",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:11.152060Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/Arcturus/The answer is 5 minutes..md": {
-      "hash": "3bcb49a90bd216dd38f629143b092f7b",
-      "status": "complete",
-      "indexed_at": "2026-01-16T10:03:10.503938Z",
-      "chunk_count": 1,
-      "error": null
-    },
-    "Notes/EAG/Updated Session 16 Content copy.md": {
-      "hash": "95435f1b1fc684a5ef2cb406048d63ef",
-      "status": "complete",
-      "indexed_at": "2026-01-16T12:01:15.760930Z",
-      "chunk_count": 24,
-      "error": null
-    },
     "conversation_history/2026/01/16/session_68565810.json": {
       "hash": "a76cfff7645247296fc4ee1d4c7dff56",
       "status": "complete",
@@ -1232,6 +98,132 @@
       "status": "complete",
       "indexed_at": "2026-02-14T23:52:06.577687Z",
       "chunk_count": 7,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771114166.json": {
+      "hash": "ae5375670d381c694ec6e19a665a3198",
+      "status": "complete",
+      "indexed_at": "2026-02-15T00:15:33.616329Z",
+      "chunk_count": 11,
+      "error": null
+    },
+    "Notes/Arcturus/The Premier Selection Must-Watch Movies on Netflix (February.md": {
+      "hash": "b85b8201b1e1376cdf64961d441e9855",
+      "status": "complete",
+      "indexed_at": "2026-02-15T00:15:42.263858Z",
+      "chunk_count": 10,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771109418.json": {
+      "hash": "d20dffb00d2efa58925be3f7cf687dd5",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:08:53.683159Z",
+      "chunk_count": 4,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_71101761.json": {
+      "hash": "72b4b0955cb36ec723fca93628f547e3",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:08:54.115080Z",
+      "chunk_count": 1,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771113760.json": {
+      "hash": "a19e7d19505f4508ef8d826245311268",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:33.643961Z",
+      "chunk_count": 1,
+      "error": null
+    },
+    "Notes/Arcturus/Indian Stock Market Performance Report - February 14, 2026.md": {
+      "hash": "35d8ec6b31871162105d719f4b2c7f98",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:08:59.912635Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "Notes/Arcturus/Stock Market Performance Report - February 14, 2026.md": {
+      "hash": "edd3d1fc714be3d3302c274eff1430f2",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:37.815387Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771107648.json": {
+      "hash": "1ac7ccb031a940820c8d0595e4886cb0",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:33.206390Z",
+      "chunk_count": 1,
+      "error": null
+    },
+    "Notes/Arcturus/Gold Price Update - February 14, 2026.md": {
+      "hash": "d7aed6503c52d85897961c1f8158e3d6",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:30.773358Z",
+      "chunk_count": 2,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_71100718.json": {
+      "hash": "e683c83bf4b0053420e55ead791bb64e",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:08:59.943013Z",
+      "chunk_count": 1,
+      "error": null
+    },
+    "Notes/Arcturus/Weather Report for Morrisville, North Carolina.md": {
+      "hash": "dddd5faaad7b897dfa18ffdfbc3dbc04",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:33.176429Z",
+      "chunk_count": 3,
+      "error": null
+    },
+    "Notes/Arcturus/3-Day Weather Forecast for Durham, NC.md": {
+      "hash": "eee0675771f93b5f1a41358a9e5661b0",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:30.320720Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771113952.json": {
+      "hash": "9cf1eebd773212a9c98013652ef83412",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:26.622293Z",
+      "chunk_count": 5,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771107026.json": {
+      "hash": "5405dda13e03529546983d5fd2df2468",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:20.865230Z",
+      "chunk_count": 7,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771109729.json": {
+      "hash": "6a83a5599a92df40acf73d6de7066fdf",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:15.656464Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771107312.json": {
+      "hash": "f8b70b2ececd8182726aee0455083c8e",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:11.741024Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771113549.json": {
+      "hash": "9478cb98576091c131f1920dcd80c75a",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:00.928063Z",
+      "chunk_count": 2,
+      "error": null
+    },
+    "Notes/Arcturus/Upcoming Movie Releases A Comprehensive Outlook (2026).md": {
+      "hash": "804e237a193ea64ec3b4ba8ec548e7a0",
+      "status": "complete",
+      "indexed_at": "2026-02-15T04:09:05.768306Z",
+      "chunk_count": 4,
       "error": null
     }
   }
