@@ -439,7 +439,7 @@ class AdvancedUI:
         html_parts.append('</div>')
         
         # Add auto-refresh JavaScript if run_id is provided
-        # This script runs in the page context and can access all buttons
+        # This script directly fetches and updates the graph
         if auto_refresh and run_id:
             refresh_script = f"""
     <script>
@@ -447,86 +447,173 @@ class AdvancedUI:
             var runId = '{run_id}';
             var pollInterval = 2000; // 2 seconds
             var isPolling = true;
-            var refreshAttempts = 0;
+            var pollTimer = null;
             
-            function triggerRefresh() {{
-                if (!isPolling) return;
-                refreshAttempts++;
+            function updateGraph() {{
+                if (!isPolling || !runId) return;
                 
-                // Method 1: Try to find and click the refresh button
-                var allButtons = document.querySelectorAll('button');
-                var refreshClicked = false;
+                // Fetch latest graph data
+                fetch('http://localhost:8000/runs/' + runId + '/graph')
+                    .then(response => response.json())
+                    .then(data => {{
+                        if (data && data.nodes) {{
+                            // Check if execution is complete
+                            var hasRunning = false;
+                            var hasPending = false;
+                            
+                            for (var i = 0; i < data.nodes.length; i++) {{
+                                var node = data.nodes[i];
+                                var status = node.data && node.data.status;
+                                if (status === 'running') {{
+                                    hasRunning = true;
+                                }} else if (status === 'pending') {{
+                                    hasPending = true;
+                                }}
+                            }}
+                            
+                            // If no running or pending nodes, stop polling
+                            if (!hasRunning && !hasPending) {{
+                                isPolling = false;
+                                if (pollTimer) {{
+                                    clearInterval(pollTimer);
+                                    pollTimer = null;
+                                }}
+                                var statusEl = document.querySelector('#auto_refresh_status');
+                                if (statusEl) {{
+                                    statusEl.innerHTML = '⚪ Auto-refresh: OFF (execution complete)';
+                                }}
+                                // Trigger one final refresh via button click
+                                triggerButtonRefresh();
+                                return;
+                            }}
+                            
+                            // Update status indicator
+                            var statusEl = document.querySelector('#auto_refresh_status');
+                            if (statusEl) {{
+                                statusEl.innerHTML = '🟢 Auto-refresh: ON (updating...)';
+                            }}
+                            
+                            // Trigger refresh button click to update the graph
+                            triggerButtonRefresh();
+                        }}
+                    }})
+                    .catch(function(error) {{
+                        console.log('Auto-refresh fetch error:', error);
+                    }});
+            }}
+            
+            function triggerButtonRefresh() {{
+                // Method 1: Try to find by ID first (most reliable)
+                var btnById = document.getElementById('refresh_graph_btn');
+                if (btnById) {{
+                    try {{
+                        btnById.click();
+                        console.log('Auto-refresh: Clicked button by ID');
+                        return;
+                    }} catch(e) {{
+                        console.log('Error clicking button by ID:', e);
+                    }}
+                }}
                 
-                for (var i = 0; i < allButtons.length; i++) {{
-                    var btn = allButtons[i];
+                // Method 2: Find by text content
+                var buttons = document.querySelectorAll('button');
+                for (var i = 0; i < buttons.length; i++) {{
+                    var btn = buttons[i];
                     var btnText = (btn.textContent || btn.innerText || '').trim();
                     
-                    // Check if this is the refresh button
-                    if (btnText.includes('Refresh') || btnText.includes('🔄') || 
-                        btn.id && btn.id.includes('refresh') ||
-                        btn.className && btn.className.includes('refresh')) {{
+                    // Look for refresh button by emoji or text
+                    if (btnText.includes('🔄') || btnText === 'Refresh' || btnText.includes('Refresh')) {{
                         try {{
+                            // Try multiple click methods
+                            if (btn.onclick) {{
+                                btn.onclick();
+                            }}
                             btn.click();
-                            refreshClicked = true;
-                            console.log('Auto-refresh: Clicked refresh button');
-                            break;
+                            
+                            // Also try creating and dispatching a click event
+                            var evt = document.createEvent('MouseEvents');
+                            evt.initEvent('click', true, true);
+                            btn.dispatchEvent(evt);
+                            
+                            console.log('Auto-refresh: Clicked refresh button by text');
+                            return;
                         }} catch(e) {{
                             console.log('Error clicking button:', e);
                         }}
                     }}
                 }}
                 
-                // Method 2: If button click didn't work, check status and update status indicator
-                if (!refreshClicked) {{
-                    fetch('http://localhost:8000/runs/' + runId)
-                        .then(response => response.json())
-                        .then(data => {{
-                            if (data && data.graph && data.graph.nodes) {{
-                                var hasRunning = false;
-                                for (var i = 0; i < data.graph.nodes.length; i++) {{
-                                    var status = data.graph.nodes[i].data && data.graph.nodes[i].data.status;
-                                    if (status === 'running' || status === 'pending') {{
-                                        hasRunning = true;
-                                        break;
-                                    }}
-                                }}
-                                
-                                if (!hasRunning) {{
-                                    // Stop polling after completion
-                                    setTimeout(function() {{
-                                        isPolling = false;
-                                        var statusEl = document.querySelector('#auto_refresh_status');
-                                        if (statusEl) {{
-                                            statusEl.innerHTML = '⚪ Auto-refresh: OFF (execution complete)';
-                                        }}
-                                    }}, 5000);
-                                }}
-                            }}
-                        }})
-                        .catch(function(error) {{
-                            console.log('Auto-refresh check error:', error);
-                        }});
+                // Method 3: Try to find by data attributes or classes
+                var btnByClass = document.querySelector('button[class*="refresh"], button[id*="refresh"]');
+                if (btnByClass) {{
+                    try {{
+                        btnByClass.click();
+                        console.log('Auto-refresh: Clicked button by class/attr');
+                        return;
+                    }} catch(e) {{
+                        console.log('Error clicking button by class:', e);
+                    }}
                 }}
+                
+                console.warn('Auto-refresh: Could not find refresh button. Available buttons:', 
+                    Array.from(document.querySelectorAll('button')).map(b => b.textContent || b.id));
             }}
             
-            // Start auto-refresh after a short delay
-            setTimeout(function() {{
-                // Initial trigger
-                triggerRefresh();
+            // Start polling after page loads
+            function startPolling() {{
+                if (pollTimer) return; // Already started
                 
-                // Then poll every interval
-                var pollTimer = setInterval(function() {{
-                    if (isPolling) {{
-                        triggerRefresh();
-                    }} else {{
-                        clearInterval(pollTimer);
-                    }}
-                }}, pollInterval);
-            }}, 1500);
+                console.log('Auto-refresh: Initializing for run', runId);
+                
+                // Wait a bit for Gradio to fully initialize
+                setTimeout(function() {{
+                    console.log('Auto-refresh: Starting polling');
+                    
+                    // Initial update
+                    updateGraph();
+                    
+                    // Then poll every interval
+                    pollTimer = setInterval(function() {{
+                        if (isPolling && runId) {{
+                            updateGraph();
+                        }} else {{
+                            if (pollTimer) {{
+                                clearInterval(pollTimer);
+                                pollTimer = null;
+                                console.log('Auto-refresh: Stopped polling');
+                            }}
+                        }}
+                    }}, pollInterval);
+                }}, 2000); // Wait 2 seconds for Gradio to initialize
+            }}
             
-            // Pause when page is hidden
+            // Start when DOM is ready
+            if (document.readyState === 'loading') {{
+                document.addEventListener('DOMContentLoaded', function() {{
+                    setTimeout(startPolling, 1000);
+                }});
+            }} else {{
+                setTimeout(startPolling, 1000);
+            }}
+            
+            // Also try starting after a longer delay as fallback
+            setTimeout(function() {{
+                if (!pollTimer && isPolling) {{
+                    console.log('Auto-refresh: Fallback start');
+                    startPolling();
+                }}
+            }}, 3000);
+            
+            // Pause when page is hidden, resume when visible
             document.addEventListener('visibilitychange', function() {{
-                isPolling = !document.hidden;
+                if (document.hidden) {{
+                    console.log('Auto-refresh: Page hidden, pausing');
+                }} else {{
+                    console.log('Auto-refresh: Page visible, resuming');
+                    if (!pollTimer && isPolling) {{
+                        startPolling();
+                    }}
+                }}
             }});
         }})();
     </script>
@@ -589,6 +676,9 @@ class AdvancedUI:
                                 # Hidden state for run_id and graph_data
                                 run_id_state = gr.State(value="")
                                 graph_data_state = gr.State(value={})
+                                
+                                # Hidden trigger for auto-refresh (updates every 2 seconds)
+                                auto_refresh_trigger = gr.Number(value=0, visible=False, elem_id="auto_refresh_trigger")
                                 
                             with gr.Column(scale=1):
                                 gr.Markdown("### Node Details")
@@ -732,6 +822,63 @@ class AdvancedUI:
             mcp_btn.click(show_mcp, outputs=[chat_panel, history_panel, remme_panel, mcp_panel, settings_panel])
             settings_btn.click(show_settings, outputs=[chat_panel, history_panel, remme_panel, mcp_panel, settings_panel])
             
+            # Auto-refresh using Python background task
+            def auto_refresh_background(run_id):
+                """Background task that polls and updates the graph every 2 seconds"""
+                if not run_id:
+                    yield GRAPH_HTML_TEMPLATE, "No active run.", "", {}, []
+                    return
+                
+                iteration = 0
+                while True:
+                    iteration += 1
+                    time.sleep(2)  # Poll every 2 seconds
+                    
+                    if not run_id:
+                        break
+                    
+                    # Check if execution is complete
+                    try:
+                        response = requests.get(f"{API_BASE}/runs/{run_id}", timeout=2)
+                        if response.status_code == 200:
+                            data = response.json()
+                            status = data.get("status", "")
+                            
+                            # Get latest graph data
+                            graph_data = self.get_run_graph(run_id)
+                            if graph_data:
+                                graph_html = self.build_graph_html(graph_data, run_id=run_id, auto_refresh=False)
+                                output = self.get_final_output(run_id)
+                                
+                                # Build node choices
+                                node_choices = []
+                                for node in graph_data.get("nodes", []):
+                                    node_id = str(node.get("id", ""))
+                                    node_data = node.get("data", {})
+                                    agent_type = node_data.get("type", "Unknown")
+                                    node_status = node_data.get("status", "pending")
+                                    label = f"{node_id} - {agent_type} ({node_status})"
+                                    node_choices.append((label, node_id))
+                                
+                                yield graph_html, output, "", graph_data, node_choices
+                                
+                                # If completed or failed, stop polling
+                                if status in ["completed", "failed"]:
+                                    # Check if all nodes are done
+                                    all_done = True
+                                    for node in graph_data.get("nodes", []):
+                                        node_status = node.get("data", {}).get("status", "")
+                                        if node_status in ["running", "pending"]:
+                                            all_done = False
+                                            break
+                                    
+                                    if all_done:
+                                        print(f"Auto-refresh: Execution complete, stopped polling after {iteration} iterations")
+                                        break
+                    except Exception as e:
+                        print(f"Auto-refresh error: {e}")
+                        break
+            
             # Query submission
             def submit_query(query):
                 if not query or not query.strip():
@@ -760,6 +907,10 @@ class AdvancedUI:
                 submit_query,
                 inputs=[query_input],
                 outputs=[run_id_state, graph_html, final_output, graph_data_state, node_selector]
+            ).then(
+                auto_refresh_background,
+                inputs=[run_id_state],
+                outputs=[graph_html, final_output, node_details, graph_data_state, node_selector]
             )
             
             # Graph polling and updates
@@ -822,8 +973,6 @@ class AdvancedUI:
                 inputs=[run_id_state, graph_data_state],
                 outputs=[graph_html, final_output, node_details, graph_data_state, node_selector]
             )
-            
-            
             
             # Track run_id and trigger auto-refresh updates
             def update_current_run(new_run_id):

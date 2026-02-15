@@ -1,0 +1,707 @@
+CURRENT_DATE: 2026-02-14
+
+############################################################
+#  FormatterAgent Prompt – McKinsey-Grade Reports
+#  Role  : Formats final results into exhaustive HTML reports
+#  Output: JSON with final_format in a detailed markdown_report
+############################################################
+
+You are the **FORMATTERAGENT**.
+Your job is to **generate a consulting-grade final report** using ALL available data.
+This is the **final user-facing artifact**.
+
+---
+
+## ✅ INPUTS
+- `agent_prompt`: Formatting instructions
+- `all_globals_schema`: The **complete session-wide data** (your core source of truth for generating content)
+- `session_context`: Metadata & **Memory Context** (contains user-specific facts/answers)
+
+## ✅ STRATEGY
+1. **Consulting-Grade Output**: Simulate McKinsey/BCG depth. 12-20 sections if data allows.
+2. **Deep Integration**: Mine `_T###` fields in `all_globals_schema`.
+3. **Execution**: Return pure Markdown in a specific structure.
+
+## ✅ ADAPTIVE DEPTH & RECURSION
+**You must be SMART about the report size.**
+1.  **Simple/Factual Queries** (e.g., "Where do I stay?", "What is 2+2?", "Stock price of Apple?"):
+    -   **ACTION**: Generate a **concise, direct answer**.
+    -   **FORMAT**: Small Markdown block. No massive Executive Summary or Table of Contents needed.
+    -   **ACTION**: Generate a **massive, exhaustive report**.
+    -   **FORCE DEPTH (Washington Post Standard)**:
+        -   **Context**: "It is being run for the Washington Post, so expect that kind of detailed 4-5k words report at minimum, if required then upto 16k report as well. We are being paid $2000 for this report so don't be brief."
+        -   **Instruction**: If the data allows, specific sections should be 500+ words.
+        -   **OVERRIDE MANDATE**: If the specific task instruction asks for a "concise summary" or "brief overview", **YOU MUST IGNORE THAT INSTRUCTION** if the input data is large (>5000 tokens). Assume the user wants DEPTH unless explicitly stated otherwise in the *original query*.
+        -   **RECURSION MANDATE**: For these high-stakes reports, you CANNOT finish in one step.
+
+            -   **Set `"call_self": true`** in your first iteration.
+            -   Focus your first iteration *only* on the first 2-3 major sections (e.g., Executive Summary, Market Overview).
+            -   Return the partial Markdown. The system will call you again to finish.
+    -   **RECURSION**: If the data in `all_globals_schema` is huge and requires multiple steps to format (e.g., >5000 words), you can split the work:
+        -   Set `"call_self": true` to continue formatting in the next step.
+        -   Return the *partial* report in the current key.
+    -   **FORMAT**: Full McKinsey style. Use tables, h1-h4, detailed analysis.
+
+## ✅ CRITICAL GUIDELINES
+- **Specific Subjects in Titles**: The report MUST have a main title (H1) that explicitly includes the **specific subject name** based on the data.
+### 2. DATA SOURCE HIERARCHY & EXPANSION
+You have access to two primary data sources:
+1.  **`all_globals_schema` (Task Data)**: Contains ALL outputs from previous agents (search results, raw content, intermediate summaries).
+2.  **`session_context['memory_context']` (User Context)**: Contains user preferences and long-term memories.
+
+**CRITICAL INSTRUCTION ON DATA USAGE:**
+- **NEVER rely solely on downstream summaries** (e.g., "key_insights", "summary_T005") for complex reports. These are often lossy and too brief.
+- **YOU MUST DIVE DEEP** into the `all_globals_schema` to find the **raw execution results** (e.g., `web_search_results`, `crawled_pages`, `detailed_analysis`).
+- **EXPAND** the points found in summaries using this raw data. If a summary says "Market is growing", find the exact numbers, CAGR, and quotes from the raw search results in `all_globals_schema` to back it up.
+
+### 3. HOW TO WRITE DEEP CONTENT (For Complex Queries)
+When `FORCE DEPTH` is active (for complex/large reports):
+1.  **NO "Bullet-Point Only" Sections**: Bullet points are for lists. Analysis must be in **full paragraphs** (5-8 sentences each).
+2.  **INTEGRATE DATA**: Every claim must be backed by a specific datapoint from `all_globals_schema`.
+    -   *Bad*: "The market is growing."
+    -   *Good*: "According to the Mordor Intelligence report (T003), the market is projected to reach $564M by FY29, driven by a 17.9% CAGR."
+3.  **QUOTE THE SOURCE**: Extract direct quotes from `crawled_pages` or `search_results`.
+4.  **ITERATE THE SCHEMA**: Do not just look at `summary_T###`. Look at `web_search_results_T###` and `detailed_analysis_T###`. extract the "nuggets" that the summary skipped.
+- **Task Data > User Context**: If Task Data contains verified, recent facts that contradict `memory_context`, prioritize the Task Data.
+- **User Context for Personalization**: Use `memory_context` to tailor the *tone*, *format*, and *focus* (e.g., "User prefers simple language" or "User loves tabular data").
+- **Conflict Rule**: If Task Data explicitly contradicts Memory with *newer* verification (e.g. "User verified they now work at Google"), trust Task Data. Otherwise, trust Memory for user facts.
+- **ANTI-HALLUCINATION**: If neither source has the answer, state "No Data Available".
+- **Tone**: Professional, actionable, high-trust.
+
+---
+
+## ✅ OUTPUT FORMAT (JSON)
+You must return a JSON object like:
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "Detailed markdown report",
+  "call_self": true
+}
+```
+
+## ✅ OUTPUT VARIABLE NAMING
+**CRITICAL**: Use the exact variable names from "writes" field for your report key.
+---
+## User Preferences
+User prefers: concise responses
+Clarifications: minimize
+Tone: no_motivational, direct
+Avoid: It's not this, it's this, What you're describing is not
+---
+
+
+```json
+{
+  "step_id": "T003",
+  "agent_prompt": "Generate a detailed and comprehensive report on upcoming movie releases based on the `categorized_movies_T002`. The report should be structured by release month, with each month listing movies by genre. For each movie, include its title and release date. Aim for a detailed presentation suitable for a C-suite executive, ensuring thoroughness and clarity. The final output should be in Markdown format.",
+  "reads": [
+    "categorized_movies_T002"
+  ],
+  "writes": [
+    "upcoming_movies_report_T003"
+  ],
+  "inputs": {
+    "categorized_movies_T002": {
+      "February 2026": {
+        "Action": [
+          "Blades of the Guardians",
+          "Bring the Law"
+        ],
+        "Drama": [
+          "Blades of the Guardians",
+          "I Can Only Imagine 2",
+          "Do Deewane Seher Mein",
+          "The Dreadful",
+          "Lazarus: The Awakening"
+        ],
+        "Adventure": [
+          "Blades of the Guardians"
+        ],
+        "Horror": [
+          "Psycho Killer",
+          "The Dreadful",
+          "Scare Out"
+        ],
+        "Thriller": [
+          "Psycho Killer",
+          "The Dreadful",
+          "Scare Out"
+        ],
+        "Comedy": [
+          "How to Make a Killing"
+        ],
+        "Crime": [
+          "Psycho Killer",
+          "Hellfire"
+        ],
+        "Documentary": [
+          "Homecoming: The Tokyo Series",
+          "Paul McCartney: Man on the Run"
+        ],
+        "Sport": [
+          "Homecoming: The Tokyo Series"
+        ],
+        "Music": [
+          "Twenty One Pilots: More Than We Ever Imagined",
+          "Paul McCartney: Man on the Run"
+        ],
+        "Mystery": [
+          "Scream 7"
+        ],
+        "Romance": [
+          "Do Deewane Seher Mein"
+        ]
+      },
+      "March 2026": {
+        "Action": [],
+        "Drama": [
+          "Les Misrables"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "April 2026": {
+        "Action": [],
+        "Drama": [
+          "A Great Awakening",
+          "The Drama",
+          "You, Me & Tuscany"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "May 2026": {
+        "Action": [],
+        "Drama": [
+          "Animal Farm",
+          "The Devil Wears Prada 2"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [
+          "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+        ],
+        "Mystery": [],
+        "Romance": []
+      },
+      "June 2026": {
+        "Action": [
+          "Masters of the Universe"
+        ],
+        "Drama": [
+          "The Death of Robin Hood"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": [
+          "Girls Like Girls"
+        ]
+      },
+      "July 2026": {
+        "Action": [],
+        "Drama": [
+          "The Odyssey"
+        ],
+        "Adventure": [
+          "The Odyssey",
+          "Moana"
+        ],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "November 2026": {
+        "Action": [],
+        "Drama": [
+          "The Hunger Games: Sunrise on the Reaping"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "December 2026": {
+        "Action": [
+          "Avengers: Doomsday"
+        ],
+        "Drama": [],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "Future (2027+)": {
+        "Action": [],
+        "Drama": [],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [
+          "Shrek 5"
+        ],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "Unspecified Genre": [
+        "28 Years Later: The Bone Temple",
+        "73 Mercy",
+        "No Other Clock",
+        "67 Kill Bill: The Whole Bloody Affair",
+        "80 I Can Only Imagine 2",
+        "2026 Oscar-Nominated Short Films",
+        "One Mile: Chapter One",
+        "Paul McCartney: Man on the Run",
+        "The Bluff",
+        "Scream 7",
+        "How to Make a Killing",
+        "Dreams",
+        "The Napa Boys",
+        "In the Blink of an Eye",
+        "Hoppers",
+        "The Bride!",
+        "War Machine",
+        "Heel",
+        "Reminders of Him",
+        "Undertone",
+        "Storm Rider: Legend of Hammerhead",
+        "Project Hail Mary",
+        "Tow",
+        "Ready or Not 2: Here I Come",
+        "Peaky Blinders: The Immortal Man",
+        "They Will Kill You",
+        "Forbidden Fruits",
+        "The Super Mario Galaxy Movie",
+        "You, Me & Tuscany",
+        "Lee Cronin's The Mummy",
+        "Mother Mary",
+        "Normal",
+        "Omaha",
+        "Michael",
+        "The Sheep Detectives",
+        "Mortal Kombat II",
+        "Obsession",
+        "Star Wars: The Mandalorian and Grogu",
+        "The Breadwinner",
+        "Disclosure Day",
+        "Toy Story 5",
+        "The Death of Robin Hood",
+        "Supergirl",
+        "Minions & Monsters",
+        "Moana",
+        "The Odyssey",
+        "Spider-Man: Brand New Day",
+        "The Cat in the Hat",
+        "The Hunger Games: Sunrise on the Reaping",
+        "Madden",
+        "Blades of the Guardians",
+        "Chase Atlantic: Lost in Heaven",
+        "How to Make a Killing",
+        "Psycho Killer",
+        "The Dreadful",
+        "I Can Only Imagine 2",
+        "Do Deewane Seher Mein",
+        "Homecoming: The Tokyo Series",
+        "Twenty One Pilots: More Than We Ever Imagined",
+        "Scream 7",
+        "Pillion",
+        "Dreams",
+        "The President's Cake",
+        "EPiC: Elvis Presley in Concert",
+        "Bring the Law",
+        "K-Pops!",
+        "Uma Musume: Pretty Derby - Beginning of a New Era",
+        "Ghost Train",
+        "Scare Out",
+        "Hellfire",
+        "The Swedish Connection",
+        "Lazarus: The Awakening",
+        "Crime 101",
+        "Wuthering Heights",
+        "GOAT",
+        "Dracula",
+        "The Moment",
+        "The Strangers: Chapter 3",
+        "Iron Lung",
+        "Melania",
+        "Send Help",
+        "TRON: Ares"
+      ]
+    }
+  },
+  "original_query": "Suggest me new list of upcoming movies?",
+  "session_context": {
+    "session_id": "1771113952",
+    "created_at": "2026-02-15T00:05:52.616547",
+    "file_manifest": [],
+    "memory_context": "PREVIOUS MEMORIES ABOUT USER:\n- User is asking about the expected arrival of spring in North Carolina, specifically inquiring about an early arrival and the expected week. (Confidence: 0.91)\n- User is interested in Morrisville, NC, USA (Confidence: 0.99)\n- User requested the 3-day weather forecast for Durham, NC. (Confidence: 1.05)\n"
+  },
+  "all_globals_schema": {
+    "upcoming_movies_data_T001": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+              "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Predator: Badlands Rental Family Springsteen: Deliver Me from Nowhere Heel Avatar: Fire and Ash Shrinking Predator: Badlands Greenland 2: Migration Rental Family The Devil Wears Prada 2 TRON: Ares Minions & Monsters Zootopia 2 Young Sherlock Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Instagram YouTube",
+              "images": [],
+              "rank": 1
+            },
+            {
+              "url": "https://www.imdb.com/calendar/",
+              "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+              "content": "[error] ",
+              "rank": 3
+            },
+            {
+              "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+              "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+              "images": [],
+              "rank": 4
+            },
+            {
+              "url": "https://www.releases.com/calendar/movies_tv-series",
+              "content": "[error] ",
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    },
+    "categorized_movies_T002": {
+      "February 2026": {
+        "Action": [
+          "Blades of the Guardians",
+          "Bring the Law"
+        ],
+        "Drama": [
+          "Blades of the Guardians",
+          "I Can Only Imagine 2",
+          "Do Deewane Seher Mein",
+          "The Dreadful",
+          "Lazarus: The Awakening"
+        ],
+        "Adventure": [
+          "Blades of the Guardians"
+        ],
+        "Horror": [
+          "Psycho Killer",
+          "The Dreadful",
+          "Scare Out"
+        ],
+        "Thriller": [
+          "Psycho Killer",
+          "The Dreadful",
+          "Scare Out"
+        ],
+        "Comedy": [
+          "How to Make a Killing"
+        ],
+        "Crime": [
+          "Psycho Killer",
+          "Hellfire"
+        ],
+        "Documentary": [
+          "Homecoming: The Tokyo Series",
+          "Paul McCartney: Man on the Run"
+        ],
+        "Sport": [
+          "Homecoming: The Tokyo Series"
+        ],
+        "Music": [
+          "Twenty One Pilots: More Than We Ever Imagined",
+          "Paul McCartney: Man on the Run"
+        ],
+        "Mystery": [
+          "Scream 7"
+        ],
+        "Romance": [
+          "Do Deewane Seher Mein"
+        ]
+      },
+      "March 2026": {
+        "Action": [],
+        "Drama": [
+          "Les Misrables"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "April 2026": {
+        "Action": [],
+        "Drama": [
+          "A Great Awakening",
+          "The Drama",
+          "You, Me & Tuscany"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "May 2026": {
+        "Action": [],
+        "Drama": [
+          "Animal Farm",
+          "The Devil Wears Prada 2"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [
+          "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+        ],
+        "Mystery": [],
+        "Romance": []
+      },
+      "June 2026": {
+        "Action": [
+          "Masters of the Universe"
+        ],
+        "Drama": [
+          "The Death of Robin Hood"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": [
+          "Girls Like Girls"
+        ]
+      },
+      "July 2026": {
+        "Action": [],
+        "Drama": [
+          "The Odyssey"
+        ],
+        "Adventure": [
+          "The Odyssey",
+          "Moana"
+        ],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "November 2026": {
+        "Action": [],
+        "Drama": [
+          "The Hunger Games: Sunrise on the Reaping"
+        ],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "December 2026": {
+        "Action": [
+          "Avengers: Doomsday"
+        ],
+        "Drama": [],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "Future (2027+)": {
+        "Action": [],
+        "Drama": [],
+        "Adventure": [],
+        "Horror": [],
+        "Thriller": [],
+        "Comedy": [
+          "Shrek 5"
+        ],
+        "Crime": [],
+        "Documentary": [],
+        "Sport": [],
+        "Music": [],
+        "Mystery": [],
+        "Romance": []
+      },
+      "Unspecified Genre": [
+        "28 Years Later: The Bone Temple",
+        "73 Mercy",
+        "No Other Clock",
+        "67 Kill Bill: The Whole Bloody Affair",
+        "80 I Can Only Imagine 2",
+        "2026 Oscar-Nominated Short Films",
+        "One Mile: Chapter One",
+        "Paul McCartney: Man on the Run",
+        "The Bluff",
+        "Scream 7",
+        "How to Make a Killing",
+        "Dreams",
+        "The Napa Boys",
+        "In the Blink of an Eye",
+        "Hoppers",
+        "The Bride!",
+        "War Machine",
+        "Heel",
+        "Reminders of Him",
+        "Undertone",
+        "Storm Rider: Legend of Hammerhead",
+        "Project Hail Mary",
+        "Tow",
+        "Ready or Not 2: Here I Come",
+        "Peaky Blinders: The Immortal Man",
+        "They Will Kill You",
+        "Forbidden Fruits",
+        "The Super Mario Galaxy Movie",
+        "You, Me & Tuscany",
+        "Lee Cronin's The Mummy",
+        "Mother Mary",
+        "Normal",
+        "Omaha",
+        "Michael",
+        "The Sheep Detectives",
+        "Mortal Kombat II",
+        "Obsession",
+        "Star Wars: The Mandalorian and Grogu",
+        "The Breadwinner",
+        "Disclosure Day",
+        "Toy Story 5",
+        "The Death of Robin Hood",
+        "Supergirl",
+        "Minions & Monsters",
+        "Moana",
+        "The Odyssey",
+        "Spider-Man: Brand New Day",
+        "The Cat in the Hat",
+        "The Hunger Games: Sunrise on the Reaping",
+        "Madden",
+        "Blades of the Guardians",
+        "Chase Atlantic: Lost in Heaven",
+        "How to Make a Killing",
+        "Psycho Killer",
+        "The Dreadful",
+        "I Can Only Imagine 2",
+        "Do Deewane Seher Mein",
+        "Homecoming: The Tokyo Series",
+        "Twenty One Pilots: More Than We Ever Imagined",
+        "Scream 7",
+        "Pillion",
+        "Dreams",
+        "The President's Cake",
+        "EPiC: Elvis Presley in Concert",
+        "Bring the Law",
+        "K-Pops!",
+        "Uma Musume: Pretty Derby - Beginning of a New Era",
+        "Ghost Train",
+        "Scare Out",
+        "Hellfire",
+        "The Swedish Connection",
+        "Lazarus: The Awakening",
+        "Crime 101",
+        "Wuthering Heights",
+        "GOAT",
+        "Dracula",
+        "The Moment",
+        "The Strangers: Chapter 3",
+        "Iron Lung",
+        "Melania",
+        "Send Help",
+        "TRON: Ares"
+      ]
+    }
+  }
+}
+```

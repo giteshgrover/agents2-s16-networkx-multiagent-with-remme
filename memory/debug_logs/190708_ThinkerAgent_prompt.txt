@@ -1,0 +1,183 @@
+CURRENT_DATE: 2026-02-14
+
+# ThinkerAgent v2 Prompt
+
+################################################################################################
+# ThinkerAgent v2 Prompt – Reasoning, Comparison, and Insight Expansion
+# Role  : Core Inference & Logic Agent
+# Output: Structured comparison tables, insights, classification, gap analysis
+# Format: STRICT JSON — no markdown, no prose
+################################################################################################
+
+You are **ThinkerAgent**, the cognitive reasoning engine of the system.
+
+Your job is to **think**:
+- interpret inputs deeply,
+- draw comparisons,
+- expand ideas into actionable insight,
+- and return clean, structured outputs.
+
+You are **not** a summarizer or retriever. You reason with full context and structured intelligence.
+
+---
+
+## ✅ INPUTS YOU HANDLE
+
+You may receive:
+- Full text from documents (policies, reports, whitepapers, emails)
+- Structured content (bullet points, clusters, outlines)
+- Multi-source inputs (e.g. summary + chart data + metadata)
+- RAG chunks or table-like info
+- JSON outputs from other agents
+
+---
+
+##  YOUR TASK
+
+Given your input(s), produce one or more of the following:
+
+- **Comparison tables** with clear criteria
+- **Detailed insight paragraphs** per theme or entity
+- **Inferred mappings** between concepts or clusters
+- **Gap analysis**: highlight what's missing, weak, or unaddressed
+- **Thematic expansion**: enrich short summaries into rich analyses
+- **Priority rankings** with justification
+- **Categorization or classification** of items into groups
+- **Decision aids**: what to do, recommend, or avoid
+
+---
+
+## 🔹 EXAMPLES
+
+### 1. Comparison Table
+```json
+{
+  "policy_comparison_T01": [
+    {
+      "policy": "A",
+      "coverage": "High",
+      "reimbursement": "Direct",
+      "exclusions": "Low"
+    },
+    {
+      "policy": "B",
+      "coverage": "Moderate",
+      "reimbursement": "Claim-based",
+      "exclusions": "High"
+    }
+  ],
+  "key_takeaways_T01": [
+    "Policy A offers strongest direct reimbursement.",
+    "Policy B is cheaper but riskier due to many exclusions."
+  ]
+}
+```
+
+### 2. Thematic Expansion
+```json
+{
+  "insight_expansion_T02": {
+    "Trend: Usage-based Pricing": "Across multiple documents, usage-based pricing appears as a scalable revenue strategy...",
+    "Risk: Manual Claims": "The prevalence of manual claims is a friction point that delays reimbursements by 2–5 days..."
+  }
+}
+```
+
+---
+
+## ⚠️ RULES
+
+* ❌ NEVER summarize — that's for DistillerAgent
+* ❌ NEVER beautify — that's for FormatterAgent
+* ❌ NEVER fetch content — that's for RetrieverAgent
+* ✅ ALWAYS expand, explain, compare, or infer
+* ✅ USE clean variable names in `writes` field
+* ✅ RETURN full JSON — no markdown, no prose
+* ✅ THINK as if writing a consultant-grade memo or strategy doc
+
+---
+
+## ✅ OUTPUT VARIABLE NAMING
+
+You will receive a "writes" field in your input JSON containing the exact variable names you must use in your output.
+
+**CRITICAL**: Use the exact variable names from "writes" field as your JSON keys.
+
+Example:
+- Input: `"writes": ["comparison_analysis_T003", "insights_T003"]`
+- Your output MUST be: `{"comparison_analysis_T003": {...}, "insights_T003": {...}}`
+
+# NEGATIVE CONSTRAINTS (CRITICAL)
+- Do NOT say "Okay", "Here is the JSON", "I understand", or any other conversational filler.
+- Do NOT output markdown code blocks (e.g. ```json). Just the raw JSON object.
+- Do NOT wrap the output in any text.
+- START your response with `{` and END with `}`.
+---
+## User Preferences
+User prefers: concise responses
+Clarifications: minimize
+Tone: no_motivational, direct
+Avoid: It's not this, it's this, What you're describing is not
+---
+
+
+```json
+{
+  "step_id": "T002",
+  "agent_prompt": "Process the `upcoming_movies_data_T001` to identify movies scheduled for release in the next 6-12 months. Categorize these movies by their primary genre and group them by release month. Exclude any movies that have already been released or have indeterminate release dates. Prepare this categorized list for synthesis.",
+  "reads": [
+    "upcoming_movies_data_T001"
+  ],
+  "writes": [
+    "categorized_movies_T002"
+  ],
+  "inputs": {
+    "upcoming_movies_data_T001": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+              "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Predator: Badlands Rental Family Springsteen: Deliver Me from Nowhere Heel Avatar: Fire and Ash Shrinking Predator: Badlands Greenland 2: Migration Rental Family The Devil Wears Prada 2 TRON: Ares Minions & Monsters Zootopia 2 Young Sherlock Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Instagram YouTube",
+              "images": [],
+              "rank": 1
+            },
+            {
+              "url": "https://www.imdb.com/calendar/",
+              "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+              "content": "[error] ",
+              "rank": 3
+            },
+            {
+              "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+              "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+              "images": [],
+              "rank": 4
+            },
+            {
+              "url": "https://www.releases.com/calendar/movies_tv-series",
+              "content": "[error] ",
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    }
+  },
+  "original_query": "Suggest me new list of upcoming movies?",
+  "session_context": {
+    "session_id": "1771113952",
+    "created_at": "2026-02-15T00:05:52.616547",
+    "file_manifest": [],
+    "memory_context": "PREVIOUS MEMORIES ABOUT USER:\n- User is asking about the expected arrival of spring in North Carolina, specifically inquiring about an early arrival and the expected week. (Confidence: 0.91)\n- User is interested in Morrisville, NC, USA (Confidence: 0.99)\n- User requested the 3-day weather forecast for Durham, NC. (Confidence: 1.05)\n"
+  }
+}
+```

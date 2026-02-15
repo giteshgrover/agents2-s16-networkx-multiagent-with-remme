@@ -1,0 +1,379 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "session_id": "1771113760",
+    "original_query": "What about the silver price?",
+    "file_manifest": [],
+    "created_at": "2026-02-15T00:02:40.533571",
+    "status": "completed",
+    "globals_schema": {
+      "silver_price_usd_T001": {
+        "content": [
+          {
+            "type": "text",
+            "text": [
+              {
+                "url": "https://duckduckgo.com/y.js?ad_domain=moneymetals.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=fwlc%2D3sGDpzNqQlz9uvVUJ_m08yw%2DE7k3iZjYiB6Pju94uAqfqr2M8AGt8SxTVmlhqaB8l2TewngVJnoi9_gx7eGw4ZWczEW__lsJ%2D6wKg7BuXs62Da1TiApv7iiCeXbUWunkWeIuisPSk81B9r8W_8vV%2D8HKjskn3_30pTxHQc.UDssEc6ZkvCIozM%2DXFFrJA&rut=c8b352cf3c16982db9e00d10ff78a2cfc634b6f2d47fe46298adad820aae8254&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8pXfIJTY1oKSzMiF61G8B9TVUCUz1NlbsyXglbjJdi4na7uchMsIq4uMoWffcGwg0pF_ZDBAq%2DMFUWxgtF3pDlnsNO_U6SR7GGkIwuhM4PGShlBIH82QXRM8c3vW1_XWF6V_Pd3SI8PMLLgMB9UN2Z3HhXSr31NJCoKnRPOpnVb2xIBdUOgSZv_Vc813gvsuFgwB_nboUQvPv6_xTcc4tZf3L5CY%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uZXltZXRhbHMuY29tJTJmYnV5JTJmc2lsdmVyJTNmZ2NfaWQlM2Q0MTI1OTU3NTMlMjZtc2Nsa2lkJTNkYzY3OTM4ODY3MjE5MTc2ZDdiYzY1MTE3N2YyNTc5NTQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCTkctTU1FLWVDb21tLVNlYXJjaC1QcmljZXMtU2lsdmVyJTI2dXRtX3Rlcm0lM2RzaWx2ZXIlMjUyMHNwb3QlMjUyMHByaWNlJTI1MjBjaGFydCUyNTIwdG9kYXklMjZ1dG1fY29udGVudCUzZFNpbHZlciUyNTIwUHJpY2VzJTI1MjB0byUyNTIwUHJvZHVjdA%26rlid%3Dc67938867219176d7bc651177f257954&vqd=4-131909685363158948027534360958120775780&iurl=%7B1%7DIG%3D0F364526DE3C4C5A9D37C8D239293B8E%26CID%3D0EAC3CCD9A0061241F482BCC9B8B6058%26ID%3DDevEx%2C5045.1",
+                "content": "[error] ",
+                "rank": 1
+              },
+              {
+                "url": "https://www.kitco.com/charts/livesilver.html",
+                "content": "Silver Price Today | Price of Silver Per Ounce | 24 Hour Spot Chart | KITCO BUY/SELL GOLD & SILVER Bullion Coins and Bars Precious Metals All Metal Quotes Cryptos Base Metals Markets Mining News About Kitco Forum NEW Jeweler Resources Video News Opinion Kitco Forum Jeweler Resources Newsletters Live Charts / silver Live silver Price Bid 77.32 + 2.13 ( + 2.83% ) Ask 77.57 ounce 77.32 + 2.13 gram 2.49 + 0.07 Kilo 2,485.93 + 68.38 pennyweight 3.87 + 0.11 tola 29.00 + 0.80 tael 93.97 + 2.58 73.86 79.47 Day's Range KITCO All Metal Quotes Cryptocurrencies Markets News Commentaries Mining We appreciate your feedback Submit Terms of Use Terms & Conditions Privacy Policy | Your Privacy Choices 2026 Kitco Metals Inc.",
+                "images": [],
+                "rank": 2
+              },
+              {
+                "url": "https://www.bullion.com/spotprices/silver-price",
+                "content": "Live Silver Prices | Silver Prices Per Ounce | Bullion.com Gold $5,059.40 $120.30 2.43 % Silver $78.24 $2.25 2.93 % Platinum $2,084.40 $64.90 3.18 % Palladium $1,720.00 $61.50 3.73 % My Account My Account My Orders My Alerts Favorites Help Center Sign In New Customer ? Sign up Cart 0 Cart Summary There are no items in the cart. Hello, Sign In Trending Best Sellers 2026 Products Weekly Finds Compare & Save Shop by category Gold Silver Platinum & More Others Charts Learn Help & Settings 1-833-629-3927 My Account Customer Service Sign In Gold Featured Best Sellers 2026 Products Shop By Mint Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Gold Featured Best Sellers 2026 Products Shop By Mint Shop All Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Shop All Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Shop All Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Gold $5,059.40 $120.30 2.43 % View Chart Silver $78.24 $2.25 2.93 % View Chart Platinum $2,084.40 $64.90 3.18 % View Chart Palladium $1,720.00 $61.50 3.73 % View Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Weekly Finds Compare & Save Fast & Discreet Shipping 1-833-629-3927 Bullion.com Silver Spot Price Gold Silver Platinum Palladium Silver Spot Price & Charts Ounces Ounces Grams Kilo Our spot price chart accurately reports silver spot prices in real-time. Use the table to the right to discover the silver price today in ounces, grams, and kilograms. Identify trends by examining our historical spot price chart below, showing the price of silver in various time frames, including 24-hours, 3 days, 1 week, 1 month, 3 months, YTD, 1 year, 5 years, and all time. Bookmark this page to receive accurate and up-to-date silver price information. Learn more about spot price, and how to use it, in the FAQ section below. Live Metal Spot Price (24hrs) Feb 13, 2026 4:59 PM ET Silver Spot Prices Today's Price Change Silver Price Per Ounce $78.24 $2.25 Silver Price Per Gram $2.52 $0.07 Silver Price Per Kilo $2,515.47 $72.34 Silver Spot Price Create a Price Alert $78.24 $2.25 2.93% Ask $78.24 Bid $75.24 Change $2.25 2.",
+                "images": [],
+                "rank": 3
+              },
+              {
+                "url": "https://sdbullion.com/silver-prices",
+                "content": "Silver Spot Price | Live Silver Price Today | SD Bullion JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Free Shipping on $199+ Orders Search Search 1-800-294-8732 Silver Silver chevron-right SILVER COINS SILVER COINS chevron-right chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics chevron-left SILVER COINS chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics SILVER ROUNDS SILVER ROUNDS chevron-right chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening chevron-left SILVER ROUNDS chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening SILVER BARS SILVER BARS chevron-right chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars chevron-left SILVER BARS chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars OTHER SILVER OTHER SILVER chevron-right chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles Navy Privy Silver Eagles chevron-left OTHER SILVER chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles",
+                "images": [],
+                "rank": 4
+              },
+              {
+                "url": "https://coinbin.com/sterling-silver-price-per-oz/",
+                "content": "Sterling Silver Price Per Oz (Live) | CoinBin.com Current Rates USD BitCoin $69,725 Gold $5,041.20 Silver $77.43 Home Coins Dollars Morgan Silver Dollars Peace Dollars Seated Liberty Dollars Half Dollars Kennedy Half Dollars Franklin Half Dollars Walking Liberty Half Dollars Barber Half Dollars Quarter Dollars Standing Liberty Quarters Washington Quarters Nickels Jefferson Nickels Buffalo Nickels Dimes Roosevelt Dimes Mercury Dimes Cents Lincoln Pennies Wheat Pennies Crypto Bitcoin (BTC) Ethereum (ETH) Metals Gold Gold Current Rates Gold Calculator Gold Price Per Gram 24k Gold Price Per Gram 22k Gold Price Per Gram 18k Gold Price Per Gram 14k Gold Price Per Gram Gold Price Per Oz 24k Gold Price Per Oz 22k Gold Price Per Gram 18k Gold Price Per Oz 14k Gold Price Per Oz Cash 4 Gold / Pawn Ring 24k Gold Pawn Rates 18k Gold Pawn Rates 14k Gold Pawn Rates Pennyweight of Gold Silver Silver Current Rates Silver Melt Calculator Sterling Silver Calculator Platinum Copper Nickel Aluminum Palladium Rhodium Articles Coin Articles 1 Who Is On Morgan Dollar Who Is On Peace Dollar Who Is On The Penny? Who Is On Wheat Penny Who Is On Kennedy Half Dollar Who Is On Franklin Half Dollar? Who Is On Walker Half Dollar? Who Is On The Quarter? Who Is On Standing Liberty Quarter Who Is On The Dime? Who Is On The Nickel? Who Is On Buffalo Nickel? Coin Articles 2 Protecting Your Coin Collection Starting a Coin Collection Mint Mark Location Quick Guide Coin Grading and Certification How are coins made? Worlds Most Popular Coins Crypto Articles Bitcoin Currency of Mars? Metals Articles Buying Silver Numismatic Coins $5 Million Dollar Gold Coin Top 4 Ways To Test Gold at Home News Coin News 1909 Penny on Mars? Paid $915 in Pennies? 2021 Morgan Silver Dollars Pennies Worth Millions Crypto News Bitcoin Breaks $60,000 Mark Fidelity BitCoin ETF Metals News Metals Tax Neutrality Act Sterling Silver Price Per Oz $71.62 1 Oz of 925 Sterling Silver is currently valued at $71.62 USD based off current silver market sterling spot price per troy oz of $71.62 USD Find the current Sterling Silver Price Per Oz based on live silver market rates. 24/7 / 365 days a year. When we speak of an ounce of sterling silver here we are referring to troy ounces. Troy ounces are the standard for most of the world when measuring precious metals like gold, silver, and sterling silver. Values Basic Units of Sterling Silver Current Sterling Silver Spot Price By Type Type Current Value Currency Gram $2.30 USD Troy Oz $71.62 USD Pound $1,044.50 USD Kilo $2,302.72 USD Pennyweight $3.58 USD Tola $26.83 USD Tael $87.04 USD Metric Ton $2,302,723.17 USD Measurement Current Value Currency Add this tool on your blog, web page, or forum. Please help us grow. Copy Link Need More Info? Use our Sterling Silver Calculator Use our sterling silver calculator to quickly learn the value of any sterling silver item no matter the shape, size, or weight. Prices are live and based off live silver market rates. Sterling Silver usually labeled as 925 Sterling is 92.5% silver and 7.5% copper or some other metal. Learn how to use How many Ozs of Silver? Current Price Silver/Oz. Purity 925 Sterling Silver (92.5%) 99.99% Pure 980 Mexican Silver 958 Britannia Silver 950 French Silver 947 Russian silver 935 Swiss Silver 917 Indian Silver 916 Russian Silver 90% Pre 1964 Coin Silver 875 Russian Silver 875 Swiss Silver 835 German Silver 833 Continental Silver 830 Scandinavian Silver 800 French Silver 800 German Silver 50% Coin Silver 40% Coin Silver Result (USD $) What Measurement Gram Oz Pound Kilo Pennyweight Tola Tael Metric Ton How to calculate sterling silver prices using your favorite new free silver app Weigh your ring, cup, plate or pendant using a digital scale. Digital scales can be purchased online for as little as $10 or in person at many stores. Enter the numeric digits into the calculator decimals and all. Example 4.56 or 14.56. If not decimal points enter in whole number 4 or 14 as an example. Lastly make",
+                "images": [],
+                "rank": 5
+              }
+            ],
+            "annotations": null,
+            "_meta": null
+          }
+        ]
+      },
+      "formatted_silver_price_T002": []
+    }
+  },
+  "nodes": [
+    {
+      "description": "Initial Query",
+      "agent": "System",
+      "status": "completed",
+      "output": null,
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": null,
+      "execution_time": 0.0,
+      "id": "ROOT"
+    },
+    {
+      "id": "Query",
+      "description": "Formulate execution plan",
+      "agent": "PlannerAgent",
+      "status": "completed",
+      "reads": [
+        "original_query"
+      ],
+      "writes": [
+        "plan_graph"
+      ],
+      "output": {
+        "plan_graph": {
+          "nodes": [
+            {
+              "id": "T001",
+              "description": "Retrieve current silver price data",
+              "agent": "RetrieverAgent",
+              "agent_prompt": "Retrieve the current market price of silver. Provide the price per troy ounce in USD. Format the output as a key-value pair, e.g., 'silver_price_usd: 23.50'.",
+              "reads": [],
+              "writes": [
+                "silver_price_usd_T001"
+              ]
+            },
+            {
+              "id": "T002",
+              "description": "Format the retrieved silver price information",
+              "agent": "FormatterAgent",
+              "agent_prompt": "Format the provided silver price information into a concise, direct statement. Include the current price per troy ounce in USD. The user prefers moderate responses and directness, avoiding motivational language or comparative phrasing. Output should be suitable for direct presentation.",
+              "reads": [
+                "silver_price_usd_T001"
+              ],
+              "writes": [
+                "formatted_silver_price_T002"
+              ]
+            }
+          ],
+          "edges": [
+            {
+              "from": "ROOT",
+              "to": "T001"
+            },
+            {
+              "from": "T001",
+              "to": "T002"
+            }
+          ]
+        },
+        "next_step_id": "T001",
+        "interpretation_confidence": 0.9,
+        "ambiguity_notes": [],
+        "cost": 7.7e-05,
+        "input_tokens": 94,
+        "output_tokens": 169,
+        "total_tokens": 263,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": "2026-02-15T00:02:42.032966",
+      "execution_time": 0.0
+    },
+    {
+      "id": "T001",
+      "description": "Retrieve current silver price data",
+      "agent": "RetrieverAgent",
+      "agent_prompt": "Retrieve the current market price of silver. Provide the price per troy ounce in USD. Format the output as a key-value pair, e.g., 'silver_price_usd: 23.50'.",
+      "reads": [],
+      "writes": [
+        "silver_price_usd_T001"
+      ],
+      "status": "completed",
+      "output": {
+        "silver_price_usd_T001": [],
+        "call_self": false,
+        "code_variants": {
+          "CODE_1A": "price_data = json.loads(search_web_with_text_content('current silver price per troy ounce USD', 5))\nreturn {'silver_price_usd_T001': price_data}",
+          "CODE_1B": "urls = json.loads(web_search('live silver price per troy ounce USD', 5))\ncontent = webpage_url_to_raw_text(urls[0])\nreturn {'silver_price_usd_T001': content}"
+        },
+        "cost": 3.4e-05,
+        "input_tokens": 144,
+        "output_tokens": 49,
+        "total_tokens": 193,
+        "executed_model": "gemini:gemini-2.5-flash-lite",
+        "execution_result": {
+          "silver_price_usd_T001": {
+            "content": [
+              {
+                "type": "text",
+                "text": [
+                  {
+                    "url": "https://duckduckgo.com/y.js?ad_domain=moneymetals.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=fwlc%2D3sGDpzNqQlz9uvVUJ_m08yw%2DE7k3iZjYiB6Pju94uAqfqr2M8AGt8SxTVmlhqaB8l2TewngVJnoi9_gx7eGw4ZWczEW__lsJ%2D6wKg7BuXs62Da1TiApv7iiCeXbUWunkWeIuisPSk81B9r8W_8vV%2D8HKjskn3_30pTxHQc.UDssEc6ZkvCIozM%2DXFFrJA&rut=c8b352cf3c16982db9e00d10ff78a2cfc634b6f2d47fe46298adad820aae8254&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8pXfIJTY1oKSzMiF61G8B9TVUCUz1NlbsyXglbjJdi4na7uchMsIq4uMoWffcGwg0pF_ZDBAq%2DMFUWxgtF3pDlnsNO_U6SR7GGkIwuhM4PGShlBIH82QXRM8c3vW1_XWF6V_Pd3SI8PMLLgMB9UN2Z3HhXSr31NJCoKnRPOpnVb2xIBdUOgSZv_Vc813gvsuFgwB_nboUQvPv6_xTcc4tZf3L5CY%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uZXltZXRhbHMuY29tJTJmYnV5JTJmc2lsdmVyJTNmZ2NfaWQlM2Q0MTI1OTU3NTMlMjZtc2Nsa2lkJTNkYzY3OTM4ODY3MjE5MTc2ZDdiYzY1MTE3N2YyNTc5NTQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RCTkctTU1FLWVDb21tLVNlYXJjaC1QcmljZXMtU2lsdmVyJTI2dXRtX3Rlcm0lM2RzaWx2ZXIlMjUyMHNwb3QlMjUyMHByaWNlJTI1MjBjaGFydCUyNTIwdG9kYXklMjZ1dG1fY29udGVudCUzZFNpbHZlciUyNTIwUHJpY2VzJTI1MjB0byUyNTIwUHJvZHVjdA%26rlid%3Dc67938867219176d7bc651177f257954&vqd=4-131909685363158948027534360958120775780&iurl=%7B1%7DIG%3D0F364526DE3C4C5A9D37C8D239293B8E%26CID%3D0EAC3CCD9A0061241F482BCC9B8B6058%26ID%3DDevEx%2C5045.1",
+                    "content": "[error] ",
+                    "rank": 1
+                  },
+                  {
+                    "url": "https://www.kitco.com/charts/livesilver.html",
+                    "content": "Silver Price Today | Price of Silver Per Ounce | 24 Hour Spot Chart | KITCO BUY/SELL GOLD & SILVER Bullion Coins and Bars Precious Metals All Metal Quotes Cryptos Base Metals Markets Mining News About Kitco Forum NEW Jeweler Resources Video News Opinion Kitco Forum Jeweler Resources Newsletters Live Charts / silver Live silver Price Bid 77.32 + 2.13 ( + 2.83% ) Ask 77.57 ounce 77.32 + 2.13 gram 2.49 + 0.07 Kilo 2,485.93 + 68.38 pennyweight 3.87 + 0.11 tola 29.00 + 0.80 tael 93.97 + 2.58 73.86 79.47 Day's Range KITCO All Metal Quotes Cryptocurrencies Markets News Commentaries Mining We appreciate your feedback Submit Terms of Use Terms & Conditions Privacy Policy | Your Privacy Choices 2026 Kitco Metals Inc.",
+                    "images": [],
+                    "rank": 2
+                  },
+                  {
+                    "url": "https://www.bullion.com/spotprices/silver-price",
+                    "content": "Live Silver Prices | Silver Prices Per Ounce | Bullion.com Gold $5,059.40 $120.30 2.43 % Silver $78.24 $2.25 2.93 % Platinum $2,084.40 $64.90 3.18 % Palladium $1,720.00 $61.50 3.73 % My Account My Account My Orders My Alerts Favorites Help Center Sign In New Customer ? Sign up Cart 0 Cart Summary There are no items in the cart. Hello, Sign In Trending Best Sellers 2026 Products Weekly Finds Compare & Save Shop by category Gold Silver Platinum & More Others Charts Learn Help & Settings 1-833-629-3927 My Account Customer Service Sign In Gold Featured Best Sellers 2026 Products Shop By Mint Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Gold Featured Best Sellers 2026 Products Shop By Mint Shop All Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Shop All Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Shop All Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Gold $5,059.40 $120.30 2.43 % View Chart Silver $78.24 $2.25 2.93 % View Chart Platinum $2,084.40 $64.90 3.18 % View Chart Palladium $1,720.00 $61.50 3.73 % View Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Weekly Finds Compare & Save Fast & Discreet Shipping 1-833-629-3927 Bullion.com Silver Spot Price Gold Silver Platinum Palladium Silver Spot Price & Charts Ounces Ounces Grams Kilo Our spot price chart accurately reports silver spot prices in real-time. Use the table to the right to discover the silver price today in ounces, grams, and kilograms. Identify trends by examining our historical spot price chart below, showing the price of silver in various time frames, including 24-hours, 3 days, 1 week, 1 month, 3 months, YTD, 1 year, 5 years, and all time. Bookmark this page to receive accurate and up-to-date silver price information. Learn more about spot price, and how to use it, in the FAQ section below. Live Metal Spot Price (24hrs) Feb 13, 2026 4:59 PM ET Silver Spot Prices Today's Price Change Silver Price Per Ounce $78.24 $2.25 Silver Price Per Gram $2.52 $0.07 Silver Price Per Kilo $2,515.47 $72.34 Silver Spot Price Create a Price Alert $78.24 $2.25 2.93% Ask $78.24 Bid $75.24 Change $2.25 2.",
+                    "images": [],
+                    "rank": 3
+                  },
+                  {
+                    "url": "https://sdbullion.com/silver-prices",
+                    "content": "Silver Spot Price | Live Silver Price Today | SD Bullion JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Free Shipping on $199+ Orders Search Search 1-800-294-8732 Silver Silver chevron-right SILVER COINS SILVER COINS chevron-right chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics chevron-left SILVER COINS chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics SILVER ROUNDS SILVER ROUNDS chevron-right chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening chevron-left SILVER ROUNDS chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening SILVER BARS SILVER BARS chevron-right chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars chevron-left SILVER BARS chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars OTHER SILVER OTHER SILVER chevron-right chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles Navy Privy Silver Eagles chevron-left OTHER SILVER chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles",
+                    "images": [],
+                    "rank": 4
+                  },
+                  {
+                    "url": "https://coinbin.com/sterling-silver-price-per-oz/",
+                    "content": "Sterling Silver Price Per Oz (Live) | CoinBin.com Current Rates USD BitCoin $69,725 Gold $5,041.20 Silver $77.43 Home Coins Dollars Morgan Silver Dollars Peace Dollars Seated Liberty Dollars Half Dollars Kennedy Half Dollars Franklin Half Dollars Walking Liberty Half Dollars Barber Half Dollars Quarter Dollars Standing Liberty Quarters Washington Quarters Nickels Jefferson Nickels Buffalo Nickels Dimes Roosevelt Dimes Mercury Dimes Cents Lincoln Pennies Wheat Pennies Crypto Bitcoin (BTC) Ethereum (ETH) Metals Gold Gold Current Rates Gold Calculator Gold Price Per Gram 24k Gold Price Per Gram 22k Gold Price Per Gram 18k Gold Price Per Gram 14k Gold Price Per Gram Gold Price Per Oz 24k Gold Price Per Oz 22k Gold Price Per Gram 18k Gold Price Per Oz 14k Gold Price Per Oz Cash 4 Gold / Pawn Ring 24k Gold Pawn Rates 18k Gold Pawn Rates 14k Gold Pawn Rates Pennyweight of Gold Silver Silver Current Rates Silver Melt Calculator Sterling Silver Calculator Platinum Copper Nickel Aluminum Palladium Rhodium Articles Coin Articles 1 Who Is On Morgan Dollar Who Is On Peace Dollar Who Is On The Penny? Who Is On Wheat Penny Who Is On Kennedy Half Dollar Who Is On Franklin Half Dollar? Who Is On Walker Half Dollar? Who Is On The Quarter? Who Is On Standing Liberty Quarter Who Is On The Dime? Who Is On The Nickel? Who Is On Buffalo Nickel? Coin Articles 2 Protecting Your Coin Collection Starting a Coin Collection Mint Mark Location Quick Guide Coin Grading and Certification How are coins made? Worlds Most Popular Coins Crypto Articles Bitcoin Currency of Mars? Metals Articles Buying Silver Numismatic Coins $5 Million Dollar Gold Coin Top 4 Ways To Test Gold at Home News Coin News 1909 Penny on Mars? Paid $915 in Pennies? 2021 Morgan Silver Dollars Pennies Worth Millions Crypto News Bitcoin Breaks $60,000 Mark Fidelity BitCoin ETF Metals News Metals Tax Neutrality Act Sterling Silver Price Per Oz $71.62 1 Oz of 925 Sterling Silver is currently valued at $71.62 USD based off current silver market sterling spot price per troy oz of $71.62 USD Find the current Sterling Silver Price Per Oz based on live silver market rates. 24/7 / 365 days a year. When we speak of an ounce of sterling silver here we are referring to troy ounces. Troy ounces are the standard for most of the world when measuring precious metals like gold, silver, and sterling silver. Values Basic Units of Sterling Silver Current Sterling Silver Spot Price By Type Type Current Value Currency Gram $2.30 USD Troy Oz $71.62 USD Pound $1,044.50 USD Kilo $2,302.72 USD Pennyweight $3.58 USD Tola $26.83 USD Tael $87.04 USD Metric Ton $2,302,723.17 USD Measurement Current Value Currency Add this tool on your blog, web page, or forum. Please help us grow. Copy Link Need More Info? Use our Sterling Silver Calculator Use our sterling silver calculator to quickly learn the value of any sterling silver item no matter the shape, size, or weight. Prices are live and based off live silver market rates. Sterling Silver usually labeled as 925 Sterling is 92.5% silver and 7.5% copper or some other metal. Learn how to use How many Ozs of Silver? Current Price Silver/Oz. Purity 925 Sterling Silver (92.5%) 99.99% Pure 980 Mexican Silver 958 Britannia Silver 950 French Silver 947 Russian silver 935 Swiss Silver 917 Indian Silver 916 Russian Silver 90% Pre 1964 Coin Silver 875 Russian Silver 875 Swiss Silver 835 German Silver 833 Continental Silver 830 Scandinavian Silver 800 French Silver 800 German Silver 50% Coin Silver 40% Coin Silver Result (USD $) What Measurement Gram Oz Pound Kilo Pennyweight Tola Tael Metric Ton How to calculate sterling silver prices using your favorite new free silver app Weigh your ring, cup, plate or pendant using a digital scale. Digital scales can be purchased online for as little as $10 or in person at many stores. Enter the numeric digits into the calculator decimals and all. Example 4.56 or 14.56. If not decimal points enter in whole number 4 or 14 as an example. Lastly make",
+                    "images": [],
+                    "rank": 5
+                  }
+                ],
+                "annotations": null,
+                "_meta": null
+              }
+            ]
+          }
+        },
+        "execution_status": "success",
+        "execution_error": null,
+        "execution_time": "2026-02-14 19:03:08",
+        "executed_variant": "CODE_1A",
+        "execution_logs": ""
+      },
+      "error": null,
+      "cost": 3.4e-05,
+      "start_time": "2026-02-15T00:02:42.035414",
+      "end_time": "2026-02-15T00:03:30.435336",
+      "execution_time": 48.399922,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "silver_price_usd_T001": [],
+            "call_self": false,
+            "code_variants": {
+              "CODE_1A": "price_data = json.loads(search_web_with_text_content('current silver price per troy ounce USD', 5))\nreturn {'silver_price_usd_T001': price_data}",
+              "CODE_1B": "urls = json.loads(web_search('live silver price per troy ounce USD', 5))\ncontent = webpage_url_to_raw_text(urls[0])\nreturn {'silver_price_usd_T001': content}"
+            },
+            "cost": 3.4e-05,
+            "input_tokens": 144,
+            "output_tokens": 49,
+            "total_tokens": 193,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          },
+          "execution_result": {
+            "status": "success",
+            "result": {
+              "silver_price_usd_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://www.kitco.com/charts/livesilver.html",
+                        "content": "Silver Price Today | Price of Silver Per Ounce | 24 Hour Spot Chart | KITCO BUY/SELL GOLD & SILVER Bullion Coins and Bars Precious Metals All Metal Quotes Cryptos Base Metals Markets Mining News About Kitco Forum NEW Jeweler Resources Video News Opinion Kitco Forum Jeweler Resources Newsletters Live Charts / silver Live silver Price Bid 77.32 + 2.13 ( + 2.83% ) Ask 77.57 ounce 77.32 + 2.13 gram 2.49 + 0.07 Kilo 2,485.93 + 68.38 pennyweight 3.87 + 0.11 tola 29.00 + 0.80 tael 93.97 + 2.58 73.86 79.47 Day's Range KITCO All Metal Quotes Cryptocurrencies Markets News Commentaries Mining We appreciate your feedback Submit Terms of Use Terms & Conditions Privacy Policy | Your Privacy Choices 2026 Kitco Metals Inc.",
+                        "images": [],
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://www.bullion.com/spotprices/silver-price",
+                        "content": "Live Silver Prices | Silver Prices Per Ounce | Bullion.com Gold $5,059.40 $120.30 2.43 % Silver $78.24 $2.25 2.93 % Platinum $2,084.40 $64.90 3.18 % Palladium $1,720.00 $61.50 3.73 % My Account My Account My Orders My Alerts Favorites Help Center Sign In New Customer ? Sign up Cart 0 Cart Summary There are no items in the cart. Hello, Sign In Trending Best Sellers 2026 Products Weekly Finds Compare & Save Shop by category Gold Silver Platinum & More Others Charts Learn Help & Settings 1-833-629-3927 My Account Customer Service Sign In Gold Featured Best Sellers 2026 Products Shop By Mint Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Gold Featured Best Sellers 2026 Products Shop By Mint Shop All Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Shop All Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Shop All Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Gold $5,059.40 $120.30 2.43 % View Chart Silver $78.24 $2.25 2.93 % View Chart Platinum $2,084.40 $64.90 3.18 % View Chart Palladium $1,720.00 $61.50 3.73 % View Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Weekly Finds Compare & Save Fast & Discreet Shipping 1-833-629-3927 Bullion.com Silver Spot Price Gold Silver Platinum Palladium Silver Spot Price & Charts Ounces Ounces Grams Kilo Our spot price chart accurately reports silver spot prices in real-time. Use the table to the right to discover the silver price today in ounces, grams, and kilograms. Identify trends by examining our historical spot price chart below, showing the price of silver in various time frames, including 24-hours, 3 days, 1 week, 1 month, 3 months, YTD, 1 year, 5 years, and all time. Bookmark this page to receive accurate and up-to-date silver price information. Learn more about spot price, and how to use it, in the FAQ section below. Live Metal Spot Price (24hrs) Feb 13, 2026 4:59 PM ET Silver Spot Prices Today's Price Change Silver Price Per Ounce $78.24 $2.25 Silver Price Per Gram $2.52 $0.07 Silver Price Per Kilo $2,515.47 $72.34 Silver Spot Price Create a Price Alert $78.24 $2.25 2.93% Ask $78.24 Bid $75.24 Change $2.25 2.",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://sdbullion.com/silver-prices",
+                        "content": "Silver Spot Price | Live Silver Price Today | SD Bullion JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Free Shipping on $199+ Orders Search Search 1-800-294-8732 Silver Silver chevron-right SILVER COINS SILVER COINS chevron-right chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics chevron-left SILVER COINS chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics SILVER ROUNDS SILVER ROUNDS chevron-right chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening chevron-left SILVER ROUNDS chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening SILVER BARS SILVER BARS chevron-right chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars chevron-left SILVER BARS chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars OTHER SILVER OTHER SILVER chevron-right chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles Navy Privy Silver Eagles chevron-left OTHER SILVER chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://coinbin.com/sterling-silver-price-per-oz/",
+                        "content": "Sterling Silver Price Per Oz (Live) | CoinBin.com Current Rates USD BitCoin $69,725 Gold $5,041.20 Silver $77.43 Home Coins Dollars Morgan Silver Dollars Peace Dollars Seated Liberty Dollars Half Dollars Kennedy Half Dollars Franklin Half Dollars Walking Liberty Half Dollars Barber Half Dollars Quarter Dollars Standing Liberty Quarters Washington Quarters Nickels Jefferson Nickels Buffalo Nickels Dimes Roosevelt Dimes Mercury Dimes Cents Lincoln Pennies Wheat Pennies Crypto Bitcoin (BTC) Ethereum (ETH) Metals Gold Gold Current Rates Gold Calculator Gold Price Per Gram 24k Gold Price Per Gram 22k Gold Price Per Gram 18k Gold Price Per Gram 14k Gold Price Per Gram Gold Price Per Oz 24k Gold Price Per Oz 22k Gold Price Per Gram 18k Gold Price Per Oz 14k Gold Price Per Oz Cash 4 Gold / Pawn Ring 24k Gold Pawn Rates 18k Gold Pawn Rates 14k Gold Pawn Rates Pennyweight of Gold Silver Silver Current Rates Silver Melt Calculator Sterling Silver Calculator Platinum Copper Nickel Aluminum Palladium Rhodium Articles Coin Articles 1 Who Is On Morgan Dollar Who Is On Peace Dollar Who Is On The Penny? Who Is On Wheat Penny Who Is On Kennedy Half Dollar Who Is On Franklin Half Dollar? Who Is On Walker Half Dollar? Who Is On The Quarter? Who Is On Standing Liberty Quarter Who Is On The Dime? Who Is On The Nickel? Who Is On Buffalo Nickel? Coin Articles 2 Protecting Your Coin Collection Starting a Coin Collection Mint Mark Location Quick Guide Coin Grading and Certification How are coins made? Worlds Most Popular Coins Crypto Articles Bitcoin Currency of Mars? Metals Articles Buying Silver Numismatic Coins $5 Million Dollar Gold Coin Top 4 Ways To Test Gold at Home News Coin News 1909 Penny on Mars? Paid $915 in Pennies? 2021 Morgan Silver Dollars Pennies Worth Millions Crypto News Bitcoin Breaks $60,000 Mark Fidelity BitCoin ETF Metals News Metals Tax Neutrality Act Sterling Silver Price Per Oz $71.62 1 Oz of 925 Sterling Silver is currently valued at $71.62 USD based off current silver market sterling spot price per troy oz of $71.62 USD Find the current Sterling Silver Price Per Oz based on live silver market rates. 24/7 / 365 days a year. When we speak of an ounce of sterling silver here we are referring to troy ounces. Troy ounces are the standard for most of the world when measuring precious metals like gold, silver, and sterling silver. Values Basic Units of Sterling Silver Current Sterling Silver Spot Price By Type Type Current Value Currency Gram $2.30 USD Troy Oz $71.62 USD Pound $1,044.50 USD Kilo $2,302.72 USD Pennyweight $3.58 USD Tola $26.83 USD Tael $87.04 USD Metric Ton $2,302,723.17 USD Measurement Current Value Currency Add this tool on your blog, web page, or forum. Please help us grow. Copy Link Need More Info? Use our Sterling Silver Calculator Use our sterling silver calculator to quickly learn the value of any sterling silver item no matter the shape, size, or weight. Prices are live and based off live silver market rates. Sterling Silver usually labeled as 925 Sterling is 92.5% silver and 7.5% copper or some other metal. Learn how to use How many Ozs of Silver? Current Price Silver/Oz. Purity 925 Sterling Silver (92.5%) 99.99% Pure 980 Mexican Silver 958 Britannia Silver 950 French Silver 947 Russian silver 935 Swiss Silver 917 Indian Silver 916 Russian Silver 90% Pre 1964 Coin Silver 875 Russian Silver 875 Swiss Silver 835 German Silver 833 Continental Silver 830 Scandinavian Silver 800 French Silver 800 German Silver 50% Coin Silver 40% Coin Silver Result (USD $) What Measurement Gram Oz Pound Kilo Pennyweight Tola Tael Metric Ton How to calculate sterling silver prices using your favorite new free silver app Weigh your ring, cup, plate or pendant using a digital scale. Digital scales can be purchased online for as little as $10 or in person at many stores. Enter the numeric digits into the calculator decimals and all. Example 4.56 or 14.56. If not decimal points enter in whole number 4 or 14 as an example. Lastly make",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.bullionbypost.eu/silver-price/live/ounces/USD/",
+                        "content": "[error] ",
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "raw": {
+              "silver_price_usd_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://www.kitco.com/charts/livesilver.html",
+                        "content": "Silver Price Today | Price of Silver Per Ounce | 24 Hour Spot Chart | KITCO BUY/SELL GOLD & SILVER Bullion Coins and Bars Precious Metals All Metal Quotes Cryptos Base Metals Markets Mining News About Kitco Forum NEW Jeweler Resources Video News Opinion Kitco Forum Jeweler Resources Newsletters Live Charts / silver Live silver Price Bid 77.32 + 2.13 ( + 2.83% ) Ask 77.57 ounce 77.32 + 2.13 gram 2.49 + 0.07 Kilo 2,485.93 + 68.38 pennyweight 3.87 + 0.11 tola 29.00 + 0.80 tael 93.97 + 2.58 73.86 79.47 Day's Range KITCO All Metal Quotes Cryptocurrencies Markets News Commentaries Mining We appreciate your feedback Submit Terms of Use Terms & Conditions Privacy Policy | Your Privacy Choices 2026 Kitco Metals Inc.",
+                        "images": [],
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://www.bullion.com/spotprices/silver-price",
+                        "content": "Live Silver Prices | Silver Prices Per Ounce | Bullion.com Gold $5,059.40 $120.30 2.43 % Silver $78.24 $2.25 2.93 % Platinum $2,084.40 $64.90 3.18 % Palladium $1,720.00 $61.50 3.73 % My Account My Account My Orders My Alerts Favorites Help Center Sign In New Customer ? Sign up Cart 0 Cart Summary There are no items in the cart. Hello, Sign In Trending Best Sellers 2026 Products Weekly Finds Compare & Save Shop by category Gold Silver Platinum & More Others Charts Learn Help & Settings 1-833-629-3927 My Account Customer Service Sign In Gold Featured Best Sellers 2026 Products Shop By Mint Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Gold Featured Best Sellers 2026 Products Shop By Mint Shop All Gold Coins American Gold Eagles American Gold Buffalos Canadian Gold Maple Leafs Mexican Gold Coins European Fractional Gold World Gold Coins Fractional Gold Coins 1 oz Gold Coins Gold Bars Gram Gold Bars 1 oz Gold Bars 5 oz & 10 oz Gold Bars Goldbacks Arizona Goldbacks Florida Goldbacks Nevada Goldbacks New Hampshire Goldbacks Oklahoma Goldbacks South Dakota Goldbacks Utah Goldbacks Wyoming Goldbacks Silver Featured Best Sellers 2026 Products Shop By Mint Shop All Silver Coins American Silver Eagles Canadian Silver Maple Leafs World Silver Coins 90% Silver US Coins 1 oz Silver Coins Silver Bars 1 oz Silver Bars 10 oz Silver Bars Kilo Silver Bars 100 oz Silver Bars Silver Rounds View All Platinum & More Featured Best Sellers 2026 Products Shop All Platinum Coins American Platinum Eagles World Platinum Coins Platinum Bars View All Copper Copper Rounds Copper Bars Charts Live Prices Gold Chart Silver Chart Platinum Chart Palladium Chart Gold $5,059.40 $120.30 2.43 % View Chart Silver $78.24 $2.25 2.93 % View Chart Platinum $2,084.40 $64.90 3.18 % View Chart Palladium $1,720.00 $61.50 3.73 % View Chart Learn Resources Education Center Military Discount Bullion App News Market & Price Alerts About Us About Bullion.com FAQs Reviews Contact Us Weekly Finds Compare & Save Fast & Discreet Shipping 1-833-629-3927 Bullion.com Silver Spot Price Gold Silver Platinum Palladium Silver Spot Price & Charts Ounces Ounces Grams Kilo Our spot price chart accurately reports silver spot prices in real-time. Use the table to the right to discover the silver price today in ounces, grams, and kilograms. Identify trends by examining our historical spot price chart below, showing the price of silver in various time frames, including 24-hours, 3 days, 1 week, 1 month, 3 months, YTD, 1 year, 5 years, and all time. Bookmark this page to receive accurate and up-to-date silver price information. Learn more about spot price, and how to use it, in the FAQ section below. Live Metal Spot Price (24hrs) Feb 13, 2026 4:59 PM ET Silver Spot Prices Today's Price Change Silver Price Per Ounce $78.24 $2.25 Silver Price Per Gram $2.52 $0.07 Silver Price Per Kilo $2,515.47 $72.34 Silver Spot Price Create a Price Alert $78.24 $2.25 2.93% Ask $78.24 Bid $75.24 Change $2.25 2.",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://sdbullion.com/silver-prices",
+                        "content": "Silver Spot Price | Live Silver Price Today | SD Bullion JavaScript seems to be disabled in your browser. For the best experience on our site, be sure to turn on Javascript in your browser. Skip to Content Free Shipping on $199+ Orders Search Search 1-800-294-8732 Silver Silver chevron-right SILVER COINS SILVER COINS chevron-right chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics chevron-left SILVER COINS chevron-right US Silver Eagles US Silver Eagles chevron-right Silver Maple Leafs Silver Maple Leafs chevron-right 90% Junk Silver 90% Junk Silver chevron-right Silver Dollars Silver Dollars chevron-right Truth Coin Series Truth Coin Series chevron-right British Silver Coins British Silver Coins chevron-right Australian Perth Mint Australian Perth Mint chevron-right African Silver Coins African Silver Coins chevron-right Chinese Silver Pandas Chinese Silver Pandas chevron-right Mexican Silver Libertads Mexican Silver Libertads chevron-right Austrian Philharmonics Austrian Philharmonics SILVER ROUNDS SILVER ROUNDS chevron-right chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening chevron-left SILVER ROUNDS chevron-right Fractional Silver Rounds Fractional Silver Rounds chevron-right 1 oz Silver Rounds 1 oz Silver Rounds chevron-right 2 oz Silver Rounds 2 oz Silver Rounds chevron-right 5 oz Silver Rounds 5 oz Silver Rounds chevron-right Intaglio Mint Silver Rounds Intaglio Mint Silver Rounds chevron-right The Awakening The Awakening SILVER BARS SILVER BARS chevron-right chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars chevron-left SILVER BARS chevron-right 1 oz Silver Bars 1 oz Silver Bars chevron-right 5 oz Silver Bars 5 oz Silver Bars chevron-right 10 oz Silver Bars 10 oz Silver Bars chevron-right Kilo Silver Bars Kilo Silver Bars chevron-right 100 oz Silver Bars 100 oz Silver Bars chevron-right 1000 oz Silver Bars 1000 oz Silver Bars chevron-right Gram Silver Bars Gram Silver Bars chevron-right Cross & Flag Silver Bars Cross & Flag Silver Bars OTHER SILVER OTHER SILVER chevron-right chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles Navy Privy Silver Eagles chevron-left OTHER SILVER chevron-right In Stock Silver In Stock Silver chevron-right Commander Series Commander Series chevron-right Una and the Lion Una and the Lion chevron-right Scottsdale Silver Scottsdale Silver chevron-right Starter Packs Starter Packs chevron-right RCM Silver Coins RCM Silver Coins chevron-right Other World Silver Other World Silver chevron-right Navy Privy Silver Eagles",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://coinbin.com/sterling-silver-price-per-oz/",
+                        "content": "Sterling Silver Price Per Oz (Live) | CoinBin.com Current Rates USD BitCoin $69,725 Gold $5,041.20 Silver $77.43 Home Coins Dollars Morgan Silver Dollars Peace Dollars Seated Liberty Dollars Half Dollars Kennedy Half Dollars Franklin Half Dollars Walking Liberty Half Dollars Barber Half Dollars Quarter Dollars Standing Liberty Quarters Washington Quarters Nickels Jefferson Nickels Buffalo Nickels Dimes Roosevelt Dimes Mercury Dimes Cents Lincoln Pennies Wheat Pennies Crypto Bitcoin (BTC) Ethereum (ETH) Metals Gold Gold Current Rates Gold Calculator Gold Price Per Gram 24k Gold Price Per Gram 22k Gold Price Per Gram 18k Gold Price Per Gram 14k Gold Price Per Gram Gold Price Per Oz 24k Gold Price Per Oz 22k Gold Price Per Gram 18k Gold Price Per Oz 14k Gold Price Per Oz Cash 4 Gold / Pawn Ring 24k Gold Pawn Rates 18k Gold Pawn Rates 14k Gold Pawn Rates Pennyweight of Gold Silver Silver Current Rates Silver Melt Calculator Sterling Silver Calculator Platinum Copper Nickel Aluminum Palladium Rhodium Articles Coin Articles 1 Who Is On Morgan Dollar Who Is On Peace Dollar Who Is On The Penny? Who Is On Wheat Penny Who Is On Kennedy Half Dollar Who Is On Franklin Half Dollar? Who Is On Walker Half Dollar? Who Is On The Quarter? Who Is On Standing Liberty Quarter Who Is On The Dime? Who Is On The Nickel? Who Is On Buffalo Nickel? Coin Articles 2 Protecting Your Coin Collection Starting a Coin Collection Mint Mark Location Quick Guide Coin Grading and Certification How are coins made? Worlds Most Popular Coins Crypto Articles Bitcoin Currency of Mars? Metals Articles Buying Silver Numismatic Coins $5 Million Dollar Gold Coin Top 4 Ways To Test Gold at Home News Coin News 1909 Penny on Mars? Paid $915 in Pennies? 2021 Morgan Silver Dollars Pennies Worth Millions Crypto News Bitcoin Breaks $60,000 Mark Fidelity BitCoin ETF Metals News Metals Tax Neutrality Act Sterling Silver Price Per Oz $71.62 1 Oz of 925 Sterling Silver is currently valued at $71.62 USD based off current silver market sterling spot price per troy oz of $71.62 USD Find the current Sterling Silver Price Per Oz based on live silver market rates. 24/7 / 365 days a year. When we speak of an ounce of sterling silver here we are referring to troy ounces. Troy ounces are the standard for most of the world when measuring precious metals like gold, silver, and sterling silver. Values Basic Units of Sterling Silver Current Sterling Silver Spot Price By Type Type Current Value Currency Gram $2.30 USD Troy Oz $71.62 USD Pound $1,044.50 USD Kilo $2,302.72 USD Pennyweight $3.58 USD Tola $26.83 USD Tael $87.04 USD Metric Ton $2,302,723.17 USD Measurement Current Value Currency Add this tool on your blog, web page, or forum. Please help us grow. Copy Link Need More Info? Use our Sterling Silver Calculator Use our sterling silver calculator to quickly learn the value of any sterling silver item no matter the shape, size, or weight. Prices are live and based off live silver market rates. Sterling Silver usually labeled as 925 Sterling is 92.5% silver and 7.5% copper or some other metal. Learn how to use How many Ozs of Silver? Current Price Silver/Oz. Purity 925 Sterling Silver (92.5%) 99.99% Pure 980 Mexican Silver 958 Britannia Silver 950 French Silver 947 Russian silver 935 Swiss Silver 917 Indian Silver 916 Russian Silver 90% Pre 1964 Coin Silver 875 Russian Silver 875 Swiss Silver 835 German Silver 833 Continental Silver 830 Scandinavian Silver 800 French Silver 800 German Silver 50% Coin Silver 40% Coin Silver Result (USD $) What Measurement Gram Oz Pound Kilo Pennyweight Tola Tael Metric Ton How to calculate sterling silver prices using your favorite new free silver app Weigh your ring, cup, plate or pendant using a digital scale. Digital scales can be purchased online for as little as $10 or in person at many stores. Enter the numeric digits into the calculator decimals and all. Example 4.56 or 14.56. If not decimal points enter in whole number 4 or 14 as an example. Lastly make",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.bullionbypost.eu/silver-price/live/ounces/USD/",
+                        "content": "[error] ",
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "logs": "",
+            "execution_time": "2026-02-14 19:02:45",
+            "total_time": "22.467",
+            "executed_variant": "CODE_1A"
+          }
+        }
+      ],
+      "input_tokens": 144,
+      "output_tokens": 49,
+      "total_tokens": 193
+    },
+    {
+      "id": "T002",
+      "description": "Format the retrieved silver price information",
+      "agent": "FormatterAgent",
+      "agent_prompt": "Format the provided silver price information into a concise, direct statement. Include the current price per troy ounce in USD. The user prefers moderate responses and directness, avoiding motivational language or comparative phrasing. Output should be suitable for direct presentation.",
+      "reads": [
+        "silver_price_usd_T001"
+      ],
+      "writes": [
+        "formatted_silver_price_T002"
+      ],
+      "status": "completed",
+      "output": {
+        "final_format": "markdown",
+        "markdown_report": "The current price of silver is approximately $77.32 per troy ounce.",
+        "call_self": false,
+        "cost": 0.0006475000000000001,
+        "input_tokens": 6379,
+        "output_tokens": 24,
+        "total_tokens": 6403,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0006475000000000001,
+      "start_time": "2026-02-15T00:03:30.437792",
+      "end_time": "2026-02-15T00:03:31.185262",
+      "execution_time": 0.74747,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "final_format": "markdown",
+            "markdown_report": "The current price of silver is approximately $77.32 per troy ounce.",
+            "call_self": false,
+            "cost": 0.0006475000000000001,
+            "input_tokens": 6379,
+            "output_tokens": 24,
+            "total_tokens": 6403,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          }
+        }
+      ],
+      "input_tokens": 6379,
+      "output_tokens": 24,
+      "total_tokens": 6403
+    }
+  ],
+  "edges": [
+    {
+      "source": "ROOT",
+      "target": "Query"
+    },
+    {
+      "source": "Query",
+      "target": "T001"
+    },
+    {
+      "source": "T001",
+      "target": "T002"
+    }
+  ]
+}

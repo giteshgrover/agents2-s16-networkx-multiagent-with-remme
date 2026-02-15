@@ -1,0 +1,1265 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "session_id": "1771113952",
+    "original_query": "Suggest me new list of upcoming movies?",
+    "file_manifest": [],
+    "created_at": "2026-02-15T00:05:52.616547",
+    "status": "completed",
+    "globals_schema": {
+      "upcoming_movies_data_T001": {
+        "content": [
+          {
+            "type": "text",
+            "text": [
+              {
+                "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+                "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Predator: Badlands Rental Family Springsteen: Deliver Me from Nowhere Heel Avatar: Fire and Ash Shrinking Predator: Badlands Greenland 2: Migration Rental Family The Devil Wears Prada 2 TRON: Ares Minions & Monsters Zootopia 2 Young Sherlock Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Instagram YouTube",
+                "images": [],
+                "rank": 1
+              },
+              {
+                "url": "https://www.imdb.com/calendar/",
+                "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+                "images": [],
+                "rank": 2
+              },
+              {
+                "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+                "content": "[error] ",
+                "rank": 3
+              },
+              {
+                "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+                "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+                "images": [],
+                "rank": 4
+              },
+              {
+                "url": "https://www.releases.com/calendar/movies_tv-series",
+                "content": "[error] ",
+                "rank": 5
+              }
+            ],
+            "annotations": null,
+            "_meta": null
+          }
+        ]
+      },
+      "categorized_movies_T002": {
+        "February 2026": {
+          "Action": [
+            "Blades of the Guardians",
+            "Bring the Law"
+          ],
+          "Drama": [
+            "Blades of the Guardians",
+            "I Can Only Imagine 2",
+            "Do Deewane Seher Mein",
+            "The Dreadful",
+            "Lazarus: The Awakening"
+          ],
+          "Adventure": [
+            "Blades of the Guardians"
+          ],
+          "Horror": [
+            "Psycho Killer",
+            "The Dreadful",
+            "Scare Out"
+          ],
+          "Thriller": [
+            "Psycho Killer",
+            "The Dreadful",
+            "Scare Out"
+          ],
+          "Comedy": [
+            "How to Make a Killing"
+          ],
+          "Crime": [
+            "Psycho Killer",
+            "Hellfire"
+          ],
+          "Documentary": [
+            "Homecoming: The Tokyo Series",
+            "Paul McCartney: Man on the Run"
+          ],
+          "Sport": [
+            "Homecoming: The Tokyo Series"
+          ],
+          "Music": [
+            "Twenty One Pilots: More Than We Ever Imagined",
+            "Paul McCartney: Man on the Run"
+          ],
+          "Mystery": [
+            "Scream 7"
+          ],
+          "Romance": [
+            "Do Deewane Seher Mein"
+          ]
+        },
+        "March 2026": {
+          "Action": [],
+          "Drama": [
+            "Les Misrables"
+          ],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "April 2026": {
+          "Action": [],
+          "Drama": [
+            "A Great Awakening",
+            "The Drama",
+            "You, Me & Tuscany"
+          ],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "May 2026": {
+          "Action": [],
+          "Drama": [
+            "Animal Farm",
+            "The Devil Wears Prada 2"
+          ],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [
+            "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+          ],
+          "Mystery": [],
+          "Romance": []
+        },
+        "June 2026": {
+          "Action": [
+            "Masters of the Universe"
+          ],
+          "Drama": [
+            "The Death of Robin Hood"
+          ],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": [
+            "Girls Like Girls"
+          ]
+        },
+        "July 2026": {
+          "Action": [],
+          "Drama": [
+            "The Odyssey"
+          ],
+          "Adventure": [
+            "The Odyssey",
+            "Moana"
+          ],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "November 2026": {
+          "Action": [],
+          "Drama": [
+            "The Hunger Games: Sunrise on the Reaping"
+          ],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "December 2026": {
+          "Action": [
+            "Avengers: Doomsday"
+          ],
+          "Drama": [],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "Future (2027+)": {
+          "Action": [],
+          "Drama": [],
+          "Adventure": [],
+          "Horror": [],
+          "Thriller": [],
+          "Comedy": [
+            "Shrek 5"
+          ],
+          "Crime": [],
+          "Documentary": [],
+          "Sport": [],
+          "Music": [],
+          "Mystery": [],
+          "Romance": []
+        },
+        "Unspecified Genre": [
+          "28 Years Later: The Bone Temple",
+          "73 Mercy",
+          "No Other Clock",
+          "67 Kill Bill: The Whole Bloody Affair",
+          "80 I Can Only Imagine 2",
+          "2026 Oscar-Nominated Short Films",
+          "One Mile: Chapter One",
+          "Paul McCartney: Man on the Run",
+          "The Bluff",
+          "Scream 7",
+          "How to Make a Killing",
+          "Dreams",
+          "The Napa Boys",
+          "In the Blink of an Eye",
+          "Hoppers",
+          "The Bride!",
+          "War Machine",
+          "Heel",
+          "Reminders of Him",
+          "Undertone",
+          "Storm Rider: Legend of Hammerhead",
+          "Project Hail Mary",
+          "Tow",
+          "Ready or Not 2: Here I Come",
+          "Peaky Blinders: The Immortal Man",
+          "They Will Kill You",
+          "Forbidden Fruits",
+          "The Super Mario Galaxy Movie",
+          "You, Me & Tuscany",
+          "Lee Cronin's The Mummy",
+          "Mother Mary",
+          "Normal",
+          "Omaha",
+          "Michael",
+          "The Sheep Detectives",
+          "Mortal Kombat II",
+          "Obsession",
+          "Star Wars: The Mandalorian and Grogu",
+          "The Breadwinner",
+          "Disclosure Day",
+          "Toy Story 5",
+          "The Death of Robin Hood",
+          "Supergirl",
+          "Minions & Monsters",
+          "Moana",
+          "The Odyssey",
+          "Spider-Man: Brand New Day",
+          "The Cat in the Hat",
+          "The Hunger Games: Sunrise on the Reaping",
+          "Madden",
+          "Blades of the Guardians",
+          "Chase Atlantic: Lost in Heaven",
+          "How to Make a Killing",
+          "Psycho Killer",
+          "The Dreadful",
+          "I Can Only Imagine 2",
+          "Do Deewane Seher Mein",
+          "Homecoming: The Tokyo Series",
+          "Twenty One Pilots: More Than We Ever Imagined",
+          "Scream 7",
+          "Pillion",
+          "Dreams",
+          "The President's Cake",
+          "EPiC: Elvis Presley in Concert",
+          "Bring the Law",
+          "K-Pops!",
+          "Uma Musume: Pretty Derby - Beginning of a New Era",
+          "Ghost Train",
+          "Scare Out",
+          "Hellfire",
+          "The Swedish Connection",
+          "Lazarus: The Awakening",
+          "Crime 101",
+          "Wuthering Heights",
+          "GOAT",
+          "Dracula",
+          "The Moment",
+          "The Strangers: Chapter 3",
+          "Iron Lung",
+          "Melania",
+          "Send Help",
+          "TRON: Ares"
+        ]
+      },
+      "upcoming_movies_report_T003": []
+    }
+  },
+  "nodes": [
+    {
+      "description": "Initial Query",
+      "agent": "System",
+      "status": "completed",
+      "output": null,
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": null,
+      "execution_time": 0.0,
+      "id": "ROOT"
+    },
+    {
+      "id": "Query",
+      "description": "Formulate execution plan",
+      "agent": "PlannerAgent",
+      "status": "completed",
+      "reads": [
+        "original_query"
+      ],
+      "writes": [
+        "plan_graph"
+      ],
+      "output": {
+        "plan_graph": {
+          "nodes": [
+            {
+              "id": "T001",
+              "description": "Retrieve a list of upcoming movies with release dates.",
+              "agent": "RetrieverAgent",
+              "agent_prompt": "Search for a comprehensive list of upcoming movie releases, including their titles and scheduled release dates. Prioritize reliable sources for movie information. Store the retrieved data in a structured format.",
+              "reads": [],
+              "writes": [
+                "upcoming_movies_data_T001"
+              ]
+            },
+            {
+              "id": "T002",
+              "description": "Filter and categorize upcoming movies by release month and genre.",
+              "agent": "ThinkerAgent",
+              "agent_prompt": "Process the `upcoming_movies_data_T001` to identify movies scheduled for release in the next 6-12 months. Categorize these movies by their primary genre and group them by release month. Exclude any movies that have already been released or have indeterminate release dates. Prepare this categorized list for synthesis.",
+              "reads": [
+                "upcoming_movies_data_T001"
+              ],
+              "writes": [
+                "categorized_movies_T002"
+              ]
+            },
+            {
+              "id": "T003",
+              "description": "Synthesize and format the list of upcoming movies for presentation.",
+              "agent": "FormatterAgent",
+              "agent_prompt": "Generate a detailed and comprehensive report on upcoming movie releases based on the `categorized_movies_T002`. The report should be structured by release month, with each month listing movies by genre. For each movie, include its title and release date. Aim for a detailed presentation suitable for a C-suite executive, ensuring thoroughness and clarity. The final output should be in Markdown format.",
+              "reads": [
+                "categorized_movies_T002"
+              ],
+              "writes": [
+                "upcoming_movies_report_T003"
+              ]
+            }
+          ],
+          "edges": [
+            {
+              "source": "ROOT",
+              "target": "T001"
+            },
+            {
+              "source": "T001",
+              "target": "T002"
+            },
+            {
+              "source": "T002",
+              "target": "T003"
+            }
+          ]
+        },
+        "next_step_id": "T001",
+        "interpretation_confidence": 0.95,
+        "ambiguity_notes": [],
+        "cost": 0.0001393,
+        "input_tokens": 97,
+        "output_tokens": 324,
+        "total_tokens": 421,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0,
+      "start_time": null,
+      "end_time": "2026-02-15T00:05:54.585141",
+      "execution_time": 0.0
+    },
+    {
+      "id": "T001",
+      "description": "Retrieve a list of upcoming movies with release dates.",
+      "agent": "RetrieverAgent",
+      "agent_prompt": "Search for a comprehensive list of upcoming movie releases, including their titles and scheduled release dates. Prioritize reliable sources for movie information. Store the retrieved data in a structured format.",
+      "reads": [],
+      "writes": [
+        "upcoming_movies_data_T001"
+      ],
+      "status": "completed",
+      "output": {
+        "upcoming_movies_data_T001": [],
+        "call_self": false,
+        "code_variants": {
+          "CODE_1A": "results = json.loads(search_web_with_text_content('upcoming movie releases list titles release dates', 10))\nreturn {'upcoming_movies_data_T001': results}",
+          "CODE_1B": "urls = json.loads(fetch_search_urls('movie release schedule 2024 2025', 15))\nreturn {'upcoming_movies_data_T001': urls}"
+        },
+        "cost": 3.2600000000000006e-05,
+        "input_tokens": 154,
+        "output_tokens": 43,
+        "total_tokens": 197,
+        "executed_model": "gemini:gemini-2.5-flash-lite",
+        "execution_result": {
+          "upcoming_movies_data_T001": {
+            "content": [
+              {
+                "type": "text",
+                "text": [
+                  {
+                    "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+                    "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Predator: Badlands Rental Family Springsteen: Deliver Me from Nowhere Heel Avatar: Fire and Ash Shrinking Predator: Badlands Greenland 2: Migration Rental Family The Devil Wears Prada 2 TRON: Ares Minions & Monsters Zootopia 2 Young Sherlock Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Instagram YouTube",
+                    "images": [],
+                    "rank": 1
+                  },
+                  {
+                    "url": "https://www.imdb.com/calendar/",
+                    "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+                    "images": [],
+                    "rank": 2
+                  },
+                  {
+                    "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+                    "content": "[error] ",
+                    "rank": 3
+                  },
+                  {
+                    "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+                    "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+                    "images": [],
+                    "rank": 4
+                  },
+                  {
+                    "url": "https://www.releases.com/calendar/movies_tv-series",
+                    "content": "[error] ",
+                    "rank": 5
+                  }
+                ],
+                "annotations": null,
+                "_meta": null
+              }
+            ]
+          }
+        },
+        "execution_status": "success",
+        "execution_error": null,
+        "execution_time": "2026-02-14 19:06:21",
+        "executed_variant": "CODE_1A",
+        "execution_logs": ""
+      },
+      "error": null,
+      "cost": 3.2600000000000006e-05,
+      "start_time": "2026-02-15T00:05:54.587770",
+      "end_time": "2026-02-15T00:07:04.755407",
+      "execution_time": 70.167637,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "upcoming_movies_data_T001": [],
+            "call_self": false,
+            "code_variants": {
+              "CODE_1A": "results = json.loads(search_web_with_text_content('upcoming movie releases list titles release dates', 10))\nreturn {'upcoming_movies_data_T001': results}",
+              "CODE_1B": "urls = json.loads(fetch_search_urls('movie release schedule 2024 2025', 15))\nreturn {'upcoming_movies_data_T001': urls}"
+            },
+            "cost": 3.2600000000000006e-05,
+            "input_tokens": 154,
+            "output_tokens": 43,
+            "total_tokens": 197,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          },
+          "execution_result": {
+            "status": "success",
+            "result": {
+              "upcoming_movies_data_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+                        "content": "[error] ",
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+                        "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Wicked: For Good IT: Welcome to Derry 100 Nights of Hero Paradise Greenland 2: Migration Monarch: Legacy of Monsters TRON: Ares The Bluff Harlan Coben's Lazarus Greenland 2: Migration Rental Family Minions & Monsters Predator: Badlands I Can Only Imagine 2 Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Ins",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+                        "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://www.imdb.com/calendar/",
+                        "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.boxofficemojo.com/calendar/",
+                        "content": "Domestic Release Schedule - Box Office Mojo Domestic International Worldwide Calendar All Time Showdowns Indices Schedule Changes Distributors Domestic Release Schedule Pre-release titles January February March April May June July August September October November December 2027 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1992 1991 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 Release Distributor Scale February 11, 2026 Gale: Yellow Brick Road Fantasy       Horror       Thriller With: Chlo Crump, Laura Kay Bailey, Karen Swan, Dara Abasut 1 hr 44 min Cast, Crew, and Company Info - Limited February 13, 2026 Jimpa Drama       Family With: Olivia Colman, John Lithgow, Eamon Farren, Cody Fern 1 hr 53 min Cast, Crew, and Company Info Kino Lorber Wide Conversation Piece 2025 Re-release Drama       Romance With: Burt Lancaster, Helmut Berger, Silvana Mangano, Claudia Marsani 2 hr 1 min Cast, Crew, and Company Info Kino Lorber Wide Nirvanna the Band the Show the Movie Adventure       Comedy       Sci-Fi With: Matt Johnson, Jay McCarrol, Ben Petrie, Ethan Eng 1 hr 40 min Cast, Crew, and Company Info Neon Limited The Trouble with Terkel 2026 Re-release Animation       Comedy       Drama       Musical       Thriller With: Mike Olsen, Shark Firestone, Richard Janes, Chad Ridgely 1 hr 27 min Cast, Crew, and Company Info Indican Pictures Limited Broken Bird Horror With: James Fleet, Rebecca Calder, Jay Taylor, Sacharissa Claxton 1 hr 39 min Cast, Crew, and Company Info - Limited The Mortuary Assistant Horror With: Willa Holland, Paul Sparks, John Adams, Mark Steger 1 hr 31 min Cast, Crew, and Company Info Seismic Releasing Wide Good Luck, Have Fun, Don't Die Action       Adventure       Comedy       Sci-Fi With: Sam Rockwell, Juno Temple, Haley Lu Richardson, Michael Pea 2 hr 14 min Cast, Crew, and Company Info Briarcliff Entertainment Wide By Design Comedy       Drama       Sci-Fi With: Juliette Lewis, Mamoudou Athie, Samantha Mathis, Robin Tunney 1 hr 32 min Cast, Crew, and Company Info Music Box Films Limited O' Romeo Action       Crime       Drama       Romance With: Akshay Kumar, Shahid Kapoor, Triptii Dimri, Disha Patani 2 hr 58 min Cast, Crew, and Company Info - Limited Wuthering Heights Drama       Romance With: Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver 2 hr 16 min Cast, Crew, and Company Info Warner Bros. Wide GOAT Action       Adventure       Animation       Comedy       Family       Sport With: Caleb McLaughlin, Gabrielle Union, Stephen Curry, Aaron Pierre 1 hr 40 min Cast, Crew, and Company Info Sony Pictures Releasing Wide Crime 101 Crime       Drama       Thriller With: Chris Hemsworth, Mark Ruffalo, Barry Keoghan, Peter Banifaz 2 hr 19 min Cast, Crew, and Company Info Amazon MGM Studios Limited Mimics Comedy       Horror       Romance With: Kristoffer Polaha, Moriah, Stephen Tobolowsky, Chris Parnell 1 hr 30 min Cast, Crew, and Company Info ArtAffects Entertainment Limited Cold Storage Comedy       Horror       Sci-Fi With: Joe Keery, Georgina Campbell, Liam Neeson, Lesley Manville 1 hr 39 min Cast, Crew, and Company Info The Samuel Goldwyn Company Limited February 14, 2026 Pretty in Pink 40th Anniversary Comedy       Drama       Romance With: Molly Ringwald, Jon Cryer, Harry Dean Stanton, Annie Potts 1 hr 37 min Cast, Crew, and Company Info - Limited February 15, 2026 The A",
+                        "images": [],
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "raw": {
+              "upcoming_movies_data_T001": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": [
+                      {
+                        "url": "https://www.movieinsider.com/lists/the-complete-list-of-all-upcoming-movie-release-dates",
+                        "content": "[error] ",
+                        "rank": 1
+                      },
+                      {
+                        "url": "https://www.moviefone.com/movies/upcoming-movie-releases/",
+                        "content": "Upcoming Movie Release Calendar | Moviefone Trending 'Masters of the Universe' Teaser 'Avengers: Doomsday' Teaser 'The Odyssey' Trailer 'Supergirl' Teaser Movies TV Shows Streaming In Theaters Coming Soon Movie Charts TV Show Charts Showtimes Highlights News Celebrities What to Watch New Trailers Movie Theaters Movie Reviews Videos Moviefone TV Made In Hollywood Predator: Badlands Bugonia If I Had Legs I'd Kick You Archive One Battle After Another How to Get to Heaven from Belfast The Pitt Fallout The Night Manager A Knight of the Seven Kingdoms Highlights Wicked: For Good IT: Welcome to Derry 100 Nights of Hero Paradise Greenland 2: Migration Monarch: Legacy of Monsters TRON: Ares The Bluff Harlan Coben's Lazarus Greenland 2: Migration Rental Family Minions & Monsters Predator: Badlands I Can Only Imagine 2 Upcoming Movies by Release Date February 17, 2026 28 Years Later: The Bone Temple On Digital 73 Mercy On Digital 67 No Other Choice On Digital 76 Kill Bill: The Whole Bloody Affair On Digital 80 February 20, 2026 I Can Only Imagine 2 In Theaters Cast & Crew Psycho Killer In Theaters Cast & Crew Midwinter Break In Theaters Cast & Crew Nirvanna the Band the Show the Movie In Theaters 53 Pillion In Theaters 60 2026 Oscar-Nominated Short Films In Theaters Cast & Crew The Dreadful On Digital Cast & Crew One Mile: Chapter One On Digital Cast & Crew February 25, 2026 The Bluff On Digital Cast & Crew Paul McCartney: Man on the Run On Digital Cast & Crew February 27, 2026 Scream 7 In Theaters Cast & Crew How to Make a Killing In Theaters Cast & Crew Dreams In Theaters 61 The Napa Boys In Theaters 0 In the Blink of an Eye On Digital Cast & Crew March 1, 2026 Les Misrables On Digital 73 March 6, 2026 Hoppers In Theaters Cast & Crew The Bride! In Theaters Cast & Crew War Machine On Digital Cast & Crew Heel On Digital Cast & Crew March 13, 2026 Reminders of Him In Theaters Cast & Crew Undertone In Theaters Cast & Crew Storm Rider: Legend of Hammerhead In Theaters Cast & Crew March 20, 2026 Project Hail Mary In Theaters Cast & Crew Tow In Theaters Cast & Crew Ready or Not 2: Here I Come In Theaters Cast & Crew Peaky Blinders: The Immortal Man On Digital Cast & Crew March 27, 2026 They Will Kill You In Theaters Cast & Crew Forbidden Fruits In Theaters Cast & Crew April 1, 2026 The Super Mario Galaxy Movie In Theaters Cast & Crew April 3, 2026 A Great Awakening In Theaters Cast & Crew The Drama In Theaters Cast & Crew April 10, 2026 You, Me & Tuscany In Theaters Cast & Crew April 17, 2026 Lee Cronin's The Mummy In Theaters Cast & Crew Mother Mary In Theaters Cast & Crew Normal In Theaters Cast & Crew April 24, 2026 Omaha In Theaters 80 Michael In Theaters Cast & Crew May 1, 2026 Animal Farm In Theaters Cast & Crew The Devil Wears Prada 2 In Theaters Cast & Crew May 8, 2026 Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D) In Theaters Cast & Crew The Sheep Detectives In Theaters Cast & Crew Mortal Kombat II In Theaters Cast & Crew May 15, 2026 Obsession In Theaters Cast & Crew May 22, 2026 Star Wars: The Mandalorian and Grogu In Theaters Cast & Crew May 29, 2026 The Breadwinner In Theaters Cast & Crew June 5, 2026 Masters of the Universe In Theaters Cast & Crew June 12, 2026 Disclosure Day In Theaters Cast & Crew June 19, 2026 Toy Story 5 In Theaters Cast & Crew Girls Like Girls In Theaters Cast & Crew The Death of Robin Hood In Theaters Cast & Crew June 26, 2026 Supergirl In Theaters Cast & Crew July 1, 2026 Minions & Monsters In Theaters Cast & Crew July 10, 2026 Moana In Theaters Cast & Crew July 17, 2026 The Odyssey In Theaters Cast & Crew July 31, 2026 Spider-Man: Brand New Day In Theaters Cast & Crew November 6, 2026 The Cat in the Hat In Theaters Cast & Crew November 20, 2026 The Hunger Games: Sunrise on the Reaping In Theaters Cast & Crew November 26, 2026 Madden On Digital Cast & Crew December 18, 2026 Avengers: Doomsday In Theaters Cast & Crew June 30, 2027 Shrek 5 In Theaters Cast & Crew Follow Moviefone Facebook X Ins",
+                        "images": [],
+                        "rank": 2
+                      },
+                      {
+                        "url": "https://www.metacritic.com/browse/movie/?releaseType=coming-soon",
+                        "content": "All Upcoming Movie Releases - Metacritic JustWatch X Close Ad Games Explore Games 2025 Game Awards Tracker Free & Subscription Games Xbox Game Pass Best Games This Year Best Games of All Time Upcoming Releases New PS5 Games New Xbox Series X/S Games New PC Games New Switch/Switch 2 Games See All New Games Game Release Calendar God of War Sons of Sparta High on Life 2 REANIMAL Mario Tennis Fever Romeo is a Dead Man Crisol: Theater of Idols Yakuza Kiwami 3 & Dark Ties Nioh 3 Mewgenics More Movies Explore Movies Sundance Film Festival Recap Upcoming Movies DVD/Blu-ray: New & Upcoming Best Movies This Year Best Movies of All Time Best Movies on Netflix Best Movies on Hulu Best Movies on Prime Video Best Movies on Max Best Movies on Paramount+ See All New Movies Movie Release Calendar Crime 101 Wuthering Heights GOAT Dracula The Moment The Strangers: Chapter 3 Iron Lung Melania Send Help See All TV Shows Explore TV BEST TV SHOWS OF 2025 Renew/Cancel Scorecard Apple TV: New & Upcoming Disney+: New & Upcoming HBO Max: New & Upcoming Hulu: New & Upcoming Netflix: New & Upcoming Paramount+: New & Upcoming Peacock: New & Upcoming Prime Video: New & Upcoming See All New TV Shows TV Premiere Calendar Dark Winds S4 Love Story: JFK Jr. & Carolyn Bessette Cross S2 The Burbs The Muppet Show [2026 reboot] Nature: Parenthood Vanished Bridgerton S4 Shrinking S3 See All New Shows Music New Albums 40 BEST ALBUMS OF 2025 Charli xcx: Wuthering Heights Howling Bells: Strange Life Danny L Harle : Cerulean hemlocke springs: the apple tree under the sea Jill Scott: To Whom This May Concern J. Cole: The Fall-Off Mandy, Indiana: Urgh Ratboys: Singin' To An Empty Chair Daphni: Butterfly More in Music ... News Register Register All Upcoming Movie Releases Find your next movie to watch. Filter by genre, release year, or streaming service. Games Movies TV Shows 136 results Filters 136 results Blades of the Guardians Feb 17, 2026 Dao Ma, the \"second most wanted fugitive,\" who is entrusted by his benefactor, the chief of Mo family clan, to take on a mysterious escort mission-escorting the \"most wanted fugitive,\" to Chang'an. Scare Out Feb 17, 2026 Secrets beneath the surface, waiting to be exposed. When doubt takes over, the trap is set. In the world of spies, no one is ever beyond suspicion. Ghost Train Feb 17, 2026 Da-kyung is desperate to make it as a YouTube content creator, but her failing channel really needs a boost. Her latest plan: explore an allegedly haunted train station. Her interview with the station master takes her through a horrifying series of chilling tales that may be more true than she could have ever expected. Hellfire Feb 17, 2026 Rated R A haunted exGreen Beret drifter (Stephen Lang) wanders into a Southern town ruled by a ruthless crime boss (Harvey Keitel) and a corrupt sheriff (Dolph Lundgren). When violence erupts, the Man wages a one-man war for justice, redemption, and the soul of a broken town. Paul McCartney: Man on the Run Feb 19, 2026 Rated R Man on the Run takes viewers on an intimate journey through Paul McCartney's extraordinary life following the breakup of The Beatles and the formation of Wings with his wife, Linda. The Swedish Connection Feb 19, 2026 Rated PG-13 Swedish Foreign Ministry bureaucrat Gsta Engzell, overlooked during WWII, rescued thousands while turning supposedly neutral Sweden into a moral force. His efforts challenged the status quo and left a lasting humanitarian legacy. The Dreadful Feb 20, 2026 Rated R Set in medieval England, Anne (Sophie Turner) and her domineering mother-in-law Morwen (Marcia Gay Harden) struggle to survive on the outskirts of society. But when a man from Annes past returns from war, a curse begins to take shape through a mysterious knight and threatens to destroy them all. Lazarus: The Awakening Feb 20, 2026 A vigilante resurrected from death hunts a drug empire in Jackson, clashing with a kingpin, a reporter, and a city consumed by fentanyl. Justice becomes war. Billy Prest",
+                        "images": [],
+                        "rank": 3
+                      },
+                      {
+                        "url": "https://www.imdb.com/calendar/",
+                        "content": "Upcoming releases - IMDb Menu Movies Release calendar Top 250 movies Most popular movies Browse movies by genre Top box office Showtimes & tickets Movie news India movie spotlight TV shows What's on TV & streaming Top 250 TV shows Most popular TV shows Browse TV shows by genre TV news Watch What to watch Latest trailers IMDb Originals IMDb Picks IMDb Spotlight Family entertainment guide IMDb Podcasts Awards & events Oscars Black History Month SXSW Film Festival Sundance Film Festival Red Carpet Photos STARmeter Awards Awards Central Festival Central All events Celebs Born today Most popular celebs Celebrity news Community Help center Contributor zone Polls For industry professionals Language English (United States) Language Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) All All Watchlist Sign in EN Fully supported English (United States) Partially supported Franais (Canada) Franais (France) Deutsch (Deutschland) () Italiano (Italia) Portugus (Brasil) Espaol (Espaa) Espaol (Mxico) Use app Upcoming releases United States Select country Afghanistan Albania American Samoa Anguilla Argentina Armenia Australia Austria Bangladesh Barbados Belarus Belgium Benin Bermuda Brazil Bulgaria Cambodia Cameroon Canada Central African Republic Chile China Cocos (Keeling) Islands Colombia Costa Rica Croatia Cuba Curaao Cyprus Czechia Denmark Dominica Dominican Republic Ecuador Egypt Equatorial Guinea Estonia Finland France French Guiana Gabon Gambia Georgia Germany Greece Guinea Guinea-Bissau Hong Kong SAR China Hungary Iceland India Indonesia Iran Ireland Israel Italy Japan Kazakhstan Kuwait Latvia Lebanon Liberia Libya Lithuania Luxembourg Macao SAR China Malaysia Maldives Marshall Islands Mexico Montenegro Myanmar (Burma) Nepal Netherlands New Zealand Nicaragua Nigeria Norway Pakistan Paraguay Peru Philippines Poland Portugal Puerto Rico Qatar Romania Russia Saudi Arabia Serbia Singapore Slovakia Slovenia South Africa South Korea Spain Sri Lanka Sweden Switzerland Taiwan Thailand Turkey Ukraine United Arab Emirates United Kingdom United States Uruguay Venezuela Vietnam MOVIE TV TV EPISODE Feb 17, 2026 Blades of the Guardians (2026) Action Adventure Drama Jing Wu Nicholas Tse Jet Li Tony Ka Fai Leung Feb 18, 2026 Chase Atlantic: Lost in Heaven (2026) Christian Anthony Chase Atlantic Jesse Boyle Clinton Cave Feb 20, 2026 How to Make a Killing (2026) Comedy Drama Thriller Glen Powell Margaret Qualley Ed Harris Topher Grace Psycho Killer (2026) Crime Horror Thriller Dutchess Cayetano Malcolm McDowell Georgina Campbell Logan Miller The Dreadful (2026) Horror Thriller Sophie Turner Kit Harington Marcia Gay Harden Laurence O'Fuarain I Can Only Imagine 2 (2026) Drama Milo Ventimiglia Dennis Quaid Arielle Kebbel Sophie Skelton Do Deewane Seher Mein (2026) Drama Romance Siddhant Chaturvedi Mrunal Thakur Ila Arun Joy Sengupta Feb 23, 2026 Homecoming: The Tokyo Series (2026) Documentary Sport Shota Imanaga Shohei Ohtani Roki Sasaki Seiya Suzuki Feb 26, 2026 Twenty One Pilots: More Than We Ever Imagined (2026) Music Josh Dun Tyler Joseph Feb 27, 2026 Scream 7 (2026) Horror Mystery Neve Campbell Courteney Cox Isabel May Jasmin Savoy Brown Pillion (2025) Comedy Drama Romance Harry Melling Alexander Skarsgrd Douglas Hodge Lesley Sharp Dreams (2025) Drama Romance Thriller Jessica Chastain Isaac Hernndez Rupert Friend Eduardo Gonzalez The President's Cake (2025) Drama Baneen Ahmad Nayyef Waheed Thabet Khreibat Sajad Mohamad Qasem Muthanna Malaghi EPiC: Elvis Presley in Concert (2025) Documentary Music Elvis Presley Bring the Law (2026) Action Crime Thriller Brendan Fehr Danielle Harris Nicky Whelan Mickey Rourke K-Pops! (2024) Comedy Drama Anderson .Paak Jee Young Han Soul Rasheed Jonnie Park Uma Musume: Pretty Derby - Beginning of a New Era (2024) Animation Comedy Drama Yuri Fujimoto Sumire Uesaka Yui Ogura Haruna Fukushi",
+                        "images": [],
+                        "rank": 4
+                      },
+                      {
+                        "url": "https://www.boxofficemojo.com/calendar/",
+                        "content": "Domestic Release Schedule - Box Office Mojo Domestic International Worldwide Calendar All Time Showdowns Indices Schedule Changes Distributors Domestic Release Schedule Pre-release titles January February March April May June July August September October November December 2027 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002 2001 2000 1999 1998 1997 1996 1995 1994 1993 1992 1991 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 1972 1971 1970 1969 1968 1967 1966 1965 1964 1963 1962 1961 1960 1959 1958 1957 1956 1955 1954 1953 1952 1951 1950 1949 1948 1947 1946 1945 1944 1943 1942 1941 1940 1939 1938 1937 1936 1935 1934 1933 1932 1931 1930 1929 1928 1927 1926 1925 1924 1923 1922 1921 Release Distributor Scale February 11, 2026 Gale: Yellow Brick Road Fantasy       Horror       Thriller With: Chlo Crump, Laura Kay Bailey, Karen Swan, Dara Abasut 1 hr 44 min Cast, Crew, and Company Info - Limited February 13, 2026 Jimpa Drama       Family With: Olivia Colman, John Lithgow, Eamon Farren, Cody Fern 1 hr 53 min Cast, Crew, and Company Info Kino Lorber Wide Conversation Piece 2025 Re-release Drama       Romance With: Burt Lancaster, Helmut Berger, Silvana Mangano, Claudia Marsani 2 hr 1 min Cast, Crew, and Company Info Kino Lorber Wide Nirvanna the Band the Show the Movie Adventure       Comedy       Sci-Fi With: Matt Johnson, Jay McCarrol, Ben Petrie, Ethan Eng 1 hr 40 min Cast, Crew, and Company Info Neon Limited The Trouble with Terkel 2026 Re-release Animation       Comedy       Drama       Musical       Thriller With: Mike Olsen, Shark Firestone, Richard Janes, Chad Ridgely 1 hr 27 min Cast, Crew, and Company Info Indican Pictures Limited Broken Bird Horror With: James Fleet, Rebecca Calder, Jay Taylor, Sacharissa Claxton 1 hr 39 min Cast, Crew, and Company Info - Limited The Mortuary Assistant Horror With: Willa Holland, Paul Sparks, John Adams, Mark Steger 1 hr 31 min Cast, Crew, and Company Info Seismic Releasing Wide Good Luck, Have Fun, Don't Die Action       Adventure       Comedy       Sci-Fi With: Sam Rockwell, Juno Temple, Haley Lu Richardson, Michael Pea 2 hr 14 min Cast, Crew, and Company Info Briarcliff Entertainment Wide By Design Comedy       Drama       Sci-Fi With: Juliette Lewis, Mamoudou Athie, Samantha Mathis, Robin Tunney 1 hr 32 min Cast, Crew, and Company Info Music Box Films Limited O' Romeo Action       Crime       Drama       Romance With: Akshay Kumar, Shahid Kapoor, Triptii Dimri, Disha Patani 2 hr 58 min Cast, Crew, and Company Info - Limited Wuthering Heights Drama       Romance With: Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver 2 hr 16 min Cast, Crew, and Company Info Warner Bros. Wide GOAT Action       Adventure       Animation       Comedy       Family       Sport With: Caleb McLaughlin, Gabrielle Union, Stephen Curry, Aaron Pierre 1 hr 40 min Cast, Crew, and Company Info Sony Pictures Releasing Wide Crime 101 Crime       Drama       Thriller With: Chris Hemsworth, Mark Ruffalo, Barry Keoghan, Peter Banifaz 2 hr 19 min Cast, Crew, and Company Info Amazon MGM Studios Limited Mimics Comedy       Horror       Romance With: Kristoffer Polaha, Moriah, Stephen Tobolowsky, Chris Parnell 1 hr 30 min Cast, Crew, and Company Info ArtAffects Entertainment Limited Cold Storage Comedy       Horror       Sci-Fi With: Joe Keery, Georgina Campbell, Liam Neeson, Lesley Manville 1 hr 39 min Cast, Crew, and Company Info The Samuel Goldwyn Company Limited February 14, 2026 Pretty in Pink 40th Anniversary Comedy       Drama       Romance With: Molly Ringwald, Jon Cryer, Harry Dean Stanton, Annie Potts 1 hr 37 min Cast, Crew, and Company Info - Limited February 15, 2026 The A",
+                        "images": [],
+                        "rank": 5
+                      }
+                    ],
+                    "annotations": null,
+                    "_meta": null
+                  }
+                ]
+              }
+            },
+            "logs": "",
+            "execution_time": "2026-02-14 19:05:58",
+            "total_time": "23.001",
+            "executed_variant": "CODE_1A"
+          }
+        }
+      ],
+      "input_tokens": 154,
+      "output_tokens": 43,
+      "total_tokens": 197
+    },
+    {
+      "id": "T002",
+      "description": "Filter and categorize upcoming movies by release month and genre.",
+      "agent": "ThinkerAgent",
+      "agent_prompt": "Process the `upcoming_movies_data_T001` to identify movies scheduled for release in the next 6-12 months. Categorize these movies by their primary genre and group them by release month. Exclude any movies that have already been released or have indeterminate release dates. Prepare this categorized list for synthesis.",
+      "reads": [
+        "upcoming_movies_data_T001"
+      ],
+      "writes": [
+        "categorized_movies_T002"
+      ],
+      "status": "completed",
+      "output": {
+        "categorized_movies_T002": {
+          "February 2026": {
+            "Action": [
+              "Blades of the Guardians",
+              "Bring the Law"
+            ],
+            "Drama": [
+              "Blades of the Guardians",
+              "I Can Only Imagine 2",
+              "Do Deewane Seher Mein",
+              "The Dreadful",
+              "Lazarus: The Awakening"
+            ],
+            "Adventure": [
+              "Blades of the Guardians"
+            ],
+            "Horror": [
+              "Psycho Killer",
+              "The Dreadful",
+              "Scare Out"
+            ],
+            "Thriller": [
+              "Psycho Killer",
+              "The Dreadful",
+              "Scare Out"
+            ],
+            "Comedy": [
+              "How to Make a Killing"
+            ],
+            "Crime": [
+              "Psycho Killer",
+              "Hellfire"
+            ],
+            "Documentary": [
+              "Homecoming: The Tokyo Series",
+              "Paul McCartney: Man on the Run"
+            ],
+            "Sport": [
+              "Homecoming: The Tokyo Series"
+            ],
+            "Music": [
+              "Twenty One Pilots: More Than We Ever Imagined",
+              "Paul McCartney: Man on the Run"
+            ],
+            "Mystery": [
+              "Scream 7"
+            ],
+            "Romance": [
+              "Do Deewane Seher Mein"
+            ]
+          },
+          "March 2026": {
+            "Action": [],
+            "Drama": [
+              "Les Misrables"
+            ],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "April 2026": {
+            "Action": [],
+            "Drama": [
+              "A Great Awakening",
+              "The Drama",
+              "You, Me & Tuscany"
+            ],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "May 2026": {
+            "Action": [],
+            "Drama": [
+              "Animal Farm",
+              "The Devil Wears Prada 2"
+            ],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [
+              "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+            ],
+            "Mystery": [],
+            "Romance": []
+          },
+          "June 2026": {
+            "Action": [
+              "Masters of the Universe"
+            ],
+            "Drama": [
+              "The Death of Robin Hood"
+            ],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": [
+              "Girls Like Girls"
+            ]
+          },
+          "July 2026": {
+            "Action": [],
+            "Drama": [
+              "The Odyssey"
+            ],
+            "Adventure": [
+              "The Odyssey",
+              "Moana"
+            ],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "November 2026": {
+            "Action": [],
+            "Drama": [
+              "The Hunger Games: Sunrise on the Reaping"
+            ],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "December 2026": {
+            "Action": [
+              "Avengers: Doomsday"
+            ],
+            "Drama": [],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "Future (2027+)": {
+            "Action": [],
+            "Drama": [],
+            "Adventure": [],
+            "Horror": [],
+            "Thriller": [],
+            "Comedy": [
+              "Shrek 5"
+            ],
+            "Crime": [],
+            "Documentary": [],
+            "Sport": [],
+            "Music": [],
+            "Mystery": [],
+            "Romance": []
+          },
+          "Unspecified Genre": [
+            "28 Years Later: The Bone Temple",
+            "73 Mercy",
+            "No Other Clock",
+            "67 Kill Bill: The Whole Bloody Affair",
+            "80 I Can Only Imagine 2",
+            "2026 Oscar-Nominated Short Films",
+            "One Mile: Chapter One",
+            "Paul McCartney: Man on the Run",
+            "The Bluff",
+            "Scream 7",
+            "How to Make a Killing",
+            "Dreams",
+            "The Napa Boys",
+            "In the Blink of an Eye",
+            "Hoppers",
+            "The Bride!",
+            "War Machine",
+            "Heel",
+            "Reminders of Him",
+            "Undertone",
+            "Storm Rider: Legend of Hammerhead",
+            "Project Hail Mary",
+            "Tow",
+            "Ready or Not 2: Here I Come",
+            "Peaky Blinders: The Immortal Man",
+            "They Will Kill You",
+            "Forbidden Fruits",
+            "The Super Mario Galaxy Movie",
+            "You, Me & Tuscany",
+            "Lee Cronin's The Mummy",
+            "Mother Mary",
+            "Normal",
+            "Omaha",
+            "Michael",
+            "The Sheep Detectives",
+            "Mortal Kombat II",
+            "Obsession",
+            "Star Wars: The Mandalorian and Grogu",
+            "The Breadwinner",
+            "Disclosure Day",
+            "Toy Story 5",
+            "The Death of Robin Hood",
+            "Supergirl",
+            "Minions & Monsters",
+            "Moana",
+            "The Odyssey",
+            "Spider-Man: Brand New Day",
+            "The Cat in the Hat",
+            "The Hunger Games: Sunrise on the Reaping",
+            "Madden",
+            "Blades of the Guardians",
+            "Chase Atlantic: Lost in Heaven",
+            "How to Make a Killing",
+            "Psycho Killer",
+            "The Dreadful",
+            "I Can Only Imagine 2",
+            "Do Deewane Seher Mein",
+            "Homecoming: The Tokyo Series",
+            "Twenty One Pilots: More Than We Ever Imagined",
+            "Scream 7",
+            "Pillion",
+            "Dreams",
+            "The President's Cake",
+            "EPiC: Elvis Presley in Concert",
+            "Bring the Law",
+            "K-Pops!",
+            "Uma Musume: Pretty Derby - Beginning of a New Era",
+            "Ghost Train",
+            "Scare Out",
+            "Hellfire",
+            "The Swedish Connection",
+            "Lazarus: The Awakening",
+            "Crime 101",
+            "Wuthering Heights",
+            "GOAT",
+            "Dracula",
+            "The Moment",
+            "The Strangers: Chapter 3",
+            "Iron Lung",
+            "Melania",
+            "Send Help",
+            "TRON: Ares"
+          ]
+        },
+        "cost": 0.0006916000000000001,
+        "input_tokens": 3252,
+        "output_tokens": 916,
+        "total_tokens": 4168,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0006916000000000001,
+      "start_time": "2026-02-15T00:07:04.759072",
+      "end_time": "2026-02-15T00:07:08.695723",
+      "execution_time": 3.936651,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "categorized_movies_T002": {
+              "February 2026": {
+                "Action": [
+                  "Blades of the Guardians",
+                  "Bring the Law"
+                ],
+                "Drama": [
+                  "Blades of the Guardians",
+                  "I Can Only Imagine 2",
+                  "Do Deewane Seher Mein",
+                  "The Dreadful",
+                  "Lazarus: The Awakening"
+                ],
+                "Adventure": [
+                  "Blades of the Guardians"
+                ],
+                "Horror": [
+                  "Psycho Killer",
+                  "The Dreadful",
+                  "Scare Out"
+                ],
+                "Thriller": [
+                  "Psycho Killer",
+                  "The Dreadful",
+                  "Scare Out"
+                ],
+                "Comedy": [
+                  "How to Make a Killing"
+                ],
+                "Crime": [
+                  "Psycho Killer",
+                  "Hellfire"
+                ],
+                "Documentary": [
+                  "Homecoming: The Tokyo Series",
+                  "Paul McCartney: Man on the Run"
+                ],
+                "Sport": [
+                  "Homecoming: The Tokyo Series"
+                ],
+                "Music": [
+                  "Twenty One Pilots: More Than We Ever Imagined",
+                  "Paul McCartney: Man on the Run"
+                ],
+                "Mystery": [
+                  "Scream 7"
+                ],
+                "Romance": [
+                  "Do Deewane Seher Mein"
+                ]
+              },
+              "March 2026": {
+                "Action": [],
+                "Drama": [
+                  "Les Misrables"
+                ],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "April 2026": {
+                "Action": [],
+                "Drama": [
+                  "A Great Awakening",
+                  "The Drama",
+                  "You, Me & Tuscany"
+                ],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "May 2026": {
+                "Action": [],
+                "Drama": [
+                  "Animal Farm",
+                  "The Devil Wears Prada 2"
+                ],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [
+                  "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+                ],
+                "Mystery": [],
+                "Romance": []
+              },
+              "June 2026": {
+                "Action": [
+                  "Masters of the Universe"
+                ],
+                "Drama": [
+                  "The Death of Robin Hood"
+                ],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": [
+                  "Girls Like Girls"
+                ]
+              },
+              "July 2026": {
+                "Action": [],
+                "Drama": [
+                  "The Odyssey"
+                ],
+                "Adventure": [
+                  "The Odyssey",
+                  "Moana"
+                ],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "November 2026": {
+                "Action": [],
+                "Drama": [
+                  "The Hunger Games: Sunrise on the Reaping"
+                ],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "December 2026": {
+                "Action": [
+                  "Avengers: Doomsday"
+                ],
+                "Drama": [],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "Future (2027+)": {
+                "Action": [],
+                "Drama": [],
+                "Adventure": [],
+                "Horror": [],
+                "Thriller": [],
+                "Comedy": [
+                  "Shrek 5"
+                ],
+                "Crime": [],
+                "Documentary": [],
+                "Sport": [],
+                "Music": [],
+                "Mystery": [],
+                "Romance": []
+              },
+              "Unspecified Genre": [
+                "28 Years Later: The Bone Temple",
+                "73 Mercy",
+                "No Other Clock",
+                "67 Kill Bill: The Whole Bloody Affair",
+                "80 I Can Only Imagine 2",
+                "2026 Oscar-Nominated Short Films",
+                "One Mile: Chapter One",
+                "Paul McCartney: Man on the Run",
+                "The Bluff",
+                "Scream 7",
+                "How to Make a Killing",
+                "Dreams",
+                "The Napa Boys",
+                "In the Blink of an Eye",
+                "Hoppers",
+                "The Bride!",
+                "War Machine",
+                "Heel",
+                "Reminders of Him",
+                "Undertone",
+                "Storm Rider: Legend of Hammerhead",
+                "Project Hail Mary",
+                "Tow",
+                "Ready or Not 2: Here I Come",
+                "Peaky Blinders: The Immortal Man",
+                "They Will Kill You",
+                "Forbidden Fruits",
+                "The Super Mario Galaxy Movie",
+                "You, Me & Tuscany",
+                "Lee Cronin's The Mummy",
+                "Mother Mary",
+                "Normal",
+                "Omaha",
+                "Michael",
+                "The Sheep Detectives",
+                "Mortal Kombat II",
+                "Obsession",
+                "Star Wars: The Mandalorian and Grogu",
+                "The Breadwinner",
+                "Disclosure Day",
+                "Toy Story 5",
+                "The Death of Robin Hood",
+                "Supergirl",
+                "Minions & Monsters",
+                "Moana",
+                "The Odyssey",
+                "Spider-Man: Brand New Day",
+                "The Cat in the Hat",
+                "The Hunger Games: Sunrise on the Reaping",
+                "Madden",
+                "Blades of the Guardians",
+                "Chase Atlantic: Lost in Heaven",
+                "How to Make a Killing",
+                "Psycho Killer",
+                "The Dreadful",
+                "I Can Only Imagine 2",
+                "Do Deewane Seher Mein",
+                "Homecoming: The Tokyo Series",
+                "Twenty One Pilots: More Than We Ever Imagined",
+                "Scream 7",
+                "Pillion",
+                "Dreams",
+                "The President's Cake",
+                "EPiC: Elvis Presley in Concert",
+                "Bring the Law",
+                "K-Pops!",
+                "Uma Musume: Pretty Derby - Beginning of a New Era",
+                "Ghost Train",
+                "Scare Out",
+                "Hellfire",
+                "The Swedish Connection",
+                "Lazarus: The Awakening",
+                "Crime 101",
+                "Wuthering Heights",
+                "GOAT",
+                "Dracula",
+                "The Moment",
+                "The Strangers: Chapter 3",
+                "Iron Lung",
+                "Melania",
+                "Send Help",
+                "TRON: Ares"
+              ]
+            },
+            "cost": 0.0006916000000000001,
+            "input_tokens": 3252,
+            "output_tokens": 916,
+            "total_tokens": 4168,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          }
+        }
+      ],
+      "input_tokens": 3252,
+      "output_tokens": 916,
+      "total_tokens": 4168
+    },
+    {
+      "id": "T003",
+      "description": "Synthesize and format the list of upcoming movies for presentation.",
+      "agent": "FormatterAgent",
+      "agent_prompt": "Generate a detailed and comprehensive report on upcoming movie releases based on the `categorized_movies_T002`. The report should be structured by release month, with each month listing movies by genre. For each movie, include its title and release date. Aim for a detailed presentation suitable for a C-suite executive, ensuring thoroughness and clarity. The final output should be in Markdown format.",
+      "reads": [
+        "categorized_movies_T002"
+      ],
+      "writes": [
+        "upcoming_movies_report_T003"
+      ],
+      "status": "completed",
+      "output": {
+        "final_format": "markdown",
+        "markdown_report": "# Upcoming Movie Releases: A Comprehensive Outlook (2026)\n\nThis report details upcoming movie releases scheduled for 2026, categorized by their release month and genre. The data is compiled from various industry sources to provide a comprehensive overview for stakeholders.\n\n## Executive Summary\n\nThe cinematic landscape of 2026 is poised for a diverse range of releases, spanning major franchise installments, compelling dramas, and genre-bending thrillers. February is set to be a particularly active month, featuring a wide array of genres including Action, Drama, Horror, and Documentary. Key releases such as \"Blades of the Guardians,\" \"Psycho Killer,\" and \"The Dreadful\" are anticipated to generate significant interest. As the year progresses, audiences can look forward to established franchises like \"Masters of the Universe\" and \"Avengers: Doomsday,\" alongside intriguing dramas and adventurous tales. This report aims to provide a structured and detailed view of these upcoming releases to inform strategic planning and content engagement.\n\n## Detailed Release Schedule by Month and Genre\n\n### February 2026\n\nThis month is characterized by a robust offering across multiple genres, indicating a strong start to the year's cinematic releases.\n\n*   **Action**\n    *   Blades of the Guardians\n    *   Bring the Law\n*   **Drama**\n    *   Blades of the Guardians\n    *   I Can Only Imagine 2\n    *   Do Deewane Seher Mein\n    *   The Dreadful\n    *   Lazarus: The Awakening\n*   **Adventure**\n    *   Blades of the Guardians\n*   **Horror**\n    *   Psycho Killer\n    *   The Dreadful\n    *   Scare Out\n*   **Thriller**\n    *   Psycho Killer\n    *   The Dreadful\n    *   Scare Out\n*   **Comedy**\n    *   How to Make a Killing\n*   **Crime**\n    *   Psycho Killer\n    *   Hellfire\n*   **Documentary**\n    *   Homecoming: The Tokyo Series\n    *   Paul McCartney: Man on the Run\n*   **Sport**\n    *   Homecoming: The Tokyo Series\n*   **Music**\n    *   Twenty One Pilots: More Than We Ever Imagined\n    *   Paul McCartney: Man on the Run\n*   **Mystery**\n    *   Scream 7\n*   **Romance**\n    *   Do Deewane Seher Mein\n\n### March 2026\n\nMarch's releases are more concentrated, with a notable Drama title leading the pack.\n\n*   **Drama**\n    *   Les Misrables\n\n### April 2026\n\nApril brings a focus on dramatic narratives, with a few titles appearing across multiple genre categorizations.\n\n*   **Drama**\n    *   A Great Awakening\n    *   The Drama\n    *   You, Me & Tuscany\n\n### May 2026\n\nMay features a mix of dramatic and musical offerings.\n\n*   **Drama**\n    *   Animal Farm\n    *   The Devil Wears Prada 2\n*   **Music**\n    *   Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)\n\n### June 2026\n\nJune sees the return of a major action franchise alongside other genre entries.\n\n*   **Action**\n    *   Masters of the Universe\n*   **Drama**\n    *   The Death of Robin Hood\n*   **Romance**\n    *   Girls Like Girls\n\n### July 2026\n\nJuly's releases emphasize Adventure and Drama, with one title spanning both.\n\n*   **Drama**\n    *   The Odyssey\n*   **Adventure**\n    *   The Odyssey\n    *   Moana\n\n### November 2026\n\nNovember's schedule is anchored by a highly anticipated installment in a popular franchise.\n\n*   **Drama**\n    *   The Hunger Games: Sunrise on the Reaping\n\n### December 2026\n\nThe year concludes with a significant action spectacle.\n\n*   **Action**\n    *   Avengers: Doomsday\n\n### Future (2027+)\n\nLooking beyond 2026, a highly anticipated animated comedy is slated for release.\n\n*   **Comedy**\n    *   Shrek 5\n\n## Unspecified Genre Releases\n\nThe following titles have been identified with release dates but without specific genre categorization within the provided data. Further investigation may be required for a complete genre breakdown.\n\n*   28 Years Later: The Bone Temple\n*   73 Mercy\n*   No Other Clock\n*   67 Kill Bill: The Whole Bloody Affair\n*   80 I Can Only Imagine 2\n*   2026 Oscar-Nominated Short Films\n*   One Mile: Chapter One\n*   Paul McCartney: Man on the Run\n*   The Bluff\n*   Scream 7\n*   How to Make a Killing\n*   Dreams\n*   The Napa Boys\n*   In the Blink of an Eye\n*   Hoppers\n*   The Bride!\n*   War Machine\n*   Heel\n*   Reminders of Him\n*   Undertone\n*   Storm Rider: Legend of Hammerhead\n*   Project Hail Mary\n*   Tow\n*   Ready or Not 2: Here I Come\n*   Peaky Blinders: The Immortal Man\n*   They Will Kill You\n*   Forbidden Fruits\n*   The Super Mario Galaxy Movie\n*   You, Me & Tuscany\n*   Lee Cronin's The Mummy\n*   Mother Mary\n*   Normal\n*   Omaha\n*   Michael\n*   The Sheep Detectives\n*   Mortal Kombat II\n*   Obsession\n*   Star Wars: The Mandalorian and Grogu\n*   The Breadwinner\n*   Disclosure Day\n*   Toy Story 5\n*   The Death of Robin Hood\n*   Supergirl\n*   Minions & Monsters\n*   Moana\n*   The Odyssey\n*   Spider-Man: Brand New Day\n*   The Cat in the Hat\n*   The Hunger Games: Sunrise on the Reaping\n*   Madden\n*   Blades of the Guardians\n*   Chase Atlantic: Lost in Heaven\n*   How to Make a Killing\n*   Psycho Killer\n*   The Dreadful\n*   I Can Only Imagine 2\n*   Do Deewane Seher Mein\n*   Homecoming: The Tokyo Series\n*   Twenty One Pilots: More Than We Ever Imagined\n*   Scream 7\n*   Pillion\n*   Dreams\n*   The President's Cake\n*   EPiC: Elvis Presley in Concert\n*   Bring the Law\n*   K-Pops!\n*   Uma Musume: Pretty Derby - Beginning of a New Era\n*   Ghost Train\n*   Scare Out\n*   Hellfire\n*   The Swedish Connection\n*   Lazarus: The Awakening\n*   Crime 101\n*   Wuthering Heights\n*   GOAT\n*   Dracula\n*   The Moment\n*   The Strangers: Chapter 3\n*   Iron Lung\n*   Melania\n*   Send Help\n*   TRON: Ares\n\nThis report is based on the data available as of February 14, 2026. Release dates are subject to change by distributors.\n",
+        "call_self": false,
+        "cost": 0.0009875,
+        "input_tokens": 5107,
+        "output_tokens": 1192,
+        "total_tokens": 6299,
+        "executed_model": "gemini:gemini-2.5-flash-lite"
+      },
+      "error": null,
+      "cost": 0.0009875,
+      "start_time": "2026-02-15T00:07:08.703926",
+      "end_time": "2026-02-15T00:07:14.906443",
+      "execution_time": 6.202517,
+      "iterations": [
+        {
+          "iteration": 1,
+          "output": {
+            "final_format": "markdown",
+            "markdown_report": "# Upcoming Movie Releases: A Comprehensive Outlook (2026)\n\nThis report details upcoming movie releases scheduled for 2026, categorized by their release month and genre. The data is compiled from various industry sources to provide a comprehensive overview for stakeholders.\n\n## Executive Summary\n\nThe cinematic landscape of 2026 is poised for a diverse range of releases, spanning major franchise installments, compelling dramas, and genre-bending thrillers. February is set to be a particularly active month, featuring a wide array of genres including Action, Drama, Horror, and Documentary. Key releases such as \"Blades of the Guardians,\" \"Psycho Killer,\" and \"The Dreadful\" are anticipated to generate significant interest. As the year progresses, audiences can look forward to established franchises like \"Masters of the Universe\" and \"Avengers: Doomsday,\" alongside intriguing dramas and adventurous tales. This report aims to provide a structured and detailed view of these upcoming releases to inform strategic planning and content engagement.\n\n## Detailed Release Schedule by Month and Genre\n\n### February 2026\n\nThis month is characterized by a robust offering across multiple genres, indicating a strong start to the year's cinematic releases.\n\n*   **Action**\n    *   Blades of the Guardians\n    *   Bring the Law\n*   **Drama**\n    *   Blades of the Guardians\n    *   I Can Only Imagine 2\n    *   Do Deewane Seher Mein\n    *   The Dreadful\n    *   Lazarus: The Awakening\n*   **Adventure**\n    *   Blades of the Guardians\n*   **Horror**\n    *   Psycho Killer\n    *   The Dreadful\n    *   Scare Out\n*   **Thriller**\n    *   Psycho Killer\n    *   The Dreadful\n    *   Scare Out\n*   **Comedy**\n    *   How to Make a Killing\n*   **Crime**\n    *   Psycho Killer\n    *   Hellfire\n*   **Documentary**\n    *   Homecoming: The Tokyo Series\n    *   Paul McCartney: Man on the Run\n*   **Sport**\n    *   Homecoming: The Tokyo Series\n*   **Music**\n    *   Twenty One Pilots: More Than We Ever Imagined\n    *   Paul McCartney: Man on the Run\n*   **Mystery**\n    *   Scream 7\n*   **Romance**\n    *   Do Deewane Seher Mein\n\n### March 2026\n\nMarch's releases are more concentrated, with a notable Drama title leading the pack.\n\n*   **Drama**\n    *   Les Misrables\n\n### April 2026\n\nApril brings a focus on dramatic narratives, with a few titles appearing across multiple genre categorizations.\n\n*   **Drama**\n    *   A Great Awakening\n    *   The Drama\n    *   You, Me & Tuscany\n\n### May 2026\n\nMay features a mix of dramatic and musical offerings.\n\n*   **Drama**\n    *   Animal Farm\n    *   The Devil Wears Prada 2\n*   **Music**\n    *   Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)\n\n### June 2026\n\nJune sees the return of a major action franchise alongside other genre entries.\n\n*   **Action**\n    *   Masters of the Universe\n*   **Drama**\n    *   The Death of Robin Hood\n*   **Romance**\n    *   Girls Like Girls\n\n### July 2026\n\nJuly's releases emphasize Adventure and Drama, with one title spanning both.\n\n*   **Drama**\n    *   The Odyssey\n*   **Adventure**\n    *   The Odyssey\n    *   Moana\n\n### November 2026\n\nNovember's schedule is anchored by a highly anticipated installment in a popular franchise.\n\n*   **Drama**\n    *   The Hunger Games: Sunrise on the Reaping\n\n### December 2026\n\nThe year concludes with a significant action spectacle.\n\n*   **Action**\n    *   Avengers: Doomsday\n\n### Future (2027+)\n\nLooking beyond 2026, a highly anticipated animated comedy is slated for release.\n\n*   **Comedy**\n    *   Shrek 5\n\n## Unspecified Genre Releases\n\nThe following titles have been identified with release dates but without specific genre categorization within the provided data. Further investigation may be required for a complete genre breakdown.\n\n*   28 Years Later: The Bone Temple\n*   73 Mercy\n*   No Other Clock\n*   67 Kill Bill: The Whole Bloody Affair\n*   80 I Can Only Imagine 2\n*   2026 Oscar-Nominated Short Films\n*   One Mile: Chapter One\n*   Paul McCartney: Man on the Run\n*   The Bluff\n*   Scream 7\n*   How to Make a Killing\n*   Dreams\n*   The Napa Boys\n*   In the Blink of an Eye\n*   Hoppers\n*   The Bride!\n*   War Machine\n*   Heel\n*   Reminders of Him\n*   Undertone\n*   Storm Rider: Legend of Hammerhead\n*   Project Hail Mary\n*   Tow\n*   Ready or Not 2: Here I Come\n*   Peaky Blinders: The Immortal Man\n*   They Will Kill You\n*   Forbidden Fruits\n*   The Super Mario Galaxy Movie\n*   You, Me & Tuscany\n*   Lee Cronin's The Mummy\n*   Mother Mary\n*   Normal\n*   Omaha\n*   Michael\n*   The Sheep Detectives\n*   Mortal Kombat II\n*   Obsession\n*   Star Wars: The Mandalorian and Grogu\n*   The Breadwinner\n*   Disclosure Day\n*   Toy Story 5\n*   The Death of Robin Hood\n*   Supergirl\n*   Minions & Monsters\n*   Moana\n*   The Odyssey\n*   Spider-Man: Brand New Day\n*   The Cat in the Hat\n*   The Hunger Games: Sunrise on the Reaping\n*   Madden\n*   Blades of the Guardians\n*   Chase Atlantic: Lost in Heaven\n*   How to Make a Killing\n*   Psycho Killer\n*   The Dreadful\n*   I Can Only Imagine 2\n*   Do Deewane Seher Mein\n*   Homecoming: The Tokyo Series\n*   Twenty One Pilots: More Than We Ever Imagined\n*   Scream 7\n*   Pillion\n*   Dreams\n*   The President's Cake\n*   EPiC: Elvis Presley in Concert\n*   Bring the Law\n*   K-Pops!\n*   Uma Musume: Pretty Derby - Beginning of a New Era\n*   Ghost Train\n*   Scare Out\n*   Hellfire\n*   The Swedish Connection\n*   Lazarus: The Awakening\n*   Crime 101\n*   Wuthering Heights\n*   GOAT\n*   Dracula\n*   The Moment\n*   The Strangers: Chapter 3\n*   Iron Lung\n*   Melania\n*   Send Help\n*   TRON: Ares\n\nThis report is based on the data available as of February 14, 2026. Release dates are subject to change by distributors.\n",
+            "call_self": false,
+            "cost": 0.0009875,
+            "input_tokens": 5107,
+            "output_tokens": 1192,
+            "total_tokens": 6299,
+            "executed_model": "gemini:gemini-2.5-flash-lite"
+          }
+        }
+      ],
+      "input_tokens": 5107,
+      "output_tokens": 1192,
+      "total_tokens": 6299
+    }
+  ],
+  "edges": [
+    {
+      "source": "ROOT",
+      "target": "Query"
+    },
+    {
+      "source": "Query",
+      "target": "T001"
+    },
+    {
+      "source": "T001",
+      "target": "T002"
+    },
+    {
+      "source": "T002",
+      "target": "T003"
+    }
+  ]
+}

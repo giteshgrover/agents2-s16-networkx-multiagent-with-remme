@@ -1,0 +1,43 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve current silver price data",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the current market price of silver. Provide the price per troy ounce in USD. Format the output as a key-value pair, e.g., 'silver_price_usd: 23.50'.",
+        "reads": [],
+        "writes": [
+          "silver_price_usd_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format the retrieved silver price information",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided silver price information into a concise, direct statement. Include the current price per troy ounce in USD. The user prefers moderate responses and directness, avoiding motivational language or comparative phrasing. Output should be suitable for direct presentation.",
+        "reads": [
+          "silver_price_usd_T001"
+        ],
+        "writes": [
+          "formatted_silver_price_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "ROOT",
+        "to": "T001"
+      },
+      {
+        "from": "T001",
+        "to": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.9,
+  "ambiguity_notes": []
+}
+```

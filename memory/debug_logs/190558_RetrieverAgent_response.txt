@@ -1,0 +1,10 @@
+```json
+{
+  "upcoming_movies_data_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('upcoming movie releases list titles release dates', 10))\nreturn {'upcoming_movies_data_T001': results}",
+    "CODE_1B": "urls = json.loads(fetch_search_urls('movie release schedule 2024 2025', 15))\nreturn {'upcoming_movies_data_T001': urls}"
+  }
+}
+```

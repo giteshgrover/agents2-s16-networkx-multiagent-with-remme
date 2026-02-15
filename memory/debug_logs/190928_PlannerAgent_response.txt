@@ -1,0 +1,59 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve popular and critically acclaimed movies on Netflix, considering user preference for moderate responses.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Search for highly-rated and popular movies currently available on Netflix. Focus on titles that are generally considered 'must-watch' without being overly niche or requiring extensive prior knowledge. The user prefers moderate responses, so avoid overly obscure or extremely niche recommendations. Consider a balance of genres. Output a list of movie titles.",
+        "reads": [],
+        "writes": [
+          "netflix_movie_titles_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Synthesize retrieved Netflix movie titles into a concise, actionable list.",
+        "agent": "DistillerAgent",
+        "agent_prompt": "Review the list of Netflix movie titles retrieved. Consolidate and present them as a clear, actionable list of 'must-watch' movies. Ensure the list reflects the user's preference for moderate recommendations. The output should be a structured list suitable for further processing.",
+        "reads": [
+          "netflix_movie_titles_T001"
+        ],
+        "writes": [
+          "distilled_movie_list_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the distilled list of Netflix movies into a user-friendly report.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided list of 'must-watch' Netflix movies into a comprehensive and well-organized report. The report should be detailed, aiming for a significant word count (5000+ words if possible, though this is a directive for depth and not a strict limit on the number of movies). Include brief descriptions or reasons why each movie is considered a 'must-watch' if available from upstream data, or infer them based on general critical reception. The output should be rich, well-structured, and visually organized. Ensure the tone is direct and avoids motivational language or phrases like 'It's not this, it's this' or 'What you're describing is not'.",
+        "reads": [
+          "distilled_movie_list_T002"
+        ],
+        "writes": [
+          "final_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "ROOT",
+        "to": "T001"
+      },
+      {
+        "from": "T001",
+        "to": "T002"
+      },
+      {
+        "from": "T002",
+        "to": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

@@ -1,0 +1,59 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve a list of upcoming movies with release dates.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Search for a comprehensive list of upcoming movie releases, including their titles and scheduled release dates. Prioritize reliable sources for movie information. Store the retrieved data in a structured format.",
+        "reads": [],
+        "writes": [
+          "upcoming_movies_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Filter and categorize upcoming movies by release month and genre.",
+        "agent": "ThinkerAgent",
+        "agent_prompt": "Process the `upcoming_movies_data_T001` to identify movies scheduled for release in the next 6-12 months. Categorize these movies by their primary genre and group them by release month. Exclude any movies that have already been released or have indeterminate release dates. Prepare this categorized list for synthesis.",
+        "reads": [
+          "upcoming_movies_data_T001"
+        ],
+        "writes": [
+          "categorized_movies_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Synthesize and format the list of upcoming movies for presentation.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Generate a detailed and comprehensive report on upcoming movie releases based on the `categorized_movies_T002`. The report should be structured by release month, with each month listing movies by genre. For each movie, include its title and release date. Aim for a detailed presentation suitable for a C-suite executive, ensuring thoroughness and clarity. The final output should be in Markdown format.",
+        "reads": [
+          "categorized_movies_T002"
+        ],
+        "writes": [
+          "upcoming_movies_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

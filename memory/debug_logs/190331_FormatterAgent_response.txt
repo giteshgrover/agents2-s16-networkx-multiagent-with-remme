@@ -1,0 +1,7 @@
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "The current price of silver is approximately $77.32 per troy ounce.",
+  "call_self": false
+}
+```

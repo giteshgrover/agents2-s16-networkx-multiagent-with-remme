@@ -1,0 +1,280 @@
+```json
+{
+  "categorized_movies_T002": {
+    "February 2026": {
+      "Action": [
+        "Blades of the Guardians",
+        "Bring the Law"
+      ],
+      "Drama": [
+        "Blades of the Guardians",
+        "I Can Only Imagine 2",
+        "Do Deewane Seher Mein",
+        "The Dreadful",
+        "Lazarus: The Awakening"
+      ],
+      "Adventure": [
+        "Blades of the Guardians"
+      ],
+      "Horror": [
+        "Psycho Killer",
+        "The Dreadful",
+        "Scare Out"
+      ],
+      "Thriller": [
+        "Psycho Killer",
+        "The Dreadful",
+        "Scare Out"
+      ],
+      "Comedy": [
+        "How to Make a Killing"
+      ],
+      "Crime": [
+        "Psycho Killer",
+        "Hellfire"
+      ],
+      "Documentary": [
+        "Homecoming: The Tokyo Series",
+        "Paul McCartney: Man on the Run"
+      ],
+      "Sport": [
+        "Homecoming: The Tokyo Series"
+      ],
+      "Music": [
+        "Twenty One Pilots: More Than We Ever Imagined",
+        "Paul McCartney: Man on the Run"
+      ],
+      "Mystery": [
+        "Scream 7"
+      ],
+      "Romance": [
+        "Do Deewane Seher Mein"
+      ]
+    },
+    "March 2026": {
+      "Action": [],
+      "Drama": [
+        "Les Misrables"
+      ],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "April 2026": {
+      "Action": [],
+      "Drama": [
+        "A Great Awakening",
+        "The Drama",
+        "You, Me & Tuscany"
+      ],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "May 2026": {
+      "Action": [],
+      "Drama": [
+        "Animal Farm",
+        "The Devil Wears Prada 2"
+      ],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [
+        "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)"
+      ],
+      "Mystery": [],
+      "Romance": []
+    },
+    "June 2026": {
+      "Action": [
+        "Masters of the Universe"
+      ],
+      "Drama": [
+        "The Death of Robin Hood"
+      ],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": [
+        "Girls Like Girls"
+      ]
+    },
+    "July 2026": {
+      "Action": [],
+      "Drama": [
+        "The Odyssey"
+      ],
+      "Adventure": [
+        "The Odyssey",
+        "Moana"
+      ],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "November 2026": {
+      "Action": [],
+      "Drama": [
+        "The Hunger Games: Sunrise on the Reaping"
+      ],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "December 2026": {
+      "Action": [
+        "Avengers: Doomsday"
+      ],
+      "Drama": [],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "Future (2027+)": {
+      "Action": [],
+      "Drama": [],
+      "Adventure": [],
+      "Horror": [],
+      "Thriller": [],
+      "Comedy": [
+        "Shrek 5"
+      ],
+      "Crime": [],
+      "Documentary": [],
+      "Sport": [],
+      "Music": [],
+      "Mystery": [],
+      "Romance": []
+    },
+    "Unspecified Genre": [
+      "28 Years Later: The Bone Temple",
+      "73 Mercy",
+      "No Other Clock",
+      "67 Kill Bill: The Whole Bloody Affair",
+      "80 I Can Only Imagine 2",
+      "2026 Oscar-Nominated Short Films",
+      "One Mile: Chapter One",
+      "Paul McCartney: Man on the Run",
+      "The Bluff",
+      "Scream 7",
+      "How to Make a Killing",
+      "Dreams",
+      "The Napa Boys",
+      "In the Blink of an Eye",
+      "Hoppers",
+      "The Bride!",
+      "War Machine",
+      "Heel",
+      "Reminders of Him",
+      "Undertone",
+      "Storm Rider: Legend of Hammerhead",
+      "Project Hail Mary",
+      "Tow",
+      "Ready or Not 2: Here I Come",
+      "Peaky Blinders: The Immortal Man",
+      "They Will Kill You",
+      "Forbidden Fruits",
+      "The Super Mario Galaxy Movie",
+      "You, Me & Tuscany",
+      "Lee Cronin's The Mummy",
+      "Mother Mary",
+      "Normal",
+      "Omaha",
+      "Michael",
+      "The Sheep Detectives",
+      "Mortal Kombat II",
+      "Obsession",
+      "Star Wars: The Mandalorian and Grogu",
+      "The Breadwinner",
+      "Disclosure Day",
+      "Toy Story 5",
+      "The Death of Robin Hood",
+      "Supergirl",
+      "Minions & Monsters",
+      "Moana",
+      "The Odyssey",
+      "Spider-Man: Brand New Day",
+      "The Cat in the Hat",
+      "The Hunger Games: Sunrise on the Reaping",
+      "Madden",
+      "Blades of the Guardians",
+      "Chase Atlantic: Lost in Heaven",
+      "How to Make a Killing",
+      "Psycho Killer",
+      "The Dreadful",
+      "I Can Only Imagine 2",
+      "Do Deewane Seher Mein",
+      "Homecoming: The Tokyo Series",
+      "Twenty One Pilots: More Than We Ever Imagined",
+      "Scream 7",
+      "Pillion",
+      "Dreams",
+      "The President's Cake",
+      "EPiC: Elvis Presley in Concert",
+      "Bring the Law",
+      "K-Pops!",
+      "Uma Musume: Pretty Derby - Beginning of a New Era",
+      "Ghost Train",
+      "Scare Out",
+      "Hellfire",
+      "The Swedish Connection",
+      "Lazarus: The Awakening",
+      "Crime 101",
+      "Wuthering Heights",
+      "GOAT",
+      "Dracula",
+      "The Moment",
+      "The Strangers: Chapter 3",
+      "Iron Lung",
+      "Melania",
+      "Send Help",
+      "TRON: Ares"
+    ]
+  }
+}
+```
