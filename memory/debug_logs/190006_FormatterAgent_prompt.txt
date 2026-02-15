@@ -1,6 +1,3 @@
-AGENT: FormatterAgent
-CONFIG: prompts/formatter.md
-
 CURRENT_DATE: 2026-02-14
 
 ############################################################

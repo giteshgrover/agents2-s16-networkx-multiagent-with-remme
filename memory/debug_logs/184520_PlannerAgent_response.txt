@@ -1,0 +1,61 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve general information about Durham, NC",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve general information about Durham, North Carolina, USA. Focus on key characteristics, location, and any notable features.",
+        "reads": [],
+        "writes": [
+          "durham_general_info_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Synthesize retrieved information about Durham",
+        "agent": "DistillerAgent",
+        "agent_prompt": "Synthesize the general information about Durham, North Carolina, USA into a concise overview. Include its location, administrative status, and any prominent identifiers.",
+        "reads": [
+          "durham_general_info_T001"
+        ],
+        "writes": [
+          "durham_synthesis_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the synthesized information about Durham",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the synthesized information about Durham, North Carolina into a clear and structured report. Present key details about the city.",
+        "reads": [
+          "durham_synthesis_T002"
+        ],
+        "writes": [
+          "durham_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.85,
+  "ambiguity_notes": [
+    "The user query 'How about Durham?' is very general. Assuming the user is asking for general information about Durham, NC. If more specific information is needed, please provide further details."
+  ]
+}
+```

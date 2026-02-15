@@ -4,8 +4,8 @@
     "text": "User is asking about the weather in Morrisville, NC",
     "category": "derived",
     "created_at": "2026-02-14T17:52:59.016327",
-    "updated_at": "2026-02-14T17:52:59.016359",
-    "source": "run_1771109418",
+    "updated_at": "2026-02-14T18:58:22.624766",
+    "source": "run_1771109418, run_1771112633",
     "faiss_id": 0
   },
   {
@@ -16,5 +16,23 @@
     "updated_at": "2026-02-14T17:59:50.789336",
     "source": "run_1771109729",
     "faiss_id": 1
+  },
+  {
+    "id": "c3f05194-4308-445b-bb47-b130da9e83d3",
+    "text": "User is asking about the expected arrival of spring in North Carolina, specifically inquiring about an early arrival and the expected week.",
+    "category": "derived",
+    "created_at": "2026-02-14T18:07:49.412401",
+    "updated_at": "2026-02-14T18:07:49.412406",
+    "source": "run_1771110096",
+    "faiss_id": 2
+  },
+  {
+    "id": "59c95a72-aa7c-4f2f-b108-a40c2754d807",
+    "text": "User is interested in Morrisville, NC, USA",
+    "category": "derived",
+    "created_at": "2026-02-14T18:41:32.421588",
+    "updated_at": "2026-02-14T18:58:19.072699",
+    "source": "run_1771110752, run_1771112718",
+    "faiss_id": 3
   }
 ]

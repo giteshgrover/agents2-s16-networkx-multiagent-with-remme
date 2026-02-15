@@ -1,0 +1,16 @@
+```json
+{
+  "durham_synthesis_T002": {
+    "summary_bullets": [
+      "Durham is a city in North Carolina, USA, located in the east-central part of the Piedmont region along the Eno River.",
+      "It is the county seat of Durham County, with portions extending into Orange and Wake Counties.",
+      "Durham is known by nicknames such as 'Bull City' and 'City of Medicine'.",
+      "It is the fourth-most populous city in North Carolina and 70th-most populous in the United States.",
+      "The city is a significant educational, medical, and research center, home to Duke University and North Carolina Central University.",
+      "It is a key vertex of the Research Triangle area, which includes Research Triangle Park, a major hub for research facilities and companies.",
+      "Durham has a history rooted in the tobacco industry and has undergone revitalization to become a center for innovation.",
+      "Notable institutions and sites include Duke University Hospital, the Museum of Life and Science, and the Durham Performing Arts Center."
+    ]
+  }
+}
+```

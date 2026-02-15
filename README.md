@@ -95,14 +95,26 @@ uv run python app.py --ui
 - `--ui` - Launches the web UI instead of CLI mode
 
 **For Development (with auto-reload):**
+
+Option 1: Using the development script (Recommended):
+```bash
+uv run python scripts/dev_ui.py
+```
+
+**What this does:**
+- Watches all Python files in the `ui/` directory
+- Automatically restarts the UI server when files change
+- Full process restart ensures all changes are applied
+
+Option 2: Using the --reload flag:
 ```bash
 uv run python app.py --ui --reload
 ```
 
 **What `--reload` does:**
-- Watches `ui/advanced_ui.py` for changes
-- Automatically reloads the UI when you save changes
-- No need to manually restart the UI server during development
+- Attempts to use Gradio's built-in file watching
+- May require manual browser refresh for some changes
+- Less reliable than the dev script approach
 
 ### Accessing the UI
 

@@ -14,6 +14,43 @@
       },
       "source": "session_1771109729",
       "timestamp": "2026-02-14T17:59:50.830693"
+    },
+    {
+      "raw": {
+        "weather_interest": "high",
+        "region": "North Carolina",
+        "time_frame": "current year (2026)"
+      },
+      "source": "session_1771110096",
+      "timestamp": "2026-02-14T18:07:49.425911"
+    },
+    {
+      "raw": {
+        "location": "Morrisville, NC, USA"
+      },
+      "source": "session_1771110752",
+      "timestamp": "2026-02-14T18:41:32.422697"
+    },
+    {
+      "raw": {
+        "location_query": "Durham, NC"
+      },
+      "source": "session_1771110562",
+      "timestamp": "2026-02-14T18:41:34.572847"
+    },
+    {
+      "raw": {
+        "city_interests": "Durham, North Carolina"
+      },
+      "source": "session_1771112718",
+      "timestamp": "2026-02-14T18:58:19.073498"
+    },
+    {
+      "raw": {
+        "location": "Morrisville, NC"
+      },
+      "source": "session_1771112633",
+      "timestamp": "2026-02-14T18:58:22.625181"
     }
   ],
   "last_normalized": null

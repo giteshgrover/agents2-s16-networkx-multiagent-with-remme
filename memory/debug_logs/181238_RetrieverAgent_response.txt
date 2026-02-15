@@ -1,0 +1,10 @@
+```json
+{
+  "morrisville_general_info_T001": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "results = json.loads(search_web_with_text_content('demographics major industries notable landmarks Morrisville NC', 8))\nreturn {'morrisville_general_info_T001': results}",
+    "CODE_1B": "urls = json.loads(fetch_search_urls('Morrisville North Carolina key facts', 10))\nreturn {'morrisville_general_info_T001': urls}"
+  }
+}
+```

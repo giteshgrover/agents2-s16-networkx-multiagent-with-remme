@@ -1,0 +1,43 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve current gold price.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the current real-time price of gold. Provide the price per troy ounce.",
+        "reads": [],
+        "writes": [
+          "current_gold_price_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format the gold price information.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided current gold price into a clear and concise statement. Include the price per troy ounce. Ensure the output is direct and adheres to the user's preference for moderate responses and no motivational tone.",
+        "reads": [
+          "current_gold_price_T001"
+        ],
+        "writes": [
+          "formatted_gold_price_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "clarificationMessage": "To provide the most accurate information about daylight, could you please specify a city or region?",
+  "options": [
+    "Use my current location",
+    "Durham, NC",
+    "Morrisville, NC",
+    "Specify another location"
+  ],
+  "writes_to": "location_query_T001"
+}
+```

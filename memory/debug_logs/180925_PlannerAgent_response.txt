@@ -1,0 +1,62 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Determine user's current or preferred location for daylight information.",
+        "agent": "ClarificationAgent",
+        "agent_prompt": "The user is asking 'When does the day light start?' This is ambiguous without a location. Please ask the user for their current city or region, or if they have a preferred location for this information.  User preferences indicate minimizing clarifications, so phrase this as a gentle request for context.",
+        "reads": [],
+        "writes": [
+          "location_query_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Retrieve daylight start times based on location and current date.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Given the user's confirmed location (`location_T001`) and the current date (2026-02-14), retrieve the precise start time of daylight. If the location is ambiguous or not provided, request clarification.",
+        "reads": [
+          "location_T001"
+        ],
+        "writes": [
+          "daylight_start_time_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the daylight start time information for the user.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Present the retrieved daylight start time information (`daylight_start_time_T002`) clearly and directly to the user. Ensure the response is concise and directly answers the question 'When does the day light start?'.  Adhere to user preferences for direct tone and avoidance of motivational language. The response should be a simple statement of the time.",
+        "reads": [
+          "daylight_start_time_T002"
+        ],
+        "writes": [
+          "final_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.6,
+  "ambiguity_notes": [
+    "Location for daylight start time is not specified in the original query. A ClarificationAgent step is initiated to request this information.",
+    "User preferences indicate minimizing clarifications, so the clarification prompt is phrased as a gentle request for context."
+  ]
+}
+```

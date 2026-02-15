@@ -68,7 +68,12 @@ async def main():
             try:
                 # Launch advanced UI (runs in separate thread, non-blocking)
                 from ui.advanced_ui import launch_ui
-                launch_ui(share=False, server_name="0.0.0.0", server_port=7860, reload=args.reload)
+                import os
+                
+                # Enable reload if flag is set OR if GRADIO_RELOAD env var is set
+                enable_reload = args.reload or os.environ.get("GRADIO_RELOAD", "").lower() == "true"
+                
+                launch_ui(share=False, server_name="0.0.0.0", server_port=7860, reload=enable_reload)
                 
                 # Keep the main thread alive
                 while True:

@@ -1,0 +1,10 @@
+```json
+{
+  "morrisville_climate_data_T002": [],
+  "call_self": false,
+  "code_variants": {
+    "CODE_1A": "data = json.loads(search_web_with_text_content('climate data Morrisville NC average temperature precipitation seasonal variations', 8))\nreturn {'morrisville_climate_data_T002': data}",
+    "CODE_1B": "data = json.loads(search_web_with_text_content('weather patterns Morrisville North Carolina average monthly weather', 6))\nreturn {'morrisville_climate_data_T002': data}"
+  }
+}
+```

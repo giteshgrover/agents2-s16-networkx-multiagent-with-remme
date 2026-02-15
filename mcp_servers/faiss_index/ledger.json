@@ -1163,6 +1163,76 @@
       "indexed_at": "2026-02-14T22:19:06.738254Z",
       "chunk_count": 1,
       "error": null
+    },
+    "Notes/Arcturus/North Carolina Spring Weather Prediction 2026.md": {
+      "hash": "781f180c37cb147a077b78cd492ae973",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:08:04.712971Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771110096.json": {
+      "hash": "b2d5fc29c70b05a2d21e39cd3053f06e",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:08:47.929468Z",
+      "chunk_count": 6,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771110562.json": {
+      "hash": "23a6eacdf09ebf1d0db4949071417800",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:14:43.327062Z",
+      "chunk_count": 1,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771110752.json": {
+      "hash": "cc663517910e7b492d464ac766ee3954",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:22:14.736522Z",
+      "chunk_count": 11,
+      "error": null
+    },
+    "Notes/Arcturus/Comprehensive Report Morrisville, North Carolina.md": {
+      "hash": "8b6de2e8c1e6f7eccb74473b3bc88e97",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:22:14.756204Z",
+      "chunk_count": 0,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771112571.json": {
+      "hash": "909f441d592fec3cc5aeac2eef2cd884",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:48:12.016318Z",
+      "chunk_count": 2,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771112633.json": {
+      "hash": "d148ed4a64533bd502a869a75655704c",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:49:27.777248Z",
+      "chunk_count": 5,
+      "error": null
+    },
+    "Notes/Arcturus/Weather Forecast for Morrisville, NC - February 15, 2026.md": {
+      "hash": "deb15bbe025bc1c81379a3c7387f19c1",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:49:33.299540Z",
+      "chunk_count": 5,
+      "error": null
+    },
+    "conversation_history/2026/02/14/session_1771112718.json": {
+      "hash": "8cdd81c32e96120d98c8e53ea8474778",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:51:17.494982Z",
+      "chunk_count": 7,
+      "error": null
+    },
+    "Notes/Arcturus/Durham, North Carolina A Comprehensive Overview.md": {
+      "hash": "00944e287eda0a5b982e37720cb6faf9",
+      "status": "complete",
+      "indexed_at": "2026-02-14T23:52:06.577687Z",
+      "chunk_count": 7,
+      "error": null
     }
   }
 }

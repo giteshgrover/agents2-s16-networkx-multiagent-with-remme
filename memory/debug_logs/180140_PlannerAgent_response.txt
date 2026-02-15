@@ -1,0 +1,61 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve historical weather data and Spring prediction models for North Carolina.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Access reliable sources for historical weather patterns in North Carolina and consult meteorological models that predict the onset of Spring. Focus on data relevant to the current year and upcoming Spring season. The output should include information on typical Spring arrival dates and any indicators suggesting an early Spring for North Carolina. Source data should be prioritized for accuracy and recency. No specific date range needs to be defined in this retrieval step; the agent should use its discretion to gather the most relevant information for predicting an early spring.",
+        "reads": [],
+        "writes": [
+          "historical_weather_data_T001",
+          "spring_prediction_models_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Analyze retrieved data for early Spring indicators in North Carolina.",
+        "agent": "ThinkerAgent",
+        "agent_prompt": "Analyze the provided `historical_weather_data_T001` and `spring_prediction_models_T001` to identify specific indicators and scientific consensus suggesting an early Spring in North Carolina. Synthesize this information to determine if an early Spring is indeed expected. If the data provides a strong indication, identify the most probable week for Spring's arrival. The analysis should prioritize data-driven conclusions over speculative forecasts. Explicitly state whether an early spring is predicted and provide the associated expected week if the data supports it. If the data is inconclusive or contradictory, clearly state that.",
+        "reads": [
+          "historical_weather_data_T001",
+          "spring_prediction_models_T001"
+        ],
+        "writes": [
+          "early_spring_prediction_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the early Spring prediction for North Carolina.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Present the findings on whether an early Spring is expected in North Carolina and the predicted week of arrival, based on `early_spring_prediction_T002`. The output should be a clear, direct, and comprehensive report, suitable for executive review. Include any supporting details from the analysis that justify the prediction. If an early spring is not expected, clearly state that. The report should be structured to directly answer the user's query about expecting an early Spring and its expected week.",
+        "reads": [
+          "early_spring_prediction_T002"
+        ],
+        "writes": [
+          "final_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```

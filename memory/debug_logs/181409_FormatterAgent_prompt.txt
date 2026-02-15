@@ -1,0 +1,216 @@
+CURRENT_DATE: 2026-02-14
+
+############################################################
+#  FormatterAgent Prompt – McKinsey-Grade Reports
+#  Role  : Formats final results into exhaustive HTML reports
+#  Output: JSON with final_format in a detailed markdown_report
+############################################################
+
+You are the **FORMATTERAGENT**.
+Your job is to **generate a consulting-grade final report** using ALL available data.
+This is the **final user-facing artifact**.
+
+---
+
+## ✅ INPUTS
+- `agent_prompt`: Formatting instructions
+- `all_globals_schema`: The **complete session-wide data** (your core source of truth for generating content)
+- `session_context`: Metadata & **Memory Context** (contains user-specific facts/answers)
+
+## ✅ STRATEGY
+1. **Consulting-Grade Output**: Simulate McKinsey/BCG depth. 12-20 sections if data allows.
+2. **Deep Integration**: Mine `_T###` fields in `all_globals_schema`.
+3. **Execution**: Return pure Markdown in a specific structure.
+
+## ✅ ADAPTIVE DEPTH & RECURSION
+**You must be SMART about the report size.**
+1.  **Simple/Factual Queries** (e.g., "Where do I stay?", "What is 2+2?", "Stock price of Apple?"):
+    -   **ACTION**: Generate a **concise, direct answer**.
+    -   **FORMAT**: Small Markdown block. No massive Executive Summary or Table of Contents needed.
+    -   **ACTION**: Generate a **massive, exhaustive report**.
+    -   **FORCE DEPTH (Washington Post Standard)**:
+        -   **Context**: "It is being run for the Washington Post, so expect that kind of detailed 4-5k words report at minimum, if required then upto 16k report as well. We are being paid $2000 for this report so don't be brief."
+        -   **Instruction**: If the data allows, specific sections should be 500+ words.
+        -   **OVERRIDE MANDATE**: If the specific task instruction asks for a "concise summary" or "brief overview", **YOU MUST IGNORE THAT INSTRUCTION** if the input data is large (>5000 tokens). Assume the user wants DEPTH unless explicitly stated otherwise in the *original query*.
+        -   **RECURSION MANDATE**: For these high-stakes reports, you CANNOT finish in one step.
+
+            -   **Set `"call_self": true`** in your first iteration.
+            -   Focus your first iteration *only* on the first 2-3 major sections (e.g., Executive Summary, Market Overview).
+            -   Return the partial Markdown. The system will call you again to finish.
+    -   **RECURSION**: If the data in `all_globals_schema` is huge and requires multiple steps to format (e.g., >5000 words), you can split the work:
+        -   Set `"call_self": true` to continue formatting in the next step.
+        -   Return the *partial* report in the current key.
+    -   **FORMAT**: Full McKinsey style. Use tables, h1-h4, detailed analysis.
+
+## ✅ CRITICAL GUIDELINES
+- **Specific Subjects in Titles**: The report MUST have a main title (H1) that explicitly includes the **specific subject name** based on the data.
+### 2. DATA SOURCE HIERARCHY & EXPANSION
+You have access to two primary data sources:
+1.  **`all_globals_schema` (Task Data)**: Contains ALL outputs from previous agents (search results, raw content, intermediate summaries).
+2.  **`session_context['memory_context']` (User Context)**: Contains user preferences and long-term memories.
+
+**CRITICAL INSTRUCTION ON DATA USAGE:**
+- **NEVER rely solely on downstream summaries** (e.g., "key_insights", "summary_T005") for complex reports. These are often lossy and too brief.
+- **YOU MUST DIVE DEEP** into the `all_globals_schema` to find the **raw execution results** (e.g., `web_search_results`, `crawled_pages`, `detailed_analysis`).
+- **EXPAND** the points found in summaries using this raw data. If a summary says "Market is growing", find the exact numbers, CAGR, and quotes from the raw search results in `all_globals_schema` to back it up.
+
+### 3. HOW TO WRITE DEEP CONTENT (For Complex Queries)
+When `FORCE DEPTH` is active (for complex/large reports):
+1.  **NO "Bullet-Point Only" Sections**: Bullet points are for lists. Analysis must be in **full paragraphs** (5-8 sentences each).
+2.  **INTEGRATE DATA**: Every claim must be backed by a specific datapoint from `all_globals_schema`.
+    -   *Bad*: "The market is growing."
+    -   *Good*: "According to the Mordor Intelligence report (T003), the market is projected to reach $564M by FY29, driven by a 17.9% CAGR."
+3.  **QUOTE THE SOURCE**: Extract direct quotes from `crawled_pages` or `search_results`.
+4.  **ITERATE THE SCHEMA**: Do not just look at `summary_T###`. Look at `web_search_results_T###` and `detailed_analysis_T###`. extract the "nuggets" that the summary skipped.
+- **Task Data > User Context**: If Task Data contains verified, recent facts that contradict `memory_context`, prioritize the Task Data.
+- **User Context for Personalization**: Use `memory_context` to tailor the *tone*, *format*, and *focus* (e.g., "User prefers simple language" or "User loves tabular data").
+- **Conflict Rule**: If Task Data explicitly contradicts Memory with *newer* verification (e.g. "User verified they now work at Google"), trust Task Data. Otherwise, trust Memory for user facts.
+- **ANTI-HALLUCINATION**: If neither source has the answer, state "No Data Available".
+- **Tone**: Professional, actionable, high-trust.
+
+---
+
+## ✅ OUTPUT FORMAT (JSON)
+You must return a JSON object like:
+```json
+{
+  "final_format": "markdown",
+  "markdown_report": "Detailed markdown report",
+  "call_self": true
+}
+```
+
+## ✅ OUTPUT VARIABLE NAMING
+**CRITICAL**: Use the exact variable names from "writes" field for your report key.
+---
+## User Preferences
+User prefers: concise responses
+Clarifications: minimize
+Tone: no_motivational, direct
+Avoid: It's not this, it's this, What you're describing is not
+---
+
+
+```json
+{
+  "step_id": "T004",
+  "agent_prompt": "Format the synthesized overview of Morrisville, NC (`morrisville_overview_T003`) into a comprehensive report. Include sections on demographics, economy, and climate. Aim for a detailed and well-structured output suitable for executive review.",
+  "reads": [
+    "morrisville_overview_T003"
+  ],
+  "writes": [
+    "morrisville_formatted_report_T004"
+  ],
+  "inputs": {
+    "morrisville_overview_T003": {
+      "summary_bullets": [
+        "Morrisville, NC experiences hot and muggy summers with average high temperatures around 89\u00b0F in July, and short, cold winters with average lows around 33\u00b0F in January.",
+        "The best times for warm-weather activities are from early May to mid-June and late August to mid-October, avoiding the extreme heat of summer.",
+        "The town's climate is generally wet and partly cloudy year-round.",
+        "Climate trends show a warming pattern, with winter experiencing the most significant increase in temperature.",
+        "The climate data suggests that daily life and local events would need to accommodate hot, humid summers and cool winters. Outdoor activities are best suited for spring and fall.",
+        "Annual precipitation is consistent, but year-to-year variability exists."
+      ]
+    }
+  },
+  "original_query": "Morrisville, NC, USA",
+  "session_context": {
+    "session_id": "1771110752",
+    "created_at": "2026-02-14T23:12:32.806006",
+    "file_manifest": [],
+    "memory_context": "PREVIOUS MEMORIES ABOUT USER:\n- User is asking about the weather in Morrisville, NC (Confidence: 0.13)\n- User requested the 3-day weather forecast for Durham, NC. (Confidence: 0.24)\n- User is asking about the expected arrival of spring in North Carolina, specifically inquiring about an early arrival and the expected week. (Confidence: 0.66)\n"
+  },
+  "all_globals_schema": {
+    "morrisville_general_info_T001": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://www.morrisvillenc.gov/Our-Community/About-the-Town/Demographic-Profile",
+              "content": "Skip to main content Quick Links: Contact Us Questions Facebook X Instagram YouTube LinkedIn English is your current preferred language. Town of Morrisville - Home - Logo Search Things To Do Sub-menu Services & Forms Sub-menu Government Sub-menu Public Safety Sub-menu Our Community Sub-menu Select the Escape key to close the menu. Focus will then be set to the first menu item. You Are Here : Home / Our Community/ About the Town / Demographic Profile  In This Section About the Town All-America City Demographic Profile A to Z Guide Shop Local Morrisville Accolades National Community Survey Connect with Us Language Access Plan Morrisville Smart Shuttle Projects, Plans & Ordinances Town History Residents Maps Business & Development Sustainability Initiatives Closings and Delays Demographic Profile A demographic profile is one tool used to tell the story of a community. This story often includes aggregate data on topics such as age, race, employment, household size, and marital status. To discover some quick demographic facts about Morrisville click on the image below. More detailed demographic information is available from the US Census Bureau. 2020 Demographic Profile(PDF,434KB) Back to top Contact Us 100 Town Hall Drive, Morrisville, NC 27560 View on Map (919) 463-6200 Contact Us Share & Connect Like us on Facebook Follow us on X Follow us on Instagram Follow us on YouTube Follow us on LinkedIn Resources Careers Report a Concern Garbage & Recycling Public Records Requests Accolades Sitemap 2026 Town of Morrisville|Powered by Granicus Ready",
+              "images": [],
+              "rank": 1
+            },
+            {
+              "url": "https://www.census.gov/quickfacts/fact/table/morrisvilletownnorthcarolina/PST045224",
+              "content": "Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access www.census.gov Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: 9ce0413a3f77c93f Your IP: Click to reveal 136.61.114.154 Performance & security by Cloudflare",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://datausa.io/profile/geo/morrisville-nc/",
+              "content": "Morrisville, NC | Data USA Reports About Morrisville, NC Census Place Add Comparison 2023 Population 30,471 2.4% 1-year growth US Senator Thom Tillis Republican Party US Senator Ted Budd Republican Party 2023 Median Age 34.5 0.583% 1-year increase 2023 Poverty Rate 4.82% 16.9% 1-year decrease 2023 Median Household Income $125,404 9.93% 1-year growth 2023 Median Property Value $481,800 12.2% 1-year growth 2023 Employed Population 17,579 3.88% 1-year growth Population & Diversity Economy Education Housing & Living Health About In the year of 2023, Morrisville, NC had a population of 30.5k people with a median age of 34.5 and a median household income of $125,404. Between 2022 and 2023 the population of Morrisville, NC grew from 29,756 to 30,471, a 2.4% increase and its median household income grew from $114,075 to $125,404, a 9.93% increase. The 5 largest ethnic groups in Morrisville, NC are Asian (Non-Hispanic) (41.8%), White (Non-Hispanic) (35.1%), Black or African American (Non-Hispanic) (13.1%), Two Races Excluding Other, & Three or More Races (Non-Hispanic) (4.57%), and White (Hispanic) (1.77%). None of the households in Morrisville, NC reported speaking a non-English language at home as their primary shared language. This does not consider the potential multi-lingual nature of households, but only the primary self-reported language spoken by all members of the household. 79.2% of the residents in Morrisville, NC are U.S. citizens. In 2023, the median property value in Morrisville, NC was $481,800, and the homeownership rate was 48.8%. Most people in Morrisville, NC drove alone to work, and the average commute time was 20.3 minutes. The average car ownership in Morrisville, NC was 2 cars per household. United States North Carolina Durham County, NC Wake County, NC Durham-Chapel Hill, NC Raleigh, NC Wake County (Northwest)--Raleigh City (Northwest) & Morrisville Town PUMA, NC Wake County (West Central)--Cary Town PUMA, NC Wake County (Southwest)--Apex & Holly Springs Towns PUMA, NC Durham County (South)--Durham City (South) PUMA, NC Population & Diversity Morrisville, NC is home to a population of 30.5k people, from which 79.2% are citizens. As of 2023, 35.1% of Morrisville, NC residents were born outside of the country (10.7k people). In 2023, there were 1.19 times more Asian (Non-Hispanic) residents (12.8k people) in Morrisville, NC than any other race or ethnicity. There were 10.7k White (Non-Hispanic) and 3.98k Black or African American (Non-Hispanic) residents, the second and third most common ethnic groups. Population & Diversity Citizenship 79.2% 2023 Citizenship 79.9% 2022 Citizenship As of 2023, 79.2% of Morrisville, NC residents were US citizens, which is lower than the national average of 93.4%. In 2022, the percentage of US citizens in Morrisville, NC was 79.9%, meaning that the rate of citizenship has been decreasing. The following chart shows US citizenship percentages in Morrisville, NC compared to that of it's neighboring and parent geographies. View Data Save Image Share / Embed Diversity Race and Ethnicity The 3 largest ethnic groups in Morrisville, NC Asian (Non-Hispanic) 12.8k 1.09k White (Non-Hispanic) 10.7k 1.06k Black or African American (Non-Hispanic) 3.98k 733 3.83% Hispanic Population 1.17k people In 2023, there were 1.19 times more Asian (Non-Hispanic) residents (12.8k people) in Morrisville, NC than any other race or ethnicity. There were 10.7k White (Non-Hispanic) and 3.98k Black or African American (Non-Hispanic) residents, the second and third most common ethnic groups. 3.83% of the people in Morrisville, NC are hispanic (1.17k people). The following chart shows the 8 races represented in Morrisville, NC as a share of the total population. View Data Save Image Share / Embed Global Diversity The PUMS dataset is not available at the Place level, so we are showing data for North Carolina. Most Common Origin Mexico 224,963 11,520 people India 83,219 7,055 people Honduras 48,247 5,380 people",
+              "images": [],
+              "rank": 3
+            },
+            {
+              "url": "https://censusreporter.org/profiles/16000US3744520-morrisville-nc/",
+              "content": "Morrisville, NC - Profile data - Census Reporter Census Reporter Search Morrisville, NC 31,422 Population 9.2 square miles 3,427.1 people per square mile Census data: ACS 2024 5-year unless noted Find data for this place Hover for margins of error and contextual data. Demographics Age 35.2 1.1 Median age a little less than the figure in the Raleigh-Cary, NC Metro Area: 37.6 0.1 about 90 percent of the figure in North Carolina: 39.1 0.2 Sex Race & Ethnicity Economics Income $58,502 $3,625 Per capita income about 10 percent higher than the amount in the Raleigh-Cary, NC Metro Area: $51,873 $530 about 1.4 times the amount in North Carolina: $41,385 $211 $125,396 $12,240 Median household income about 25 percent higher than the amount in the Raleigh-Cary, NC Metro Area: $100,103 $1,230 more than 1.5 times the amount in North Carolina: $72,388 $324 Poverty 3.1% 1.2% (968368) Persons below poverty line about one-third of the rate in the Raleigh-Cary, NC Metro Area: 8.7% 126,752 (0.4% / 5,468) about one-quarter of the rate in North Carolina: 13% 1,360,882 (0.2% / 18,953) Transportation to work 21.8 minutes 0.6 (234,53529,048) Mean travel time to work about 80 percent of the figure in the Raleigh-Cary, NC Metro Area: 26.8 15,176,815 (0.2 / 205,566) about 90 percent of the figure in North Carolina: 25.1 106,702,896 (0.1 / 575,071) Families Households 12,300 541 Number of households the Raleigh-Cary, NC Metro Area : 574,295 2,421 North Carolina : 4,282,345 9,120 2.6 0.1 (31,404162) Persons per household about the same as the figure in the Raleigh-Cary, NC Metro Area: 2.6 1,462,567 (0 / 235) a little higher than the figure in North Carolina: 2.4 10,451,237 Marital status Fertility 4.2% 1.8% (388169) Women 15-50 who gave birth during past year about 80 percent of the rate in the Raleigh-Cary, NC Metro Area: 5.3% 20,031 (0.4% / 1,452) about 80 percent of the rate in North Carolina: 5.2% 130,601 (0.1% / 3,057) Housing Units & Occupancy 13,506 580 Number of housing units the Raleigh-Cary, NC Metro Area : 619,032 221 North Carolina : 4,895,668 642 Value $518,800 $52,073 Median value of owner-occupied housing units about 25 percent higher than the amount in the Raleigh-Cary, NC Metro Area: $418,400 $3,660 nearly double the amount in North Carolina: $288,900 $1,086 Geographical mobility 22.4% 3.8% (6,9691,181) Moved since previous year more than 1.5 times the rate in the Raleigh-Cary, NC Metro Area: 13.7% 201,076 (0.5% / 6,705.2) more than 1.5 times the rate in North Carolina: 12.7% 1,350,945 (0.1% / 15,045.5) Social Educational attainment 97.8% 5.6% (21,2421,374.5) High school grad or higher a little higher than the rate in the Raleigh-Cary, NC Metro Area: 93.2% 942,853 (0.8% / 8,252.2) about 10 percent higher than the rate in North Carolina: 90.2% 6,653,293 (0.3% / 22,263.8) 72.7% 4.6% (15,7981,114.1) Bachelor's degree or higher about 1.4 times the rate in the Raleigh-Cary, NC Metro Area: 51.2% 518,208 (0.6% / 5,645.1) about double the rate in North Carolina: 35.7% 2,631,218 (0.2% / 13,757.8) Language N/A Persons with language other than English spoken at home Place of birth 36% 3.2% (11,310999) Foreign-born population more than double the rate in the Raleigh-Cary, NC Metro Area: 13.7% 203,685 more than double the rate in North Carolina: 9.1% 973,325 Veteran status 3.6% 1.5% (876350) Population with veteran status about three-fifths of the rate in the Raleigh-Cary, NC Metro Area: 6% 68,837 (0.2% / 1,946) about half the rate in North Carolina: 7.4% 615,509 (0.1% / 5,658) 876 Total veterans 350 833 Male 345 43 Female 52 Hover for margins of error and contextual data. Learn about the Census About Census Reporter Census terms & definitions @CensusReporter Help & feedback Census Reporter on GitHub Census Reporter is a free, open-source project. Your donations help us add new data to the site and keep it running. Data on Census Reporter comes from the US Census Bureau and is not copyrighted. Original text and data visualizations on CensusReporter.or",
+              "images": [],
+              "rank": 4
+            },
+            {
+              "url": "https://raleigh-wake.org/resource/morrisville-municipal-profile",
+              "content": "Morrisville Municipal Profile | Wake County Economic Development Skip to Main Content Menu Business Advantages Business Advantages Back Overview Data and Demographics Workforce Statistics Population Characteristics Metro Comparison Major Employers & Expanding Companies Talent & Workforce Universities and Colleges Community Colleges Regional Skills Analysis Invest, Expand, Thrive Incentives Equitable Economic Development Taxes International Business Innovation Ecosystem Business Sustainability Roundtable Infrastructure & Transportation Key Industries Key Industries Back Life Sciences Advanced Manufacturing Technology Clean Tech Living Here Living Here Back Living in Wake Climate Healthcare Things to Do K-12 Education About Wake County Cost of Living Relocating Municipalities News & Resources News & Resources Back News Feed Resources About Us About Us Back About WCED EDGE 7 Our Team Contact Us Search search Home / News & Resources / Resources Morrisville Municipal Profile Living Here Municipal Profiles Download this Resource download August 25, 2025 Share linkedin facebook x Positioned at the center of the Research Triangle Region, Morrisville is a prime destination for tech startups and global corporations. With direct borders to RDU International Airport and Research Triangle Park, the town offers unparalleled connectivity. Morrisvilles population has experienced remarkable growth, rising from under 1,500 in 1990 to over 34,000 today. Download the infographic to explore more about this thriving hub. Related Resources All Resources Data & Demographics , New & Expanding Companies 2025 New & Expanding Companies Report Jan 14, 2026 Economy & Business 2026 Jan 6, 2026 2024-2025 Annual Report Nov 5, 2025 Business Advantages Data and Demographics Talent & Workforce Invest, Expand, Thrive Infrastructure & Transportation Key Industries Life Sciences Advanced Manufacturing Technology Clean Tech Living Here Living in Wake About Wake County Cost of Living Municipalities Relocating News & Resources News Feed Resources About Us About WCED EDGE 7 Our Team Get In Touch 919-664-7000 hello@raleigh-wake.org facebook x youtube 2026 Wake County Economic Development | All rights reserved | Economic Development Web Design by NMC",
+              "images": [],
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    },
+    "morrisville_climate_data_T002": {
+      "content": [
+        {
+          "type": "text",
+          "text": [
+            {
+              "url": "https://en.climate-data.org/north-america/united-states-of-america/north-carolina/morrisville-875332/",
+              "content": "[error] ",
+              "rank": 1
+            },
+            {
+              "url": "https://weatherspark.com/y/20165/Average-Weather-in-Morrisville-North-Carolina-United-States-Year-Round",
+              "content": "Morrisville Climate, Weather By Month, Average Temperature (North Carolina, United States) - Weather Spark Weather Spark Map Compare History Hide Ads F F F, knots C, m/s C, km/h C, mph C, knots Show Charts Only English Deutsch (German) Espaol (Spanish) Franais (French) (Hindi) Indonesia (Indonesian) Italiano (Italian) (Japanese) (Korean) Polski (Polish) Portugus (Portuguese) (Russian) (Thai) Trke (Turkish) Ting Vit (Vietnamese) (Chinese) (Chinese) WeatherSpark.com United States North Carolina Full Year Feb Today Spring Summer Fall Winter Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Climate and Average Weather Year Round in Morrisville North Carolina, United States In Morrisville, the summers are hot and muggy, the winters are short and very cold, and it is wet and partly cloudy year round. Over the course of the year, the temperature typically varies from 33F to 89F and is rarely below 19F or above 95F . Climate in Morrisville Link Download Compare History: 2026 2025 2024 2023 2022 2021 2020 2019 2018 cold cool warm hot warm cool Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Now Now 65% 65% 49% 49% clear overcast precipitation: 4.1 in precipitation: 4.1 in 2.7 in 2.7 in muggy: 85% muggy: 85% 0% 0% dry dry tourism score: 6.3 tourism score: 6.3 1.0 1.0 Morrisville weather by month. Click on each chart for more information. Based on the tourism score , the best times of year to visit Morrisville for warm-weather activities are from early May to mid June and from late August to mid October . Average Temperature in Morrisville The hot season lasts for 3.6 months , from May 26 to September 15 , with an average daily high temperature above 81F . The hottest month of the year in Morrisville is July , with an average high of 89F and low of 70F . The cool season lasts for 3.0 months , from December 1 to February 28 , with an average daily high temperature below 58F . The coldest month of the year in Morrisville is January , with an average low of 33F and high of 51F . Average High and Low Temperature in Morrisville Link Download Compare History: 2026 2025 2024 2023 2022 2021 2020 2019 2018 Average High and Low Temperature in Morrisville hot cool cool Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec 0F 0F 10F 10F 20F 20F 30F 30F 40F 40F 50F 50F 60F 60F 70F 70F 80F 80F 90F 90F 100F 100F Jan 29 51F Jan 29 51F Jul 20 89F Jul 20 89F 33F 33F 71F 71F May 26 81F May 26 81F Sep 15 81F Sep 15 81F Dec 1 58F Dec 1 58F 61F 61F 64F 64F 39F 39F 38F 38F Now Now The daily average high (red line) and low (blue line) temperature, with 25th to 75th and 10th to 90th percentile bands. The thin dotted lines are the corresponding average perceived temperatures. Average Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec High 51F 55F 63F 72F 79F 86F 89F 87F 81F 71F 62F 54F Temp. 41F 44F 51F 60F 68F 76F 79F 77F 71F 60F 51F 44F Low 33F 35F 42F 50F 58F 67F 70F 69F 63F 51F 42F 36F The figure below shows you a compact characterization of the entire year of hourly average temperatures. The horizontal axis is the day of the year, the vertical axis is the hour of the day, and the color is the average temperature for that hour and day. Average Hourly Temperature in Morrisville Link Download Compare History: 2026 2025 2024 2023 2022 2021 2020 2019 2018 Average Hourly Temperature in Morrisville Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec 12 AM 12 AM 2 AM 2 AM 4 AM 4 AM 6 AM 6 AM 8 AM 8 AM 10 AM 10 AM 12 PM 12 PM 2 PM 2 PM 4 PM 4 PM 6 PM 6 PM 8 PM 8 PM 10 PM 10 PM 12 AM 12 AM Now Now very cold very cold very cold cold cold cool cool comfortable warm hot very cold warm frigid 15F freezing 32F very cold 45F cold 55F cool 65F comfortable 75F warm 85F hot 95F sweltering The average hourly temperature, color coded into bands. The shaded overlays indicate night and civil twilight. Shkodr, Albania (4,997 miles away); Klak, Turkey (5,961 miles); and Luoqiao, China (7,987 miles) are the far-away foreign places with temperatures most similar to Morrisville ( view comparis",
+              "images": [],
+              "rank": 2
+            },
+            {
+              "url": "https://www.weather-atlas.com/en/north-carolina-usa/morrisville-climate",
+              "content": "Yearly & Monthly weather - Morrisville, NC Yearly & Monthly weather Morrisville, NC Weather Atlas Countries Units Celsius Fahrenheit Languages english espaol Contact Contact About Us Glossary Terms of Use Privacy policy Cookies Policy Disclaimer Search Countries North Carolina, USA Morrisville Climate Climate and monthly weather forecast Morrisville , NC Climate and monthly weather forecast Weather in January January , the same as December , in Morrisville , North Carolina , is another chilly winter month, with an average temperature varying between 48F (8.9C) and 32.5F (0.3C). January is the coldest month of the year, registering average temperatures as high as 48F (8.9C) and as low as 32.5F (0.3C). Weather in January Weather in February February , the last month of the winter in Morrisville , is a cool month, with an average temperature varying between 35.8F (2.1C) and 52.9F (11.6C). In February, Morrisville's weather conditions record an average high-temperature of a cool 52.9F (11.6C), demonstrating little divergence from the preceding month. Weather in February Weather in March March , the first month of the spring in Morrisville , is a moderate month, with an average temperature varying between 59.2F (15.1C) and 42.1F (5.6C). With the transition into March, Morrisville experiences a subtle uplift in average high-temperatures, adjusting from a fresh 52.9F (11.6C) in February to a moderate 59.2F (15.1C). Weather in March Weather in April April is a pleasant spring month in Morrisville , North Carolina , with an average temperature varying between 52F (11.1C) and 70.5F (21.4C). The arrival of April signals an increase in the average high-temperature, moving from a moderate 59.2F (15.1C) in March to a pleasant 70.5F (21.4C). Weather in April Weather in May The last month of the spring, May , is a warm month in Morrisville , North Carolina , with temperature in the range of an average high of 78.6F (25.9C) and an average low of 60.3F (15.7C). The average high-temperature mildly increases in May, edging from a pleasant 70.5F (21.4C) in April to a warm 78.6F (25.9C). Weather in May Weather in June June , the first month of the summer in Morrisville , is a hot month, with an average temperature fluctuating between 67.5F (19.7C) and 86F (30C). In June, the meteorological conditions subtly change with the average high-temperature edging from a moderately hot 78.6F (25.9C) in May to a hot 86F (30C). Weather in June Weather in July July , the same as June , in Morrisville , North Carolina , is another tropical summer month, with an average temperature ranging between max 89.8F (32.1C) and min 70.9F (21.6C). Morrisville records the warmest temperatures in July, averaging a high of 89.8F (32.1C) and a low of 70.9F (21.6C). July's mean heat index is appraised at a blistering 105.8F (41C). Weather in July Weather in August August , the last month of the summer in Morrisville , is another tropical month, with an average temperature fluctuating between 69.6F (20.9C) and 87.4F (30.8C). Morrisville observes a minor difference in average high-temperatures between July 's 89.8F (32.1C) and August's 87.4F (30.8C). Weather in August Weather in September September , the first month of the autumn in Morrisville , is also a moderately hot month, with temperature in the range of an average high of 81.9F (27.7C) and an average low of 63.9F (17.7C). The beginning of September subtly marks a decrease in the average high-temperature, transitioning from a hot 87.4F (30.8C) in August to a warm 81.9F (27.7C). Weather in September Weather in October October , the same as September , in Morrisville , North Carolina , is an agreeable autumn month, with temperature in the range of an average high of 70.7F (21.5C) and an average low of 53.2F (11.8C). In Morrisville, the beginning of October is marked by a lowered average high-temperature, shifting from September's moderately hot 81.9F (27.7C) to a pleasant 70.7F (21.5C). Weather in October Weather i",
+              "images": [],
+              "rank": 3
+            },
+            {
+              "url": "https://weather-and-climate.com/average-monthly-Rainfall-Temperature-Sunshine,morrisville-north-carolina-us,United-States-of-America",
+              "content": "[error] ",
+              "rank": 4
+            },
+            {
+              "url": "https://localclimatetrends.com/us/nc/morrisville-climate-trends",
+              "content": "Morrisville Climate Change Trends (1951-2025) | Temperature & Precipitation Data Local Climate Trends Home States About Contact Home States About Contact US NC Morrisville Morrisville Climate Data Note: Grid data is from 17.8 km away, so local conditions may vary. Since the early 1950s, Morrisville's climate has shifted by 0.0C, driven largely by warmer all seasons. The trend accelerated after 1980, reaching 0.0C per decade. Temperature Change 0.0C Since 1951 Precipitation Change 0.0mm               (0.0%) Since 1951 Jump to: Climate Stripes | Annual Mean Temperature | Precipitation Trends | Hot and Cold Days | Frost Dates | Seasonal Temperature Trends | FAQ Climate Stripes for Morrisville This heatmap shows seasonal temperature anomalies relative to the 20th-century average for each year from 1950 to 2024. Each row represents a season (Winter, Spring, Summer, Fall), and each column a year. Red shades indicate warmer-than-average seasons, while blue shades represent cooler-than-average ones. The shift from predominantly blue to red over time highlights the long-term warming trend across all seasons. Download Morrisville Climate At a Glance Seasonal Temperature Trends 0.0C Winter 0.0C Spring 0.0C Summer 0.0C Fall Trends in Hot and Cold Days Temperature threshold data not available for this location. Morrisville Annual Mean Temperature Trends Temperature data shows warming trends for Morrisville based on NOAA NClimGrid climate data. Download Morrisville Precipitation Trends This chart shows seasonal precipitation trends for Morrisville area, displaying how rainfall patterns have changed over time across different seasons. Download Morrisville Hot and Cold Days Download Temperature threshold data for Morrisville shows changes in extreme heat days. Download Temperature threshold data for Morrisville shows changes in freezing days. Morrisville Seasonal Temperature Trends Winter Winter temperature trends for Morrisville. Download Spring Spring temperature trends for Morrisville. Download Summer Summer temperature trends for Morrisville. Download Fall Fall temperature trends for Morrisville. Download Frequently Asked Questions About Morrisville's Climate How much has Morrisville warmed since 1951? Morrisville has warmed by 0.0C on average since 1951. This warming trend is consistent with broader climate change patterns observed across the region. What season has warmed the most in Morrisville? Winter has experienced the most warming with 0.0C of temperature increase since 1951. This seasonal variation is typical of mid-latitude climate change patterns. How have precipitation patterns changed in Morrisville? Precipitation patterns in Morrisville have remained relatively stable since 1951, though year-to-year variability continues to be significant. Is the warming in Morrisville part of a larger trend? Yes, the warming observed in Morrisville is consistent with regional and global climate change trends. The temperature increases align with patterns seen across NC and the broader United States, reflecting the impacts of human-caused climate change. What climate data sources are used for Morrisville? The climate data for Morrisville comes from NOAA's NClimGrid dataset, which provides gridded climate information based on weather station observations. The data represents the 17.76km grid cell nearest to Morrisville, located at coordinates 35.77N, 78.64W. How reliable are the climate projections for Morrisville? The historical climate trends shown for Morrisville are based on observed data from 1951 to present and are highly reliable. These trends provide insight into how the local climate has already changed and can inform expectations for continued warming, though specific future projections would require additional climate modeling. About This Data Location: Morrisville, NC Grid Coordinates: 35.77N, 78.64W Distance to grid center: 17.8 km Data source: NOAA NClimGrid climate data Local Climate Trends - Morri",
+              "images": [],
+              "rank": 5
+            }
+          ],
+          "annotations": null,
+          "_meta": null
+        }
+      ]
+    },
+    "morrisville_overview_T003": {
+      "summary_bullets": [
+        "Morrisville, NC experiences hot and muggy summers with average high temperatures around 89\u00b0F in July, and short, cold winters with average lows around 33\u00b0F in January.",
+        "The best times for warm-weather activities are from early May to mid-June and late August to mid-October, avoiding the extreme heat of summer.",
+        "The town's climate is generally wet and partly cloudy year-round.",
+        "Climate trends show a warming pattern, with winter experiencing the most significant increase in temperature.",
+        "The climate data suggests that daily life and local events would need to accommodate hot, humid summers and cool winters. Outdoor activities are best suited for spring and fall.",
+        "Annual precipitation is consistent, but year-to-year variability exists."
+      ]
+    }
+  }
+}
+```

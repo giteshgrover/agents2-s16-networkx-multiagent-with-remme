@@ -1,0 +1,63 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Determine the user's specific location for weather forecast.",
+        "agent": "ClarificationAgent",
+        "agent_prompt": "The user has asked 'How is the weather going to be tomorrow?'. However, their location is ambiguous. Based on memory context, previous requests included Morrisville, NC and Durham, NC. Please clarify the exact location for which the weather forecast is needed. If multiple locations were implied, ask for the primary location. Do not provide any weather information at this stage. Only ask for clarification.",
+        "reads": [],
+        "writes": [
+          "clarified_location_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Retrieve tomorrow's weather forecast for the clarified location.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the weather forecast for tomorrow for the following location: {{clarified_location_T001}}. Provide details such as temperature (high/low), precipitation chance, and general conditions (e.g., sunny, cloudy, rainy).",
+        "reads": [
+          "clarified_location_T001"
+        ],
+        "writes": [
+          "weather_forecast_data_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Format the weather forecast into a clear and concise report.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided weather forecast data into a clear and concise report for tomorrow. Include the location, date, temperature range (high and low), and precipitation chance. Present the information in a human-readable format, suitable for a direct answer to the user's query. Ensure the output is direct and avoids motivational language or phrases like 'It's not this, it's this'.",
+        "reads": [
+          "weather_forecast_data_T002",
+          "clarified_location_T001"
+        ],
+        "writes": [
+          "formatted_weather_report_T003"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      },
+      {
+        "source": "T002",
+        "target": "T003"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.65,
+  "ambiguity_notes": [
+    "Location for weather forecast is ambiguous. Memory context suggests Morrisville, NC or Durham, NC were previously mentioned. A clarification step is necessary to determine the precise location before proceeding with the weather forecast retrieval.",
+    "The user's original query 'How is the weather going to be tomorrow?' is underspecified regarding location. The plan prioritizes clarifying this ambiguity first."
+  ]
+}
+```

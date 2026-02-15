@@ -1,0 +1,7 @@
+```json
+{
+  "clarificationMessage": "To provide an accurate weather forecast, please specify the exact location you're interested in. Were you looking for Morrisville, NC, or Durham, NC?",
+  "options": ["Morrisville, NC", "Durham, NC", "Another location"],
+  "writes_to": "clarified_location_T001"
+}
+```

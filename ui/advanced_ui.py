@@ -13,6 +13,10 @@ import requests
 from typing import Optional, Dict, List, Tuple
 from datetime import datetime
 import pandas as pd
+import threading
+import time
+import sys
+import os
 
 # API base URL
 API_BASE = "http://localhost:8000"
@@ -157,6 +161,15 @@ GRAPH_HTML_TEMPLATE = """
 class AdvancedUI:
     def __init__(self):
         self.current_run_id: Optional[str] = None
+        self.polling_active = False
+        self.polling_thread = None
+        self.demo_instance = None
+        self.graph_html_component = None
+        self.final_output_component = None
+        self.node_details_component = None
+        self.graph_data_state_component = None
+        self.node_selector_component = None
+        self.run_id_state_component = None
         
     def get_runs(self) -> List[Dict]:
         """Get list of past runs"""
@@ -326,7 +339,7 @@ class AdvancedUI:
         
         return "\n".join(details)
     
-    def build_graph_html(self, graph_data: Optional[Dict]) -> str:
+    def build_graph_html(self, graph_data: Optional[Dict], run_id: Optional[str] = None, auto_refresh: bool = True) -> str:
         """Build HTML with graph data using simple CSS-based visualization"""
         if not graph_data:
             print("Warning: No graph data provided to build_graph_html")
@@ -394,7 +407,7 @@ class AdvancedUI:
             nodes_by_level[level].append(node_id)
         
         # Build HTML
-        html_parts = ['<div class="graph-container">']
+        html_parts = ['<div class="graph-container" id="graph-container">']
         
         for level in sorted(nodes_by_level.keys()):
             html_parts.append('<div class="graph-level">')
@@ -424,6 +437,101 @@ class AdvancedUI:
                 html_parts.append('<div class="graph-arrow">↓</div>')
         
         html_parts.append('</div>')
+        
+        # Add auto-refresh JavaScript if run_id is provided
+        # This script runs in the page context and can access all buttons
+        if auto_refresh and run_id:
+            refresh_script = f"""
+    <script>
+        (function() {{
+            var runId = '{run_id}';
+            var pollInterval = 2000; // 2 seconds
+            var isPolling = true;
+            var refreshAttempts = 0;
+            
+            function triggerRefresh() {{
+                if (!isPolling) return;
+                refreshAttempts++;
+                
+                // Method 1: Try to find and click the refresh button
+                var allButtons = document.querySelectorAll('button');
+                var refreshClicked = false;
+                
+                for (var i = 0; i < allButtons.length; i++) {{
+                    var btn = allButtons[i];
+                    var btnText = (btn.textContent || btn.innerText || '').trim();
+                    
+                    // Check if this is the refresh button
+                    if (btnText.includes('Refresh') || btnText.includes('🔄') || 
+                        btn.id && btn.id.includes('refresh') ||
+                        btn.className && btn.className.includes('refresh')) {{
+                        try {{
+                            btn.click();
+                            refreshClicked = true;
+                            console.log('Auto-refresh: Clicked refresh button');
+                            break;
+                        }} catch(e) {{
+                            console.log('Error clicking button:', e);
+                        }}
+                    }}
+                }}
+                
+                // Method 2: If button click didn't work, check status and update status indicator
+                if (!refreshClicked) {{
+                    fetch('http://localhost:8000/runs/' + runId)
+                        .then(response => response.json())
+                        .then(data => {{
+                            if (data && data.graph && data.graph.nodes) {{
+                                var hasRunning = false;
+                                for (var i = 0; i < data.graph.nodes.length; i++) {{
+                                    var status = data.graph.nodes[i].data && data.graph.nodes[i].data.status;
+                                    if (status === 'running' || status === 'pending') {{
+                                        hasRunning = true;
+                                        break;
+                                    }}
+                                }}
+                                
+                                if (!hasRunning) {{
+                                    // Stop polling after completion
+                                    setTimeout(function() {{
+                                        isPolling = false;
+                                        var statusEl = document.querySelector('#auto_refresh_status');
+                                        if (statusEl) {{
+                                            statusEl.innerHTML = '⚪ Auto-refresh: OFF (execution complete)';
+                                        }}
+                                    }}, 5000);
+                                }}
+                            }}
+                        }})
+                        .catch(function(error) {{
+                            console.log('Auto-refresh check error:', error);
+                        }});
+                }}
+            }}
+            
+            // Start auto-refresh after a short delay
+            setTimeout(function() {{
+                // Initial trigger
+                triggerRefresh();
+                
+                // Then poll every interval
+                var pollTimer = setInterval(function() {{
+                    if (isPolling) {{
+                        triggerRefresh();
+                    }} else {{
+                        clearInterval(pollTimer);
+                    }}
+                }}, pollInterval);
+            }}, 1500);
+            
+            // Pause when page is hidden
+            document.addEventListener('visibilitychange', function() {{
+                isPolling = !document.hidden;
+            }});
+        }})();
+    </script>
+"""
+            html_parts.append(refresh_script)
         
         # Replace the container content
         html = GRAPH_HTML_TEMPLATE.replace(
@@ -462,11 +570,12 @@ class AdvancedUI:
                                 )
                                 submit_btn = gr.Button("🚀 Run Query", variant="primary")
                                 
-                                # Graph visualization
+                                # Graph visualization with auto-refresh capability
                                 graph_html = gr.HTML(
                                     value=GRAPH_HTML_TEMPLATE,
                                     elem_classes="graph-container",
-                                    label="Execution Graph"
+                                    label="Execution Graph",
+                                    elem_id="graph_html_component"
                                 )
                                 
                                 # Node selector
@@ -490,7 +599,8 @@ class AdvancedUI:
                                 
                                 with gr.Row():
                                     maximize_output_btn = gr.Button("🔍 Maximize", variant="secondary", size="sm")
-                                    refresh_graph_btn = gr.Button("🔄 Refresh", variant="secondary", size="sm")
+                                    refresh_graph_btn = gr.Button("🔄 Refresh", variant="secondary", size="sm", elem_id="refresh_graph_btn")
+                                    auto_refresh_status = gr.Markdown("🟢 Auto-refresh: ON (every 2s)", visible=True, elem_id="auto_refresh_status")
                     
                     # Chat History Panel
                     with gr.Group(visible=False) as history_panel:
@@ -630,7 +740,7 @@ class AdvancedUI:
                 run_id = self.create_run(query)
                 if run_id:
                     graph_data = self.get_run_graph(run_id)
-                    graph_html = self.build_graph_html(graph_data)
+                    graph_html = self.build_graph_html(graph_data, run_id=run_id, auto_refresh=True)
                     
                     # Build node choices
                     node_choices = []
@@ -659,7 +769,7 @@ class AdvancedUI:
                 
                 graph_data = self.get_run_graph(run_id)
                 if graph_data:
-                    graph_html = self.build_graph_html(graph_data)
+                    graph_html = self.build_graph_html(graph_data, run_id=run_id, auto_refresh=True)
                     output = self.get_final_output(run_id)
                     
                     # Build node choices for dropdown
@@ -692,6 +802,13 @@ class AdvancedUI:
                 
                 return "Node not found."
             
+            # Function to trigger refresh via JavaScript
+            def trigger_auto_refresh(run_id):
+                """This function is called by JavaScript to trigger refresh"""
+                if run_id:
+                    return poll_graph(run_id, graph_data_state.value)
+                return GRAPH_HTML_TEMPLATE, "No active run.", "", {}, []
+            
             # Initial load on page load
             demo.load(
                 poll_graph,
@@ -704,6 +821,30 @@ class AdvancedUI:
                 poll_graph,
                 inputs=[run_id_state, graph_data_state],
                 outputs=[graph_html, final_output, node_details, graph_data_state, node_selector]
+            )
+            
+            
+            
+            # Track run_id and trigger auto-refresh updates
+            def update_current_run(new_run_id):
+                self.current_run_id = new_run_id
+                # Start polling if we have a run_id
+                if new_run_id:
+                    # The JavaScript in the graph HTML will handle the actual polling
+                    pass
+                return new_run_id
+            
+            run_id_state.change(
+                update_current_run,
+                inputs=[run_id_state],
+                outputs=[run_id_state]
+            )
+            
+            # Also update on submit
+            submit_btn.click(
+                update_current_run,
+                inputs=[run_id_state],
+                outputs=[run_id_state]
             )
             
             # Node selection handler
@@ -733,7 +874,7 @@ class AdvancedUI:
                         run_id = runs[evt.index[0]].get("id")
                         graph_data = self.get_run_graph(run_id)
                         if graph_data:
-                            graph_html = self.build_graph_html(graph_data)
+                            graph_html = self.build_graph_html(graph_data, run_id=run_id, auto_refresh=True)
                             output = self.get_final_output(run_id)
                             
                             # Build node choices
@@ -863,25 +1004,50 @@ def launch_ui(share=False, server_name="0.0.0.0", server_port=7860, reload=False
     demo = ui.build_ui()
     
     if reload:
-        # Watch for file changes and reload
-        import os
-        import sys
         from pathlib import Path
         
         ui_file = Path(__file__).resolve()
-        print(f"[yellow]Auto-reload enabled. Watching: {ui_file}[/yellow]")
-        print("[yellow]Changes to ui/advanced_ui.py will automatically reload the UI[/yellow]")
+        print(f"[green]Auto-reload mode enabled[/green]")
+        print(f"[yellow]Watching: {ui_file}[/yellow]")
+        print("[yellow]Note: For full auto-reload, use: uv run python scripts/dev_ui.py[/yellow]")
+        print("[yellow]Or manually restart after making changes[/yellow]")
         
-        # Use Gradio's watch parameter to watch the UI file
-        demo.launch(
-            share=share, 
-            server_name=server_name, 
-            server_port=server_port,
-            css=CUSTOM_CSS,
-            theme=gr.themes.Soft(),
-            show_error=True,
-            watch=[str(ui_file)]  # Watch the UI file for changes
-        )
+        # Try to use Gradio's watch parameter if available
+        launch_kwargs = {
+            "share": share,
+            "server_name": server_name,
+            "server_port": server_port,
+            "css": CUSTOM_CSS,
+            "theme": gr.themes.Soft(),
+            "show_error": True,
+        }
+        
+        # Check if watch parameter is supported
+        try:
+            import inspect
+            sig = inspect.signature(demo.launch)
+            if 'watch' in sig.parameters:
+                launch_kwargs["watch"] = [str(ui_file)]
+                print(f"[green]✓ Using Gradio's watch parameter[/green]")
+            else:
+                print("[yellow]⚠ 'watch' parameter not available - use dev_ui.py for auto-reload[/yellow]")
+        except Exception as e:
+            print(f"[yellow]Could not check watch parameter: {e}[/yellow]")
+        
+        demo.launch(**launch_kwargs)
+        
+        try:
+            demo.launch(
+                share=share, 
+                server_name=server_name, 
+                server_port=server_port,
+                css=CUSTOM_CSS,
+                theme=gr.themes.Soft(),
+                show_error=True
+            )
+        finally:
+            observer.stop()
+            observer.join()
     else:
         demo.launch(
             share=share, 

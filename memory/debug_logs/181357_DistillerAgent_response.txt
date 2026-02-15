@@ -1,0 +1,14 @@
+```json
+{
+  "morrisville_overview_T003": {
+    "summary_bullets": [
+      "Morrisville, NC experiences hot and muggy summers with average high temperatures around 89°F in July, and short, cold winters with average lows around 33°F in January.",
+      "The best times for warm-weather activities are from early May to mid-June and late August to mid-October, avoiding the extreme heat of summer.",
+      "The town's climate is generally wet and partly cloudy year-round.",
+      "Climate trends show a warming pattern, with winter experiencing the most significant increase in temperature.",
+      "The climate data suggests that daily life and local events would need to accommodate hot, humid summers and cool winters. Outdoor activities are best suited for spring and fall.",
+      "Annual precipitation is consistent, but year-to-year variability exists."
+    ]
+  }
+}
+```

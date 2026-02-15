@@ -1,0 +1,80 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve general information about Morrisville, NC",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve general information about Morrisville, NC, USA. Focus on key demographics, major industries, and notable landmarks.",
+        "reads": [],
+        "writes": [
+          "morrisville_general_info_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Analyze climate and typical weather patterns for Morrisville, NC",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve detailed climate data and typical weather patterns for Morrisville, NC, USA. Include average temperatures, precipitation, and seasonal variations.",
+        "reads": [],
+        "writes": [
+          "morrisville_climate_data_T002"
+        ]
+      },
+      {
+        "id": "T003",
+        "description": "Synthesize information on Morrisville, NC and its climate",
+        "agent": "DistillerAgent",
+        "agent_prompt": "Synthesize the retrieved general information about Morrisville, NC (`morrisville_general_info_T001`) and its climate data (`morrisville_climate_data_T002`) into a coherent overview. Highlight how the climate might influence daily life or local events.",
+        "reads": [
+          "morrisville_general_info_T001",
+          "morrisville_climate_data_T002"
+        ],
+        "writes": [
+          "morrisville_overview_T003"
+        ]
+      },
+      {
+        "id": "T004",
+        "description": "Format the synthesized overview of Morrisville, NC",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the synthesized overview of Morrisville, NC (`morrisville_overview_T003`) into a comprehensive report. Include sections on demographics, economy, and climate. Aim for a detailed and well-structured output suitable for executive review.",
+        "reads": [
+          "morrisville_overview_T003"
+        ],
+        "writes": [
+          "morrisville_formatted_report_T004"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "ROOT",
+        "to": "T001"
+      },
+      {
+        "from": "ROOT",
+        "to": "T002"
+      },
+      {
+        "from": "T001",
+        "to": "T003"
+      },
+      {
+        "from": "T002",
+        "to": "T003"
+      },
+      {
+        "from": "T003",
+        "to": "T004"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.8,
+  "ambiguity_notes": [
+    "The user query is very brief ('Morrisville, NC, USA'). Assuming a need for a general overview of the location and its climate, as this is a common type of request for a place name. If a more specific query was intended (e.g., local events, real estate, specific weather forecast), further clarification would be needed."
+  ]
+}
+```

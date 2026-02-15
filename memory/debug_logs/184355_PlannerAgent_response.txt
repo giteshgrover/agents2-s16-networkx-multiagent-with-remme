@@ -1,0 +1,43 @@
+```json
+{
+  "plan_graph": {
+    "nodes": [
+      {
+        "id": "T001",
+        "description": "Retrieve tomorrow's weather forecast for Morrisville, NC.",
+        "agent": "RetrieverAgent",
+        "agent_prompt": "Retrieve the weather forecast for Morrisville, NC for tomorrow's date. Include details such as temperature, precipitation probability, wind speed, and general conditions.",
+        "reads": [],
+        "writes": [
+          "weather_data_T001"
+        ]
+      },
+      {
+        "id": "T002",
+        "description": "Format the weather forecast into a human-readable summary.",
+        "agent": "FormatterAgent",
+        "agent_prompt": "Format the provided weather data into a clear and concise summary for Morrisville, NC for tomorrow. Include the date, expected high and low temperatures, precipitation chances, and wind conditions. User preferences indicate a direct, no-motivational tone and moderate response length.",
+        "reads": [
+          "weather_data_T001"
+        ],
+        "writes": [
+          "formatted_weather_report_T002"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "ROOT",
+        "target": "T001"
+      },
+      {
+        "source": "T001",
+        "target": "T002"
+      }
+    ]
+  },
+  "next_step_id": "T001",
+  "interpretation_confidence": 0.95,
+  "ambiguity_notes": []
+}
+```
